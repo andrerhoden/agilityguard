@@ -12,7 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('publicportal.welcome');
+});
+
+
+Route::get('/dentistportal/', function () {
+
+     return view('dentistportal.welcome');
+    //die('dentistportal--');
 });
 
 
