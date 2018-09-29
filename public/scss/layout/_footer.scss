@@ -1,0 +1,58 @@
+footer {
+    font-size: .8rem;
+    section {
+        &.copyright {
+            padding: 1rem;
+        }
+    }
+    h4 {
+        color: $gold;
+        font-size: 1.15rem;
+        font-weight: 500;
+    }
+    a {
+        color: $white;
+        &:hover {
+            color: #79c0ff;
+        }
+    }
+    .logo {
+        
+      margin: 0 0 1rem;
+      width: 200px;
+      height: 25px;
+  
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 2;
+        
+        @media (max-width: 992px) {
+            li {
+                float: left;
+                margin: 0 1rem 0.5rem 0;
+            }
+        }
+
+        &.social {
+            li {
+                float: left;
+                margin: 0 .5rem .5rem 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: initial;
+        ul {
+            li {
+                display: block;
+                float: none;
+            }
+        }
+    }
+}

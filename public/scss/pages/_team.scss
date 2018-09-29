@@ -1,0 +1,60 @@
+.team {
+    margin-top: 1rem;
+
+    .member {
+        margin-bottom: 1rem;
+
+        img {
+            margin: 0 0 .5rem;
+        }
+        .header {
+
+            h3, span {
+                font-size: .9rem;
+                margin: 0;
+            }
+        }
+        p {
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 575px) {
+    .team {
+
+        .member {
+            margin-bottom: 2rem;
+            .header {
+                border-bottom: 1px solid #ecf0f1;
+                margin: 0 0 .75rem;
+                padding: .5rem 0 .75rem;
+  
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .team {
+        margin-top: 2rem;
+        padding: 0 2rem;
+    
+        .member {
+            img {
+                margin: 0 0 .75rem;
+            }
+
+            
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team {
+        padding: 0 1rem;
+    }
+
+}

@@ -1,0 +1,158 @@
+
+.carousel {
+    position: relative;
+    margin: 0 0 1rem;
+
+
+
+    .carousel-item {
+        color: $white;
+
+        &:before {
+            content: "";
+            background: rgba(0, 0, 0, .3);
+            position: absolute;
+            width: 100%;
+            height: 101%;
+            z-index: 1;
+        }
+        &.active {
+            display: inline-block;
+        }
+        h1 {
+            color: $gold;
+        }
+        h2 {
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: $white;
+        }
+        
+        img {
+            position: absolute;
+            z-index: 0;
+        }
+        .carousel-text {
+            min-height: 250px;
+            display: table;
+            position: relative;
+    
+            z-index: 10;
+            padding: 1rem;
+
+            width: 100%;
+
+            .row {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        .photo-credit {
+            background: #013564;
+            bottom: 0;
+            position: relative;
+            padding: 1rem;
+            right: 0;
+            width: 300px;
+            z-index: 1;
+            text-align: right;
+            float: right;
+            
+            .name {
+                color: $white;
+                font-family: $headings-font-family;
+                font-weight: 500;
+                display: block;
+                font-size: 1rem;
+            }
+            .summary {
+                color: #afafaf;
+                font-size: .8rem;
+                display: inline-block;
+                line-height: 1.25;
+            }
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -2.5rem;
+        li {
+            background: $primary;
+            &.active {
+                background: $black;
+            }
+        }
+    }
+
+    .carousel-control-next, 
+    .carousel-control-prev {
+        display: none;
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+
+    .carousel {
+        margin: 0;
+        .carousel-item {
+    
+            h2 {
+                margin-bottom: 2rem;
+            }
+            
+            img {
+                position: relative;
+            }
+            .carousel-text {
+                position: absolute;
+                top: 0;
+                z-index: 10;
+                padding: 3rem 0 0;
+                left: 2rem;
+                text-shadow: 1px 1px 1px #353535;
+            }
+            .photo-credit {
+                position: absolute;
+                background: rgba(1, 53, 100, .8);
+                
+                .name {
+                    font-size: 1.4rem;
+                }
+                .summary {
+                    font-size: .9rem;
+                }
+            }
+        }
+        .carousel-indicators {
+            display: none;
+        }
+        .carousel-control-next, 
+        .carousel-control-prev {
+            display: flex;
+            width: 30px;
+        }
+    }
+    
+
+}
+
+@media (min-width: 992px) {
+
+    .carousel {
+    
+        .carousel-item {
+
+
+            .carousel-text {
+                
+            }
+        }
+
+
+    }
+    
+
+}
