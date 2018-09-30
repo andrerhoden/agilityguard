@@ -12,7 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('publicportal.welcome');
+    return view('publicportal.index');
+});
+Route::get('/about', function () {
+    return view('publicportal.about');
+});
+Route::get('/our-team', function () {
+    return view('publicportal.our-team');
 });
 
 
