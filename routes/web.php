@@ -11,20 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('publicportal.index');
-});
-Route::get('/about', function () {
+Route::get('/', 'PublicPortalController@index');
+// Route::get('/', function () {
+//     return view('publicportal.index');    
+// });
+Route::get('/about-us', function () {
     return view('publicportal.about');
 });
-Route::get('/our-team', function () {
-    return view('publicportal.our-team');
+Route::get('/products', function () {
+    return view('publicportal.products');
+});
+Route::get('/testimonials', function () {
+    return view('publicportal.testimonials');
+});
+Route::get('/contact-us', function () {
+    return view('publicportal.contact');
 });
 
 
-Route::get('/dentistportal/', function () {
 
-     return view('dentistportal.welcome');
+
+Route::get('/dentist-portal/', function () {
+
+
+     return view('dentistportal.index');
     //die('dentistportal--');
 });
 

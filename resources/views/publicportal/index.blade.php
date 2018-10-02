@@ -163,24 +163,23 @@
       <div class="row">
         <div class="col">
           
-            <div id="owl-testimonies" class="owl-carousel owl-theme">
-                <div class="item">
-                  <div class="testimony">
-                    <h2>"I consider AgilityGuard an essential piece of equipment"</h2>
-                    <h3 class="author">Giddeon Massie</h3>
-                    <span class="position">2-time Olympian & 16-time National Indoor Cycling Sprint Champio</span>
-                  </div>
+        @if( !empty( $testimonials ) )
+          
+          <div id="owl-testimonies" class="owl-carousel owl-theme">
+            @foreach ( $testimonials as $rs )
+              
+              <div class="item">
+                <div class="testimony">
+                  <h2>"{{$rs['Testimony']}}"</h2>
+                  <h3 class="author">{{$rs['Name']}}</h3>
+                  <span class="position">{{$rs['Awards']}}</span>
                 </div>
-                <div class="item">
-                    <div class="testimony">
-                      <h2>"I consider AgilityGuard an essential piece of equipment"</h2>
-                      <h3 class="author">Giddeon Massie</h3>
-                      <span class="position">2-time Olympian & 16-time National Indoor Cycling Sprint Champio</span>
-                    </div>
-                  </div>
+              </div>
+
+            @endforeach
             </div>
-
-
+            
+        @endif
 
         </div>
       </div>
