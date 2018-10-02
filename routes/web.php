@@ -12,15 +12,13 @@
 */
 
 Route::get('/', 'PublicPortalController@index');
-// Route::get('/', function () {
-//     return view('publicportal.index');    
-// });
+
 Route::get('/about-us', function () {
     return view('publicportal.about');
 });
-Route::get('/products', function () {
-    return view('publicportal.products');
-});
+
+Route::get('/products', 'PublicPortalController@products');
+
 Route::get('/testimonials', function () {
     return view('publicportal.testimonials');
 });

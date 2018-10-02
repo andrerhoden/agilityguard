@@ -1,6 +1,8 @@
 @extends('layouts.publicportal.main')
 @section('content')
 
+@php dump( $products ); @endphp
+
 <section class="white-bg">
       <div class="container text-center">
         <div class="row">
