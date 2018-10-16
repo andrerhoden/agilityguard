@@ -43,7 +43,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
               
-          <ul id="primaryMenu" class="nav navbar-nav navbar-right container text-lg-right">
+          <!-- <ul id="primaryMenu" class="nav navbar-nav navbar-right container text-lg-right">
             <li><a href="about.html">About Us</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Sports</a></li>
@@ -51,7 +51,7 @@
             <li><a href="#">Dentist Portal</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#" class="button">Find a Dentist</a></li>
-          </ul>
+          </ul> -->
 
 
 
@@ -89,16 +89,20 @@
               <div class="col-md-1"></div>
               <div class="col-md-3">
                 <h4>Our Products</h4>
-                <ul>
+                <!-- <ul>
                   <li><a href="#">PHI</a></li>
                   <li><a href="#">Throphy</a></li>
                   <li><a href="#">Authentication</a></li>
 
-                </ul>
+                </ul> -->
+
+                {!! $productsForFooterMenu !!}
+
+
               </div>
               <div class="col-md-3">
                   <h4>Quick Links</h4>
-                  <ul>
+                  <!-- <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Sports</a></li>
@@ -106,7 +110,11 @@
                     <li><a href="#">Dentist Portal</a></li>
                     <li><a href="#">Contact Us</a></li>
 
-                  </ul>
+                  </ul> -->
+                  {!! menu('Main', 'bootstrap') !!}
+
+
+
                 </div>
             </div>
         </div>
