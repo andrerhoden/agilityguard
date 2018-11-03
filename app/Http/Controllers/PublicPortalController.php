@@ -64,13 +64,26 @@ class PublicPortalController extends Controller
         ]);
     }
 
-    public function productDetails( Product $product )
+    public function productDetails( $product )
     {
         
-        return view('publicportal.products', [
-            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu'],
-            'products' => ProductsRepository::fetchProducts()
-        ]);
+        $product = Product::select(['*'])
+            ->where('slug', strtolower($product) )
+            ->first();
+
+        if ( !empty( $product ) )
+        {
+            return view('publicportal.product-details', [
+                'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu'],
+                'product' => $product
+            ]);
+        }else {
+            return redirect('products');
+        }
+            
+
+
+        
     }
 
     

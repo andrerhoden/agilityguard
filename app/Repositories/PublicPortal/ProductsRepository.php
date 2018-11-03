@@ -11,8 +11,7 @@ class ProductsRepository {
 
         $results = Product::select(['*'])
             ->where('deleted_at', NULL)
-            ->get()
-            ->toArray();
+            ->get();
 
 
 
