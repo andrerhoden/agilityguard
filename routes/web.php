@@ -13,28 +13,38 @@
 
 Route::get('/', 'PublicPortalController@index');
 
-Route::get('/about-us', function () {
-    return view('publicportal.about');
-});
+Route::get('/about-us', 'PublicPortalController@about');
 
 Route::get('/products', 'PublicPortalController@products');
+Route::get('/products/{product}', 'PublicPortalController@productDetails');
 
-Route::get('/testimonials', function () {
-    return view('publicportal.testimonials');
+Route::get('/testimonials', 'PublicPortalController@testimonials');
+
+Route::get('/contact-us', 'PublicPortalController@contactus');
+
+Route::get('/sports/basketball', 'PublicPortalController@sports_basketball');
+Route::get('/sports/baseball', 'PublicPortalController@sports_baseball');
+Route::get('/sports/boxing', 'PublicPortalController@sports_boxing');
+Route::get('/sports/cycling', 'PublicPortalController@sports_cycling');
+Route::get('/sports/fitness', 'PublicPortalController@sports_fitness');
+Route::get('/sports/football', 'PublicPortalController@sports_football');
+Route::get('/sports/golf', 'PublicPortalController@sports_golf');
+Route::get('/sports/hockey', 'PublicPortalController@sports_hockey');
+Route::get('/sports/lacrosse', 'PublicPortalController@sports_lacrosse');
+Route::get('/sports/mma', 'PublicPortalController@sports_mma');
+Route::get('/sports/running', 'PublicPortalController@sports_running');
+Route::get('/sports/swimming', 'PublicPortalController@sports_swimming');
+Route::get('/sports/tennis', 'PublicPortalController@sports_tennis');
+
+
+Route::group(['prefix' => 'dentist-portal'], function () {
+
+    Route::get('/dentist-portal/dashboard', 'DentistPortalController@dashboard');
+    Route::get('/', 'DentistPortalController@login');
+
 });
-Route::get('/contact-us', function () {
-    return view('publicportal.contact');
-});
 
 
-
-
-Route::get('/dentist-portal/', function () {
-
-
-     return view('dentistportal.index');
-    //die('dentistportal--');
-});
 
 
 Route::group(['prefix' => 'admin'], function () {
