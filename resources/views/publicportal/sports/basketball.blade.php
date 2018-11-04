@@ -22,6 +22,8 @@
             <div class="col-md-8">
               
             <div class="clearfix" id="body_content_left" style="min-height:1150px;">
+
+            
           		<p class="quote">In basketball, being able to rapidly change directions and move between forward and backward, side-to-side and up-down is a definite advantage. Discover what many of today’s professional athletes already know. With AgilityGuard™ on your side, the way you perform will never be the same again.</p>
 
 <h2>Strength and Power</h2>

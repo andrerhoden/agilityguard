@@ -21,20 +21,29 @@
             </div>
             <div class="col-md-8">
               
-               <h2>Changing the <span class="blue">Game</span></h2>
+               
+            <div class="clearfix" id="body_content_left" style="min-height:1150px;">
+          		<h3 class="quote">The USGA recently ruled on the use by golfers of AgilityGuards, allowing for use by golfers under certain circumstances. Your AgilityGuard Dentist is able to provide you with a copy of the ruling.</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus enim, scelerisque ac ante sit amet, feugiat porttitor tellus. Sed quam nisl, venenatis sit amet venenatis sed, luctus sed justo. Donec nunc ante, lobortis et viverra eu, porta vitae mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin laoreet gravida bibendum. Phasellus maximus turpis justo, sit amet hendrerit lacus interdum eu. Duis nulla nisi, egestas ac tristique sed, luctus ac tortor. Quisque tincidunt lorem ut quam tempor, in gravida nisi pellentesque.
-                </p>
-                <p>
-                    Morbi faucibus lectus quis ex varius, a egestas orci eleifend. Nulla facilisi. Sed convallis urna ut nunc pretium, quis lacinia dui lacinia. Sed ut tempor urna. Duis luctus orci at mauris eleifend mollis. Mauris et massa accumsan, feugiat felis eu, porttitor nunc. Nam semper enim magna, at consequat sapien congue vel.
-                </p>
-                <h3 class="gold">Cras id sapien eu lectus accumsan feugiat.</h3>
-                <p>
-                     Maecenas lorem mauris, aliquam ac gravida a, egestas in neque. Phasellus fermentum, ante ac vehicula elementum, velit velit vestibulum risus, condimentum aliquet enim sem ac risus. Aenean ac purus tempor, semper metus eget, gravida tortor. Sed ut gravida ipsum. Duis vehicula ipsum vitae lacus auctor, eu egestas lacus volutpat. Sed vestibulum justo risus, non ultrices elit mattis non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce aliquet arcu in odio placerat tempus. Ut id neque id enim imperdiet varius ac vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis nunc vitae dui cursus, nec mattis risus pretium. Fusce sed magna sit amet metus tincidunt faucibus placerat id quam. Quisque nulla dui, rutrum non risus eget, consectetur tristique elit.
-                </p><p>
-                    Nulla placerat magna ut nisl ornare, eget ultrices lectus aliquet. Sed pretium erat felis, aliquet malesuada neque venenatis quis. Donec risus ante, lacinia et cursus sit amet, scelerisque eu mauris. Aenean ac malesuada tortor. Donec ac turpis lacinia, pretium tellus at, gravida massa. Quisque placerat tempus pharetra. Quisque id cursus ligula. Suspendisse et ligula id augue semper pretium. Morbi a ultricies ex. Nam sed tempor lectus. Nam nulla est, eleifend a tortor vel, suscipit auctor orci.
-                </p><p>
-                    Sed suscipit aliquet justo eu egestas. Aenean hendrerit consectetur egestas. Etiam eget nisl molestie, semper nibh id, faucibus massa. Pellentesque vehicula vestibulum mauris, ac malesuada odio blandit ut. Aliquam a dui lobortis, laoreet tellus a, aliquam ligula. Mauris fringilla quam at velit convallis, vitae sollicitudin velit scelerisque. Phasellus faucibus aliquam sollicitudin. Fusce sit amet urna neque. Phasellus ultricies diam in lacus pretium, eget blandit nisi ornare. Ut eget malesuada dui. Sed placerat sed nunc ultrices venenatis. Fusce porttitor, justo a facilisis mattis, arcu nisi tempus velit, id consectetur erat nisl nec quam. Mauris finibus sapien mauris, non sagittis mauris vehicula a. Mauris convallis sodales tellus consequat sollicitudin.</p>
+              <h2>Core Strength and Stability</h2>
+              <p>A recent study published by Dr Greg Wells of the Department of Physiology and Experimental Medicine at the University of Toronto suggests that core strength and stability, flexibility, balance, and peripheral muscle strength are correlated with golf performance ("Physiological Correlates of Golf Performance", J. Strength Cond. Res., 2009 May; 23(3), 741-50).&nbsp;</p>
+              <p>The Wells study revealed varied significant associations between  abdominal muscle endurance and driver carry distance and average putt distance after a chip shot., and after a sand shot. Golfers have reported experiencing increased driving distance and driving accuracy while wearing a neuromuscular mouthguard.</p>
+              <h2>Flexibility&nbsp;</h2>
+              <p>The study indicates varying significant associations between flexibility and driver carry distance, 5-iron ball speed, 5-iron carry distance and score. &nbsp;While we do not have empirical evidence to make a claim of increased flexibility, users have reported to us being more flexible.&nbsp;</p>
+              <h2>Balance</h2>
+              <p>The Wells study shows varying significant links between balance and greens in regulation, and average putting distance after a chip shot. There are empirical studies which suggest a relationship between jaw position and posture.</p>
+              <h2>Explosive Power</h2>
+              <p>Wells illustrates, among other things, &nbsp;varying significant links between peripheral muscle power (vertical jump, number of push ups on 60 seconds, and grip strenght) and driver ball speed, driver distance, greens in regulation and sand shot performance. The results differed between males and females.A recent study by Rutgers University suggests improved explosive power with the use of a neuromuscular mouthguard that was based on Dr Chan's techniques.</p>
+              <h2>AgilityGuard Specific Experience and Potential Research</h2>
+              <p>AgilityGuard users consistently report increased flexibility, balance, core strength and explosive power. A recent study published by Dr. Shaun Arents and others of Rutgers Univeristy. "Effects of a neuromuscular dentistry- designed mouthguard on muscular endurance and anaerobic power", Comparative Exercise Physiology, Cambridge University Press, 2010, suggests an enhancement in peak power output, performance and repeated maximal efforts by individuals using a mouthguard based on Dr Chan's techniques.  Triumphant is looking at pursuing formal research on the potential of the AgilityGuard to improve flexibility, balance, endurance, recovery, core strength and stability among other attributes.</p>
+              <h3><em>Important to Note</em>
+              </h3>
+              <p><em>It is important to understand that each individual is different, and that only you can determine whether an AgilityGuard would provide any potential improvement in your athletic performance. This is best determined by you visiting an AgilityGuard dentist nearest you and having him or her perform the Agility Test on you. Only then should you make a decision to purchase an AgilityGuard.</em>
+              </p>
+
+          
+          </div>
+
 
             </div>
           </div>
