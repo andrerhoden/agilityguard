@@ -33,7 +33,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="Agility Guard" />
+          <img src="/img/logo.png" alt="Agility Guard" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
               
-          <ul id="primaryMenu" class="nav navbar-nav navbar-right container text-lg-right">
+          <!-- <ul id="primaryMenu" class="nav navbar-nav navbar-right container text-lg-right">
             <li><a href="about.html">About Us</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Sports</a></li>
@@ -51,7 +51,7 @@
             <li><a href="#">Dentist Portal</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#" class="button">Find a Dentist</a></li>
-          </ul>
+          </ul> -->
 
 
 
@@ -79,7 +79,7 @@
         <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h3><img src="img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
+                <h3><img src="/img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
                 <p>
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                     lobortis nisl ut aliquip.
@@ -89,16 +89,20 @@
               <div class="col-md-1"></div>
               <div class="col-md-3">
                 <h4>Our Products</h4>
-                <ul>
+                <!-- <ul>
                   <li><a href="#">PHI</a></li>
                   <li><a href="#">Throphy</a></li>
                   <li><a href="#">Authentication</a></li>
 
-                </ul>
+                </ul> -->
+
+                {!! $productsForFooterMenu !!}
+
+
               </div>
               <div class="col-md-3">
                   <h4>Quick Links</h4>
-                  <ul>
+                  <!-- <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Sports</a></li>
@@ -106,7 +110,11 @@
                     <li><a href="#">Dentist Portal</a></li>
                     <li><a href="#">Contact Us</a></li>
 
-                  </ul>
+                  </ul> -->
+                  {!! menu('Main', 'bootstrap') !!}
+
+
+
                 </div>
             </div>
         </div>
@@ -127,20 +135,20 @@
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-<script src="vendor/colorbox/jquery.colorbox.js"></script>
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/vendor/owlcarousel/owl.carousel.min.js"></script>
+<script src="/vendor/colorbox/jquery.colorbox.js"></script>
 
 <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="js/agility-guard.min.js"></script>
+<script src="/js/agility-guard.min.js"></script>
 
 <script type="text/javascript">
   
