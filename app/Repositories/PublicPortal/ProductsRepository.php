@@ -28,7 +28,7 @@ class ProductsRepository {
                 ->get()
             AS $product
         ){
-            $results .= "<li><a href='#'>" . $product->name . "</a></li>";
+            $results .= "<li><a href='products/{$product->slug}'>" . $product->name . "</a></li>";
         }
         $results .= "</ul>";
         return $results;
