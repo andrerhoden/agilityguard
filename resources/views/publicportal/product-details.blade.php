@@ -1,7 +1,6 @@
 @extends('layouts.publicportal.main')
 @section('content')
 
-@php dump( $product->toArray() ); @endphp
 
   <section class="masthead white-bg">
           <div class="container">

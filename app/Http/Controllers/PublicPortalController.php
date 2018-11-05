@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Repositories\PublicPortal\IndexRepository;
 use App\Repositories\PublicPortal\ProductsRepository;
+use App\Repositories\PublicPortal\AthleteRepository;
+
 use App\Product;
 
 class PublicPortalController extends Controller
@@ -38,7 +40,7 @@ class PublicPortalController extends Controller
     {
 
         return view('publicportal.testimonials', [
-            'testimonials' => IndexRepository::fetchTestimonials(),
+            'testimonials' => AthleteRepository::fetchTestimonials(),
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }

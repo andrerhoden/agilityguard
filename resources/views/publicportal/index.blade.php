@@ -170,7 +170,7 @@
               
               <div class="item">
                 <div class="testimony">
-                  <h2>"{{$rs['Testimony']}}"</h2>
+                  <h2>{!!$rs['Testimony']!!}</h2>
                   <h3 class="author">{{$rs['Name']}}</h3>
                   <span class="position">{{$rs['Awards']}}</span>
                 </div>
