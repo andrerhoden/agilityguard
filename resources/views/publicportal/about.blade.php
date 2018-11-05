@@ -15,51 +15,54 @@
 
       <section class="white-bg">
         <div class="container">
+          
           <div class="row">
-            <div class="col-md-4 d-none d-md-block">
-              <img src="img/inline/PanAmWR6.jpg" />
-            </div>
-            <div class="col-md-8">
+            <div class="col">
               
-               <h2>Changing the <span class="blue">Game</span></h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus enim, scelerisque ac ante sit amet, feugiat porttitor tellus. Sed quam nisl, venenatis sit amet venenatis sed, luctus sed justo. Donec nunc ante, lobortis et viverra eu, porta vitae mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin laoreet gravida bibendum. Phasellus maximus turpis justo, sit amet hendrerit lacus interdum eu. Duis nulla nisi, egestas ac tristique sed, luctus ac tortor. Quisque tincidunt lorem ut quam tempor, in gravida nisi pellentesque.
-                </p>
-                <p>
-                    Morbi faucibus lectus quis ex varius, a egestas orci eleifend. Nulla facilisi. Sed convallis urna ut nunc pretium, quis lacinia dui lacinia. Sed ut tempor urna. Duis luctus orci at mauris eleifend mollis. Mauris et massa accumsan, feugiat felis eu, porttitor nunc. Nam semper enim magna, at consequat sapien congue vel.
-                </p>
-                <h3 class="gold">Cras id sapien eu lectus accumsan feugiat.</h3>
-                <p>
-                     Maecenas lorem mauris, aliquam ac gravida a, egestas in neque. Phasellus fermentum, ante ac vehicula elementum, velit velit vestibulum risus, condimentum aliquet enim sem ac risus. Aenean ac purus tempor, semper metus eget, gravida tortor. Sed ut gravida ipsum. Duis vehicula ipsum vitae lacus auctor, eu egestas lacus volutpat. Sed vestibulum justo risus, non ultrices elit mattis non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce aliquet arcu in odio placerat tempus. Ut id neque id enim imperdiet varius ac vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis nunc vitae dui cursus, nec mattis risus pretium. Fusce sed magna sit amet metus tincidunt faucibus placerat id quam. Quisque nulla dui, rutrum non risus eget, consectetur tristique elit.
-                </p><p>
-                    Nulla placerat magna ut nisl ornare, eget ultrices lectus aliquet. Sed pretium erat felis, aliquet malesuada neque venenatis quis. Donec risus ante, lacinia et cursus sit amet, scelerisque eu mauris. Aenean ac malesuada tortor. Donec ac turpis lacinia, pretium tellus at, gravida massa. Quisque placerat tempus pharetra. Quisque id cursus ligula. Suspendisse et ligula id augue semper pretium. Morbi a ultricies ex. Nam sed tempor lectus. Nam nulla est, eleifend a tortor vel, suscipit auctor orci.
-                </p><p>
-                    Sed suscipit aliquet justo eu egestas. Aenean hendrerit consectetur egestas. Etiam eget nisl molestie, semper nibh id, faucibus massa. Pellentesque vehicula vestibulum mauris, ac malesuada odio blandit ut. Aliquam a dui lobortis, laoreet tellus a, aliquam ligula. Mauris fringilla quam at velit convallis, vitae sollicitudin velit scelerisque. Phasellus faucibus aliquam sollicitudin. Fusce sit amet urna neque. Phasellus ultricies diam in lacus pretium, eget blandit nisi ornare. Ut eget malesuada dui. Sed placerat sed nunc ultrices venenatis. Fusce porttitor, justo a facilisis mattis, arcu nisi tempus velit, id consectetur erat nisl nec quam. Mauris finibus sapien mauris, non sagittis mauris vehicula a. Mauris convallis sodales tellus consequat sollicitudin.</p>
+            
+              <h2>Changing the <span class="blue">Game</span></h2>
+              <h2>Agility</h2>
+              <p><img src="http://www.agilityguard.com/assets/images/system/images/0000/0931/ApoloOhno2_medium.jpg" title="Apolo Ohno2" alt="Apolo Ohno2" rel="medium" class="rounded float-left" /></p>
+              <p>As 8-time Olympic medalist Apolo Anton Ohno will attest, every athlete, player, trainer, coach and fitness enthusiast is aware of the benefits of being "agile". Agility is defined as the ability to change the body's position efficiently, requiring the integration of isolated movement skills using a combination of balance, co-ordination, speed, reflexes, strength, endurance and stamina.&nbsp;</p>
+              
+              <h3 class="clearfix">Not a New Idea - Just one who's time has come!&nbsp;</h3>
+              <p>The potential to improve athletic performance by using a properly designed mouthguard <strong><em>is not a new idea</em> </strong>. Dentists have, for some 40 years, noted improvements in athletic performance when athletes used a properly designed mouthguard.&nbsp;</p>
+              <p>Still, for many, wearing a mouthguard while playing contact sports is viewed simply as a way to protect the teeth. Football Players, Boxers, Hockey Players, MMA Athletes and others can all be seen wearing (and often chewing on) their mouthguard on the field, on the ice and in the ring.&nbsp;It used to be that if you played a sport where you could get hit, you wear a mouthguard - any mouthguard - plain and simple and no thought required.</p>
+              <p>While few serious athletes would consider competing with the wooden racquets of the 1970s, the shoes of bygone eras or outdated equipment in general, it is not uncommon to see today's athletes using mouthguards little changed from their parents' competitive days. Surely, there must be a better way!</p>
+              <h3>Now there's AgilityGuard: Performance Protection</h3>
+              <p><img src="http://www.agilityguard.com/assets/images/system/images/0000/2461/AgilityGuard_-_Performance_Protection_large.png" title="Agility Guard   Performance Protection" alt="Agility Guard   Performance Protection" rel="large" class="rounded mx-auto d-block" /></p>
+              <p>Technological advancements have in fact redefined the importance and role of mouthguards in sports.&nbsp;With a focus on precision, durability and comfort, each AgilityGuard is truly custom fit to unleash the performance potential of the most important athlete in the world - You!</p>
+              <p>Available only through a network of Certified AgilityGuard dentists with substantial collective experience assisting world-class, professional, Olympic athletes in addition to everyday athletes, you can be sure that your AgilityGuard is fabricated to the highest standards with a relentless focus on performance excellence. &nbsp; &nbsp;&nbsp;</p>
+              <h3 class="gold"><em>Important to Note</em></h3>
+              <p><em>It is important to understand that each individual is different, and that only you can determine whether an AgilityGuard would provide any potential improvement in your athletic performance. This is best determined by you visiting an AgilityGuard dentist nearest you and having him or her perform the Agility Test on you. Only then should you make a decision to purchase an AgilityGuard.</em> </p>
 
+
+              <hr/>
+           
             </div>
           </div>
+
+
+
+
+
           <div class="row callouts">
-              <div class="callout col-md-6">
-                <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Gold-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Get your custom athletic performance guard</h4>
-                    <p>Sed suscipit aliquet justo eu egestas. Aenean hendrerit consectetur egestas. Etiam eget nisl molestie, semper nibh id, faucibus massa.</p>
-                  </div>
-                </div>
+              <div class="callout col-md-3">
+                <img src="img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
               </div>
-              <div class="callout col-md-6">
-              <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Our Expertised</h4>
-                    <p>Nulla placerat magna ut nisl ornare, eget ultrices lectus aliquet. Sed pretium erat felis, aliquet malesuada neque venenatis quis.</p>
-                  </div>
-                </div>
+              <div class="callout col-md-9">
+              
+               
+                  
+                    <h4>Facts from the American Dental Association</h4>
+                    <ul>
+                      <li>A properly fitted mouthguard reduces the chances of sustaining a concussion from a blow to the jaw.</li>
+                      <li>Mouthguards should be worn at all times during competition, in practice as well as in games.</li>
+                      <li>The American Dental Association recommends wearing custom mouthguards for the following sports: acrobats, basketball, boxing, field hockey, football, gymnastics, handball, ice hockey, lacrosse, racquetball, martial arts, racquetball, roller hockey, rugby, shot put, skateboarding, skiing, skydiving, soccer, squash, surfing, volleyball, water polo, weightlifting, wrestling.</li>
+                    </ul>
+                  
+                
               </div>
             </div>
           </div>
