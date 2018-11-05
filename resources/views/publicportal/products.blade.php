@@ -1,7 +1,6 @@
 @extends('layouts.publicportal.main')
 @section('content')
 
-@php dump( $products->toArray() ); @endphp
 
 @foreach ( $products as $product) 
   
