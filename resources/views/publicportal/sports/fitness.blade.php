@@ -20,7 +20,7 @@
             <div class="col">
                
                
-            <div class="clearfix" id="body_content_left" style="min-height:1000px;">
+            <div class="clearfix" id="body_content_left">
           		<p>Multisports, such as Triathlons, are endurance sports that in some form combine swimming, running and cycling. They are very demanding sports that require a combination of a number of skills.&nbsp;</p>
 
               <div class="tes"><img src="/assets/images/system/images/0000/2335/Matt_Chabrot_-_Triathlete_medium.png" title="Matt Chabrot   Triathlete" alt="Matt Chabrot   Triathlete" rel="medium">
@@ -81,34 +81,25 @@
             </div>
           </div>
           <div class="row callouts">
-              <div class="callout col-md-6">
-                <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Gold-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Get your custom athletic performance guard</h4>
-                    <p>Sed suscipit aliquet justo eu egestas. Aenean hendrerit consectetur egestas. Etiam eget nisl molestie, semper nibh id, faucibus massa.</p>
-                  </div>
+              <div class="callout col">
+                <h4>Become a Certified Dentist</h4>
+                  
+                  <ul>
+                      <li>Learn From Dr Clayton Chan,  the creator of the Chan Gneuromuscular™&nbsp;"Optimized Bite” and the “Chan Scan”</li>
+                      <li>Create a bridge between various practice philosophies that will provide the most sustainable and positive results for your clients</li>
+                  </ul>
+                  <a href="http://learning.agilityguard.com/" class="button" target="_blank">Find Out More</a> 
+                
                 </div>
               </div>
-              <div class="callout col-md-6">
-              <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Our Expertised</h4>
-                    <p>Nulla placerat magna ut nisl ornare, eget ultrices lectus aliquet. Sed pretium erat felis, aliquet malesuada neque venenatis quis.</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
          
         </div>
      
       </section>
+
 
 
 @endsection

@@ -19,7 +19,7 @@
           <div class="row">
             <div class="col">
                
-            <div class="clearfix" id="body_content_left" style="min-height:1150px;">
+            <div class="clearfix" id="body_content_left">
           		<h3 class="quote">The USGA recently ruled on the use by golfers of AgilityGuards, allowing for use by golfers under certain circumstances. Your AgilityGuard Dentist is able to provide you with a copy of the ruling.</h3>
 
               <h2>Core Strength and Stability</h2>
@@ -45,34 +45,25 @@
             </div>
           </div>
           <div class="row callouts">
-              <div class="callout col-md-6">
-                <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Gold-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Get your custom athletic performance guard</h4>
-                    <p>Sed suscipit aliquet justo eu egestas. Aenean hendrerit consectetur egestas. Etiam eget nisl molestie, semper nibh id, faucibus massa.</p>
-                  </div>
+              <div class="callout col">
+                <h4>Become a Certified Dentist</h4>
+                  
+                  <ul>
+                      <li>Learn From Dr Clayton Chan,  the creator of the Chan Gneuromuscular™&nbsp;"Optimized Bite” and the “Chan Scan”</li>
+                      <li>Create a bridge between various practice philosophies that will provide the most sustainable and positive results for your clients</li>
+                  </ul>
+                  <a href="http://learning.agilityguard.com/" class="button" target="_blank">Find Out More</a> 
+                
                 </div>
               </div>
-              <div class="callout col-md-6">
-              <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Our Expertised</h4>
-                    <p>Nulla placerat magna ut nisl ornare, eget ultrices lectus aliquet. Sed pretium erat felis, aliquet malesuada neque venenatis quis.</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
          
         </div>
      
       </section>
+
 
 
 @endsection
