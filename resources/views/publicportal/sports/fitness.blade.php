@@ -6,6 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
+                <div class="prefix">Sports</div>
                 <h1>Fitness</h1>
               </div>
             </div>
@@ -16,11 +17,7 @@
       <section class="white-bg">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 d-none d-md-block">
-              <img src="img/inline/PanAmWR6.jpg" />
-            </div>
-            <div class="col-md-8">
-              
+            <div class="col">
                
                
             <div class="clearfix" id="body_content_left" style="min-height:1000px;">

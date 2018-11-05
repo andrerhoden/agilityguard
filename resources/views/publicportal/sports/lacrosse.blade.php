@@ -6,6 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
+                <div class="prefix">Sports</div>
                 <h1>Lacrosse</h1>
               </div>
             </div>
@@ -16,11 +17,7 @@
       <section class="white-bg">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 d-none d-md-block">
-              <img src="img/inline/PanAmWR6.jpg" />
-            </div>
-            <div class="col-md-8">
-              
+            <div class="col">
                <h2>Changing the <span class="blue">Game</span></h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus enim, scelerisque ac ante sit amet, feugiat porttitor tellus. Sed quam nisl, venenatis sit amet venenatis sed, luctus sed justo. Donec nunc ante, lobortis et viverra eu, porta vitae mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin laoreet gravida bibendum. Phasellus maximus turpis justo, sit amet hendrerit lacus interdum eu. Duis nulla nisi, egestas ac tristique sed, luctus ac tortor. Quisque tincidunt lorem ut quam tempor, in gravida nisi pellentesque.

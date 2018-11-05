@@ -6,6 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
+                <div class="prefix">Sports</div>  
                 <h1>Boxing</h1>
               </div>
             </div>
@@ -16,11 +17,7 @@
       <section class="white-bg">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 d-none d-md-block">
-              <img src="img/inline/PanAmWR6.jpg" />
-            </div>
-            <div class="col-md-8">
-              
+            <div class="col">
                
             <div class="clearfix" id="body_content_left" style="min-height:1150px;">
           		<p class="quote">Boxing requires strength, agility, balance, explosive power, flexibility, endurance and recovery. &nbsp;Discover what professional boxers already know. With AgilityGuard™ on your side, the way you perform will never be the same again.</p>

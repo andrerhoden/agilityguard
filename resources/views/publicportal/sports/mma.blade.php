@@ -6,6 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
+                <div class="prefix">Sports</div>
                 <h1>MMA</h1>
               </div>
             </div>
@@ -16,12 +17,7 @@
       <section class="white-bg">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 d-none d-md-block">
-              <img src="img/inline/PanAmWR6.jpg" />
-            </div>
-            <div class="col-md-8">
-              
-               
+           <div class="col">
 
                <div class="clearfix" id="body_content_left" style="min-height:1150px;">
           		<p class="quote">In 2006, Dr Hoa Nguyen, a Taekwon-do expert and AgilityGuard Dentist, represented Canada in the 7th Junior / 2nd Veteran International Taekwon-do Federation (ITF) World Championships held in Sofia, Bulgary, where he won a Gold Medal in his category. He states that &nbsp;"balance, flexibility, range of motion are all very important in martial arts, especially in TKD where kicks are emphasized. In TKD, there are lots more kicking techniques than hand techniques.  In these techniques, balance, speed, power, range of motion decide their effectiveness, and loose/relaxed muscles are required for highest effectiveness.</p>

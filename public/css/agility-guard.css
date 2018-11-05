@@ -28,14 +28,16 @@ hr.light {
   border-color: #fff;
 }
 
-a {
+a,
+.btn-link {
   color: #013564;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-a:hover {
+a:hover,
+.btn-link:hover {
   color: inherit;
   opacity: .8;
 }
@@ -243,6 +245,19 @@ section {
   max-width: 100%;
 }
 
+.nav-pills .nav-link.active {
+  background: #013564;
+}
+
+.page-item.active .page-link {
+  background-color: #013564;
+  border-color: #013564;
+}
+
+.page-item .page-link {
+  color: #013564;
+}
+
 @media (min-width: 460px) {
   .callouts .callout .box {
     display: inline-flex;
@@ -296,10 +311,10 @@ section {
     font-size: 1.45rem;
   }
   .masthead {
-    margin: 0;
+    margin: 0 0 1rem;
   }
   section {
-    padding: 4rem 0;
+    padding: 1rem 0;
   }
 }
 
@@ -606,6 +621,10 @@ footer ul {
   }
 }
 
+footer ul a[href$="/products"] {
+  display: none;
+}
+
 footer ul.social li {
   float: left;
   margin: 0 .5rem .5rem 0;
@@ -619,6 +638,11 @@ footer ul.social li {
     display: block;
     float: none;
   }
+}
+
+#collapseResetPassword {
+  padding: 1rem 0;
+  margin: 1rem 0 0;
 }
 
 .button {
@@ -885,6 +909,183 @@ section.video-playlist {
   }
 }
 
+/*
+ * MDBootstrap integration with Datatables
+ * Learn more: https://mdbootstrap.com/content/bootstrap-datatables/
+ * About MDBootstrap: https://mdbootstrap.com/
+ *
+ * This combined file was created by the DataTables downloader builder:
+ *   https://datatables.net/download
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#bs4/dt-1.10.18
+ *
+ * Included libraries:
+ *   DataTables 1.10.18
+ */
+table.dataTable thead {
+  cursor: pointer;
+}
+
+table.dataTable thead > tr > th:active {
+  outline: none;
+}
+
+table.dataTable thead > tr > td:active {
+  outline: none;
+}
+
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select span,
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select .select-dropdown {
+  margin-top: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_length label, div.dataTables_wrapper div.dataTables_filter label {
+  text-align: left;
+  font-weight: normal;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+div.dataTables_wrapper div.dataTables_length select,
+div.dataTables_wrapper div.dataTables_length input, div.dataTables_wrapper div.dataTables_filter select,
+div.dataTables_wrapper div.dataTables_filter input {
+  width: auto;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: .5rem;
+  display: inline-block;
+}
+
+div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
+  font-weight: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+  text-align: right;
+  margin: 0;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  justify-content: flex-end;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+  background-color: #4285f4;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  div.dataTables_wrapper div .dataTables_length,
+  div.dataTables_wrapper div .dataTables_filter,
+  div.dataTables_wrapper div .dataTables_info,
+  div.dataTables_wrapper div .dataTables_paginate ul.pagination {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.bs-select select {
+  display: inline-block !important;
+}
+
+table.dataTable thead {
+  cursor: pointer;
+}
+
+table.dataTable thead > tr > th:active {
+  outline: none;
+}
+
+table.dataTable thead > tr > td:active {
+  outline: none;
+}
+
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select span,
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select .select-dropdown {
+  margin-top: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_length label, div.dataTables_wrapper div.dataTables_filter label {
+  text-align: left;
+  font-weight: normal;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+div.dataTables_wrapper div.dataTables_length select,
+div.dataTables_wrapper div.dataTables_length input, div.dataTables_wrapper div.dataTables_filter select,
+div.dataTables_wrapper div.dataTables_filter input {
+  width: auto;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: .5rem;
+  display: inline-block;
+}
+
+div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
+  font-weight: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+  text-align: right;
+  margin: 0;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  justify-content: flex-end;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+  background-color: #4285f4;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  div.dataTables_wrapper div .dataTables_length,
+  div.dataTables_wrapper div .dataTables_filter,
+  div.dataTables_wrapper div .dataTables_info,
+  div.dataTables_wrapper div .dataTables_paginate ul.pagination {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.bs-select select {
+  display: inline-block !important;
+}
+
 section.experience {
   position: relative;
   overflow: hidden;
@@ -1036,6 +1237,10 @@ section.experience .text {
   .team {
     padding: 0 1rem;
   }
+}
+
+#remove_guard {
+  display: none;
 }
 
 .text-primary {
