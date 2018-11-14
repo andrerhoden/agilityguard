@@ -45,14 +45,23 @@ class AthleteRepository {
     private static function __prepBannerHtml( $bannerAtheletes ) 
     {
         $html = '';
-
-        // dump( $bannerAtheletes );
+        $prependBillboardSet = false;
+        if ( !empty( setting('site.homepage_prepend_billboard') ) )
+        {
+            $prependBillboardSet = true;
+            $html = setting('site.homepage_prepend_billboard');
+        }
 
         foreach ( $bannerAtheletes as $bannerAtheleteKey => $bannerAthelete )
         {
             
-
-            $activeBanner = ($bannerAtheleteKey == 0) ? 'active' : '';
+            $activeBanner =  '';
+            if ( 
+                ( $prependBillboardSet == false )
+                && ($bannerAtheleteKey == 0)
+            ){
+                $activeBanner =  'active';
+            }
 
             $bannerImages = json_decode($bannerAthelete['Images'], true);
             $dsplyBannerImage = $_ENV['APP_URL'] .'storage/'. $bannerImages[0];
@@ -75,7 +84,7 @@ class AthleteRepository {
                             <a href="#" class="button">Learn more</a>
                         </div>
                         -->
-                        
+
                     </div>
                     
                 </div>
