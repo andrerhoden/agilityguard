@@ -8,7 +8,8 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+      {!!$bannerAthletes!!}
+        <!-- <div class="carousel-item active">
             <picture>
               <source media="(max-width: 640px)" srcset="img/billboards/Christian-Homer-billboard-mobile.jpg">
               <img class="d-block w-100" src="img/billboards/Christian-Homer-billboard.jpg" alt="Add billboard text here" />
@@ -78,7 +79,7 @@
                   Singapore 2010 Youth Olympics)</span>
               </div>
           
-        </div>
+        </div> -->
       
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
