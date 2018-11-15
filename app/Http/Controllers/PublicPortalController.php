@@ -28,6 +28,14 @@ class PublicPortalController extends Controller
         ]);
     }
 
+    public function map()
+    {
+
+        return view('publicportal.map', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+
     public function contactus()
     {
 

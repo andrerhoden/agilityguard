@@ -15,6 +15,8 @@ Route::get('/', 'PublicPortalController@index');
 
 Route::get('/about-us', 'PublicPortalController@about');
 
+Route::get('/map', 'PublicPortalController@map');
+
 Route::get('/products', 'PublicPortalController@products');
 Route::get('/products/{product}', 'PublicPortalController@productDetails');
 
