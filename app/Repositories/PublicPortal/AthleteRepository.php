@@ -3,6 +3,7 @@
 namespace App\Repositories\PublicPortal;
 
 use App\Athlete;
+use App\Repositories\PublicPortal\RenderHTMLBannerRepository;
 
 class AthleteRepository {
     
@@ -14,7 +15,7 @@ class AthleteRepository {
             ->get()
             ->toArray();
 
-        return self::__prepBannerHtml( $results );
+        return RenderHTMLBannerRepository::RenderAtheletesBannerHtml( $results );        
 
     }
 

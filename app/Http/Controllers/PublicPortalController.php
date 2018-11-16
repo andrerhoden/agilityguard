@@ -22,6 +22,7 @@ class PublicPortalController extends Controller
     public function index()
     {
         return view('publicportal.index', [
+            'bannerProducts' => ProductsRepository::fetchForHomeProductsBanner(),
             'bannerAthletes' => AthleteRepository::fetchForHomeAthleteBanner(),
             'testimonials' => AthleteRepository::fetchTestimonialsForHomepage(),
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
