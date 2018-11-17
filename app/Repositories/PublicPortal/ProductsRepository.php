@@ -25,8 +25,19 @@ class ProductsRepository
             ->where('deleted_at', NULL)
             ->get();
 
+        foreach( $results as &$rs)
+        {
+            $imagesFullPath = [];
+            $images = json_decode($rs['images'], true);
+            foreach( $images as $img ) 
+            {
+                $imagesFullPath[] = $_ENV['APP_URL'] .'storage/'. $img;
+            }
 
+            $rs->imagesFullPath = $imagesFullPath;
+        }
 
+        
         return $results;
 
     }
