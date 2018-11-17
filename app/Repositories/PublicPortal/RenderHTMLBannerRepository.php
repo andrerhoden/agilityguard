@@ -3,28 +3,41 @@
 namespace App\Repositories\PublicPortal;
 
 use App\Athlete;
+use App\Repositories\PublicPortal\ProductsRepository;
+use App\Repositories\PublicPortal\AthleteRepository;
+
 
 class RenderHTMLBannerRepository {
     
-    public static function RenderProductsBannerHtml( $bannerProducts ) 
+    public $activeBanner = '';
+    public $prependBillboardSet = false;
+
+    public function RenderProductsBannerHtml() 
     {
         $html = '';
-        $prependBillboardSet = false;
-        if ( !empty( setting('site.homepage_prepend_billboard') ) )
-        {
-            $prependBillboardSet = true;
+        
+        if (
+            ( !empty( setting('site.homepage_prepend_billboard') ) )
+            && ( $this->prependBillboardSet == false )
+        ){
+            $this->prependBillboardSet = true;
             $html = setting('site.homepage_prepend_billboard');
         }
+        
+        
+        $bannerProducts = ProductsRepository::fetchForHomeProductsBanner();
 
+        
         foreach ( $bannerProducts as $bannerProductKey => $bannerProduct )
         {
             
-            $activeBanner =  '';
+            
             if ( 
-                ( $prependBillboardSet == false )
+                ( $this->prependBillboardSet == false )
                 && ($bannerProductKey == 0)
+                && ( $this->activeBanner == '' )
             ){
-                $activeBanner =  'active';
+                $this->activeBanner =  'active';
             }
 
             $bannerImages = json_decode($bannerProduct['images'], true);
@@ -32,7 +45,7 @@ class RenderHTMLBannerRepository {
             
             
             $html .= <<<EOT
-            <div class="carousel-item {$activeBanner}">            
+            <div class="carousel-item {$this->activeBanner}">            
                 <picture>
                     <source media="(max-width: 640px)" srcset="{$dsplyBannerImage}">
                     <img class="d-block w-100" src="{$dsplyBannerImage}" alt="{$bannerProduct['name']}" />
@@ -54,7 +67,7 @@ class RenderHTMLBannerRepository {
                 </div>
                 <div class="photo-credit">
                     <span class="name">{$bannerProduct['name']}</span>
-                    <span class="name">{$bannerProduct['Summary']}</span>                    
+                    <!--<span class="name">{$bannerProduct['Summary']}</span>-->                    
                 </div>            
             </div>
 EOT;
@@ -66,25 +79,29 @@ EOT;
 
     }
 
-    public static function RenderAtheletesBannerHtml( $bannerAtheletes ) 
+    public function RenderAtheletesBannerHtml() 
     {
         $html = '';
-        $prependBillboardSet = false;
-        if ( !empty( setting('site.homepage_prepend_billboard') ) )
-        {
-            $prependBillboardSet = true;
+        
+        if (
+            ( !empty( setting('site.homepage_prepend_billboard') ) )
+            && ( $this->prependBillboardSet == false )            
+        ){
+            $this->prependBillboardSet = true;
             $html = setting('site.homepage_prepend_billboard');
         }
 
+        $bannerAtheletes = AthleteRepository::fetchForHomeAthleteBanner();
         foreach ( $bannerAtheletes as $bannerAtheleteKey => $bannerAthelete )
         {
             
-            $activeBanner =  '';
+            
             if ( 
-                ( $prependBillboardSet == false )
+                ( $this->prependBillboardSet == false )
                 && ($bannerAtheleteKey == 0)
+                && ( $this->activeBanner == '' )
             ){
-                $activeBanner =  'active';
+                $this->activeBanner =  'active';
             }
 
             $bannerImages = json_decode($bannerAthelete['Images'], true);
@@ -92,7 +109,7 @@ EOT;
             
             
             $html .= <<<EOT
-            <div class="carousel-item {$activeBanner}">            
+            <div class="carousel-item {$this->activeBanner}">            
                 <picture>
                     <source media="(max-width: 640px)" srcset="{$dsplyBannerImage}">
                     <img class="d-block w-100" src="{$dsplyBannerImage}" alt="{$bannerAthelete['Name']} - {$bannerAthelete['Awards']}" />

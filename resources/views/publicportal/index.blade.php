@@ -8,7 +8,7 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-      
+      {!!$bannerProducts!!}
       {!!$bannerAthletes!!}
         <!-- <div class="carousel-item active">
             <picture>

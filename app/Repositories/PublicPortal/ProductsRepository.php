@@ -15,7 +15,7 @@ class ProductsRepository
             ->get()
             ->toArray();
         
-        return RenderHTMLBannerRepository::RenderProductsBannerHtml( $results );        
+        return $results;        
 
     }
 

@@ -4,6 +4,8 @@
 
 @foreach ( $products as $product) 
   
+  @php dump($product->toArray()) @endphp
+
   <a href="products/{{$product->slug}}"> {{$product->name}} </a>
   <br>
 @endforeach

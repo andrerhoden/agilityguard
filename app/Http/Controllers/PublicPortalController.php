@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Repositories\PublicPortal\RenderHTMLBannerRepository;
 use App\Repositories\PublicPortal\IndexRepository;
 use App\Repositories\PublicPortal\ProductsRepository;
 use App\Repositories\PublicPortal\AthleteRepository;
@@ -21,9 +22,20 @@ class PublicPortalController extends Controller
 
     public function index()
     {
+
+        
+        $RenderHTMLBannerRepository = new RenderHTMLBannerRepository();
+        
+        // dump( $RenderHTMLBannerRepository->activeBanner );
+        
+        // dump( $RenderHTMLBannerRepository->RenderProductsBannerHtml() );
+
+        // dump( $RenderHTMLBannerRepository->activeBanner );
+        // die();
+
         return view('publicportal.index', [
-            'bannerProducts' => ProductsRepository::fetchForHomeProductsBanner(),
-            'bannerAthletes' => AthleteRepository::fetchForHomeAthleteBanner(),
+            'bannerProducts' => $RenderHTMLBannerRepository->RenderProductsBannerHtml(),
+            'bannerAthletes' => $RenderHTMLBannerRepository->RenderAtheletesBannerHtml(),
             'testimonials' => AthleteRepository::fetchTestimonialsForHomepage(),
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
