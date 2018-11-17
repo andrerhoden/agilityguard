@@ -6,8 +6,18 @@
   
   @php dump($product->toArray()) @endphp
 
-  <a href="products/{{$product->slug}}"> {{$product->name}} </a>
-  <br>
+    <a href="products/{{$product->slug}}"> {{$product->name}} </a>
+    <br>
+    {!!$product->Body!!}
+    <br>
+    
+    {{$product->imagesFullPath[0]}}
+
+    <hr>
+
+    @foreach( $product->imagesFullPath as $img ) :
+      {{$img}})
+    @endforeach
 @endforeach
 
 
