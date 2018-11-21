@@ -135,46 +135,6 @@
 <!-- Custom scripts for this template -->
 <script src="js/agility-guard.min.js"></script>
 
-<script type="text/javascript">
-  
-  // Add Touch funtionality to the Bootstrao slider
-  var myElement = document.getElementById('carouselExampleIndicators');
-  var mc = new Hammer(myElement);
-  var panning = false;
-  mc.on("panleft", function(ev) {
-    if(!panning){
-      panning = true;
-      $('.carousel').carousel('next');
-    }
-  });
-  mc.on("panright", function(ev) {
-    if(!panning){
-      panning = true;
-      $('.carousel').carousel('prev');
-    }
-  });
-  mc.on("panend", function(ev) {
-    panning = false;
-  });
-
-  jQuery("#vid-list li a").click(function(e){
-    e.preventDefault();
-    var screenWidth = jQuery(window).width();
-    var link = jQuery(this).attr("href");
-
-    if(jQuery(window).width() < 768){
-      jQuery.colorbox({
-        href: link,
-        iframe: true, 
-        innerWidth: "90%", 
-        innerHeight: (screenWidth < 500) ? 250 : 350
-      });
-    }else{
-      document.getElementById('vid_frame').src=link;
-    }
-    return false;
-  });
-</script>
 </body>  
     
 </html>
