@@ -1,23 +1,91 @@
 @extends('layouts.publicportal.main')
 @section('content')
 
-<style>
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-#map {
-  height: 100%;
-  min-height: 400px;
-}
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-</style>
+<section class="masthead white-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Dentist Locator</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="white-bg">
+  <div class="container ">
+    
+    
+    <div class="row justify-content-md-center text-center">
+      <div class="col col-lg-8">
+        
+        <p>Simply type in your zip/postal code, or city to find a Chan-certified Dentist.</p>
 
 
-<div id="map"></div>
+        <form class="row">
+          <div class="form-group col-6 text-right">
+            <label for="searchDentist" class="sr-only">Search</label>
+            <input type="email" id="searchDentist" aria-describedby="Search fpr dentists" placeholder="Search">
+          </div>
+          <div class="form-group col-4 text-left">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+
+
+      </div>
+    </div>
+    
+    <div id="map"></div>
+
+    <div class="location-listing">
+ 
+      <div class="row location">
+          <div class="col-md-9 col-lg-9 location-text">
+              <h3>Waterview Dental</h3>
+              <span class="address">123 Street Name Ave, Toronto ON, M3M2J9</span>
+          </div>
+          <div class="col-md-3 col-lg-3 location-action">
+              <a href="#" class="btn btn-primary">View Website</a>
+          </div>
+      </div>
+
+      <div class="row location">
+          <div class="col-md-9 col-lg-9 location-text">
+              <h3>Waterview Dental</h3>
+              <span class="address">123 Street Name Ave, Toronto ON, M3M2J9</span>
+          </div>
+          <div class="col-md-3 col-lg-3 location-action">
+              <a href="#" class="btn btn-primary">View Website</a>
+          </div>
+      </div>
+
+      <div class="row location">
+          <div class="col-md-9 col-lg-9 location-text">
+              <h3>Waterview Dental</h3>
+              <span class="address">123 Street Name Ave, Toronto ON, M3M2J9</span>
+          </div>
+          <div class="col-md-3 col-lg-3 location-action">
+              <a href="#" class="btn btn-primary">View Website</a>
+          </div>
+      </div>
+
+      <div class="row location">
+          <div class="col-md-9 col-lg-9 location-text">
+              <h3>Waterview Dental</h3>
+              <span class="address">123 Street Name Ave, Toronto ON, M3M2J9</span>
+          </div>
+          <div class="col-md-3 col-lg-3 location-action">
+              <a href="#" class="btn btn-primary">View Website</a>
+          </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>  
+
+
+
 
 
 @endsection
@@ -30,12 +98,174 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7aEgrvcIl_h6cLGOVDdA1C1n
 
 <script>
 function initMap() {
-  alert('this');
+  //alert('this');
   var myLatLng = {lat: 43.623220, lng: -79.483930};
+  var mapStyles = [
+    {
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#f5f5f5"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#616161"
+        }
+      ]
+    },
+    {
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#f5f5f5"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.land_parcel",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#bdbdbd"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#eeeeee"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#e5e5e5"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    },
+    {
+      "featureType": "road",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#757575"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#dadada"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#616161"
+        }
+      ]
+    },
+    {
+      "featureType": "road.local",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    },
+    {
+      "featureType": "transit.line",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#e5e5e5"
+        }
+      ]
+    },
+    {
+      "featureType": "transit.station",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#eeeeee"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#c9c9c9"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#9e9e9e"
+        }
+      ]
+    }
+  ];
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
-    center: myLatLng
+    center: myLatLng,
+    styles: mapStyles,
+    disableDefaultUI: true
   });
 
   var marker = new google.maps.Marker({
@@ -44,7 +274,15 @@ function initMap() {
     icon: "https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png",
     title: 'Hello World!'
   });
+  
+
+  
 }
+
+
+
+///api/fetchMapDentalPractices/sadf/etobicoke
+
 </script>
 
 

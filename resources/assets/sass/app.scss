@@ -1,9 +1,36 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|PT+Sans');
+body {
+  color: red;
+}
+@import "general/variables.scss";
+@import "general/mixins.scss";
+@import "general/global.scss";
+
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+@import "components/login.scss";
+@import "components/buttons.scss";
+@import "components/billboards.scss";
+@import "components/video-player.scss";
+@import "components/datatables.scss";
+
+
+@import "pages/home.scss";
+@import "pages/services.scss";
+@import "pages/team.scss";
+@import "pages/testimonials.scss";
+@import "pages/lab-orders.scss";
+@import "pages/map.scss";
+
+@import "general/bootstrap-overrides.scss";
+
+
+
 
 // Variables
-@import "variables";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -12,3 +39,4 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+

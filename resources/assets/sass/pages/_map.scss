@@ -1,0 +1,27 @@
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.location-listing {
+    margin: 2rem 0 0;
+    .location {
+        border-bottom: 1px solid #f6f5f6;
+        margin: 0 0 1rem;
+        padding: 0 0 1rem;
+
+        &:last-child {
+            border: 0;
+        }
+        .location-text {
+
+            h3 {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+        .location-action {
+
+        }
+    }
+}
