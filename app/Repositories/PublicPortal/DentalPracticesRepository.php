@@ -28,7 +28,8 @@ class DentalPracticesRepository {
         $sqlDistance = $xUnit . " * ACOS( 
             COS( RADIANS(" . $coordinates['lat'] . ") ) * COS( RADIANS( Lat ) ) * COS( RADIANS( `Long` ) - RADIANS(". $coordinates['lng'] .") ) + SIN( RADIANS(" . $coordinates['lat'] . ") ) * SIN( RADIANS( Lat ) )  
         ) AS distance, `*` ";
-        $results = DentalPractice::select( DB::raw( $sqlDistance ) );
+        $results = DentalPractice::select( DB::raw( $sqlDistance ) )
+            ->having('distance', '<', $distance );
             
         $returnResults = [];
         foreach ( $results->get() as $rs )
@@ -47,7 +48,7 @@ class DentalPracticesRepository {
                 'Postal_code' => $rs->Postal_code,
                 
 
-                'Conacts' => $rs->Contacts()->select('Name', 'EmailAddress', 'products_id')->get()
+                'Contacts' => $rs->Contacts()->select('Name', 'EmailAddress', 'products_id')->get()
             ];
         }
         
