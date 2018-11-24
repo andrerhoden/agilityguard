@@ -36,6 +36,7 @@ class DentalPracticesRepository {
         {
             // dump( $rs );
             $returnResults[] = [
+                'Photo' => $rs->Photo,
                 'Name' => $rs->Name,
                 'EmailAddress' => $rs->EmailAddress,
                 'Description' => $rs->Description,
@@ -48,7 +49,7 @@ class DentalPracticesRepository {
                 'Postal_code' => $rs->Postal_code,
                 
 
-                'Contacts' => $rs->Contacts()->select('Name', 'EmailAddress', 'products_id')->get()
+                'Contacts' => $rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()
             ];
         }
         
