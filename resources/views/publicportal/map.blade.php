@@ -11,25 +11,24 @@
   </div>
 </section>
 <section class="white-bg">
-  <div class="container ">
-    
+  
     
     <div class="row justify-content-md-center text-center">
       <div class="col col-lg-8">
         
         <p>Simply type in your zip/postal code, or city to find a Chan-certified Dentist.</p>
 
-
-        <form class="row">
-          <div class="form-group col-6 text-right">
-            <label for="searchDentist" class="sr-only">Search</label>
-            <input type="email" id="searchDentist" aria-describedby="Search fpr dentists" placeholder="Search">
-          </div>
-          <div class="form-group col-4 text-left">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
-
+        <div class="form">
+          <form class="row">
+            <div class="form-group col-6 text-right">
+              <label for="searchDentist" class="sr-only">Search</label>
+              <input type="search" id="searchDentist" aria-describedby="Search fpr dentists" placeholder="Search">
+            </div>
+            <div class="form-group col-4 text-left">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
 
 
       </div>
@@ -78,10 +77,10 @@
               <a href="#" class="btn btn-primary">View Website</a>
           </div>
       </div>
-      
+
     </div>
 
-  </div>
+  
 </section>  
 
 
@@ -93,11 +92,11 @@
 @section('footerScript')
 <!-- Replace the value of the key parameter with your own API key. -->
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7aEgrvcIl_h6cLGOVDdA1C1nc4jUthNw&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key={{$_ENV['GOOGLE_API_KEY']}}&callback=initialize">
 </script>
 
 <script>
-function initMap() {
+function initialize() {
   //alert('this');
   var myLatLng = {lat: 43.623220, lng: -79.483930};
   var mapStyles = [
@@ -262,16 +261,22 @@ function initMap() {
   ];
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
+    zoom: 16,
     center: myLatLng,
     styles: mapStyles,
     disableDefaultUI: true
   });
 
+  var icon = {
+    url: "/img/icons/tooth.png", // url
+    scaledSize: new google.maps.Size(40, 42), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+  };
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    icon: "https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png",
+    icon: icon,
     title: 'Hello World!'
   });
   
