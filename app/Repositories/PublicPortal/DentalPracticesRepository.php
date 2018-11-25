@@ -18,7 +18,7 @@ class DentalPracticesRepository {
         
         if ($unit == 'miles')
             $xUnit = 3959;
-        elseif ($unit == 'kilometers')
+        elseif ($unit == 'km')
             $xUnit = 6371;
         else 
             return 'ERROR: unit incorrect';
