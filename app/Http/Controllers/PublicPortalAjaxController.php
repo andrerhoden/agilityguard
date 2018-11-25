@@ -18,10 +18,10 @@ class PublicPortalAjaxController extends Controller
     }
 
 
-    public function fetchMapDentalPractices( $site, $search )
+    public function fetchMapDentalPractices( $site, $search, $distance, $unit )
     {
         
-        return DentalPracticesRepository::fetchMapDentalPractices( $site, $search);
+        return DentalPracticesRepository::fetchMapDentalPractices( $site, $search, $distance, $unit );
        
     }
 
