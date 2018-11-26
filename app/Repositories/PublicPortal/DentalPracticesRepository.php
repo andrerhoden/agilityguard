@@ -18,7 +18,7 @@ class DentalPracticesRepository {
         
         if ($unit == 'miles')
             $xUnit = 3959;
-        elseif ($unit == 'kilometers')
+        elseif ($unit == 'km')
             $xUnit = 6371;
         else 
             return 'ERROR: unit incorrect';
@@ -34,7 +34,8 @@ class DentalPracticesRepository {
         $returnResults = [];
         foreach ( $results->get() as $rs )
         {
-            // dump( $rs );
+
+            // dump( $rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()->toArray() );
             $returnResults[] = [
                 'Photo' => $rs->Photo,
                 'Name' => $rs->Name,
@@ -47,9 +48,38 @@ class DentalPracticesRepository {
                 'Province' => $rs->Province,
                 'Country' => $rs->Country,
                 'Postal_code' => $rs->Postal_code,
-                
+                'Website' => $rs->Website,
 
-                'Contacts' => $rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()
+                'Contacts' => [
+					[
+						"Name" => "Andre Rhoden-PHI",
+						"EmailAddress" => "admin@admin.com",
+						"Photo" => null,
+						"products_id" => [
+							[
+								'Name' => 'PHI',
+								'Slug' => 'phi',
+								'Photo' => '["products\/November2018\/Zh5IqssMMUY9GRjFpGz5.jpg"]'
+							],
+							[
+								'Name' => 'Trophy',
+								'Slug' => 'phi',
+								'Photo' => '["["products\/November2018\/9x4XjE2sS8Ez4yidqqbT.jpg"]"]'
+							]
+						]
+					],[
+						"Name" => "Zariia Rhoden-trophy",
+						"EmailAddress" => "admin@admin.com",
+						"Photo" => "contacts/November2018/mSR9Mws0Q45mUuu1IhI1.jpeg",
+						"products_id" => [
+							[
+								'Name' => 'PHI',
+								'Slug' => 'phi',
+								'Photo' => '["products\/November2018\/Zh5IqssMMUY9GRjFpGz5.jpg"]'
+							]
+						]
+					]
+			  	]//$rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()
             ];
         }
         
