@@ -47,7 +47,7 @@ class DentalPracticesRepository {
                 'Province' => $rs->Province,
                 'Country' => $rs->Country,
                 'Postal_code' => $rs->Postal_code,
-                
+                'Website' => $rs->Website,
 
                 'Contacts' => $rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()
             ];
