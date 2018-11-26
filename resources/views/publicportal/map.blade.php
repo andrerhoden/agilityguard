@@ -14,21 +14,55 @@
   
     
     <div class="row justify-content-md-center text-center">
-      <div class="col col-lg-8">
+      <div class="col">
         
         <p>Simply type in your zip/postal code, or city to find a Chan-certified Dentist.</p>
 
-        <div class="form">
-          <form class="row">
-            <div class="form-group col-6 text-right">
-              <label for="searchDentist" class="sr-only">Search</label>
-              <input type="search" id="searchDentist" aria-describedby="Search fpr dentists" placeholder="Search">
+        <div id="searchMap" class="form row">
+          <form class="col">
+            <div class="form-group">
+              <label for="searchDentist" class="sr-only">City</label>
+              <input type="search" id="searchDentist" aria-describedby="City" placeholder="City" required>
             </div>
-            <div class="form-group col-4 text-left">
+
+            <div class="form-group">
+              <label for="distance" class="sr-only">Distance</label>
+              <select class="form-control" id="distance" required>
+                <option>1</option>
+                <option>5</option>
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+                <option>150</option>
+                <option>200</option>
+              </select>
+            </div>
+            
+
+            <fieldset class="form-group">
+              <div class="radios">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="distanceUnit" id="distanceUnit1" value="miles" checked>
+                    miles
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="distanceUnit" id="distanceUnit2" value="km">
+                    km
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
           </form>
         </div>
+
 
 
       </div>
@@ -36,7 +70,7 @@
     
     <div id="map"></div>
 
-    <div class="location-listing">
+    <div id="mapList" class="location-listing">
  
       <div class="row location">
           <div class="col-md-9 col-lg-9 location-text">
@@ -279,14 +313,64 @@ function initialize() {
     icon: icon,
     title: 'Hello World!'
   });
-  
-
-  
 }
 
 
 
+function SearchResults() {
+  //distanceUnit
+
+  $( "#searchMap form" ).submit(function( event ) {
+    var term = $(this).find("#searchDentist").val();
+    var distance = $(this).find("#distance").val();
+    var unit = $(this).find("input[type='radio']:checked").val();
+
+    var url = "http://agilityguard.localhost/api/fetchMapDentalPractices/{{$_ENV['GOOGLE_API_KEY']}}/"+term+"/"+distance+"/"+unit;
+    
+    console.log(url);
+
+    $.ajax({
+      url: url
+    })
+    .done(function( data ) {
+     
+        console.log(data.length);
+        mapSearchResults(data);
+        listSearchResults(data);
+       
+      
+    });
+
+    event.preventDefault();
+    
+  });
+
+}
+funtion mapSearchResults(data) {
+  
+}
+function listSearchResults(data) {
+  $("#mapList").empty();  //Clear listing
+  for(i = 0; i<data.length; i++){
+    var record = data[i];
+    var listitem = `<div class="row location">
+                          <div class="col-md-9 col-lg-9 location-text">
+                            <h3>${ record.Name }</h3>
+                            <span class="address">${ record.Address }, ${ record.City } ${ record.Province }, ${ record.Postal_code }</span><br/>
+                            ${ record.EmailAddress }
+                        </div>
+                        <div class="col-md-3 col-lg-3 location-action">
+                            <a href="${ record.Name }" class="btn btn-primary">View Website</a>
+                        </div>
+                    </div>`;
+    $("#mapList").append(listitem); // Add record to listing
+  }
+}
+
+
 ///api/fetchMapDentalPractices/sadf/etobicoke
+
+mapSearch();
 
 </script>
 
