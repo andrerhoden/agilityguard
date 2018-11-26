@@ -317,7 +317,7 @@ function initialize() {
 
 
 
-function SearchResults() {
+function initSearch() {
   //distanceUnit
 
   $( "#searchMap form" ).submit(function( event ) {
@@ -346,7 +346,7 @@ function SearchResults() {
   });
 
 }
-funtion mapSearchResults(data) {
+function mapSearchResults(data) {
   
 }
 function listSearchResults(data) {
@@ -360,7 +360,7 @@ function listSearchResults(data) {
                             ${ record.EmailAddress }
                         </div>
                         <div class="col-md-3 col-lg-3 location-action">
-                            <a href="${ record.Name }" class="btn btn-primary">View Website</a>
+                            <a href="${ record.Website }" class="btn btn-primary">View Website</a>
                         </div>
                     </div>`;
     $("#mapList").append(listitem); // Add record to listing
@@ -370,7 +370,7 @@ function listSearchResults(data) {
 
 ///api/fetchMapDentalPractices/sadf/etobicoke
 
-mapSearch();
+initSearch();
 
 </script>
 
