@@ -55,7 +55,7 @@ class DentalPracticesRepository {
 						"Name" => "Andre Rhoden-PHI",
 						"EmailAddress" => "admin@admin.com",
 						"Photo" => null,
-						"products_id" => [
+						"Products" => [
 							[
 								'Name' => 'PHI',
 								'Slug' => 'phi',
@@ -71,7 +71,7 @@ class DentalPracticesRepository {
 						"Name" => "Zariia Rhoden-trophy",
 						"EmailAddress" => "admin@admin.com",
 						"Photo" => "contacts/November2018/mSR9Mws0Q45mUuu1IhI1.jpeg",
-						"products_id" => [
+						"Products" => [
 							[
 								'Name' => 'PHI',
 								'Slug' => 'phi',
