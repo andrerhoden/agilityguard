@@ -86,6 +86,68 @@ class DentalPracticesRepository {
 
         return $returnResults;
 
+	}
+	
+	public static function fetchPageLoadMapDentalPractices() {
+
+        
+        $results = DentalPractice::select();
+            
+        $returnResults = [];
+        foreach ( $results->get() as $rs )
+        {
+
+            // dump( $rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()->toArray() );
+            $returnResults[] = [
+                'Photo' => $rs->Photo,
+                'Name' => $rs->Name,
+                'EmailAddress' => $rs->EmailAddress,
+                'Description' => $rs->Description,
+                'Lat' => $rs->Lat,
+                'Long' => $rs->Long,
+                'Address' => $rs->Address,
+                'City' => $rs->City,
+                'Province' => $rs->Province,
+                'Country' => $rs->Country,
+                'Postal_code' => $rs->Postal_code,
+                'Website' => $rs->Website,
+
+                'Contacts' => [
+					[
+						"Name" => "Andre Rhoden-PHI",
+						"EmailAddress" => "admin@admin.com",
+						"Photo" => null,
+						"Products" => [
+							[
+								'Name' => 'PHI',
+								'Slug' => 'phi',
+								'Photo' => '["products\/November2018\/Zh5IqssMMUY9GRjFpGz5.jpg"]'
+							],
+							[
+								'Name' => 'Trophy',
+								'Slug' => 'phi',
+								'Photo' => '["["products\/November2018\/9x4XjE2sS8Ez4yidqqbT.jpg"]"]'
+							]
+						]
+					],[
+						"Name" => "Zariia Rhoden-trophy",
+						"EmailAddress" => "admin@admin.com",
+						"Photo" => "contacts/November2018/mSR9Mws0Q45mUuu1IhI1.jpeg",
+						"Products" => [
+							[
+								'Name' => 'PHI',
+								'Slug' => 'phi',
+								'Photo' => '["products\/November2018\/Zh5IqssMMUY9GRjFpGz5.jpg"]'
+							]
+						]
+					]
+			  	]//$rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()
+            ];
+        }
+        
+
+        return $returnResults;
+
     }
 
     public static function GeoCodeAddress($address)

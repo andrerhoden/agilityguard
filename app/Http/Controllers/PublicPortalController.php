@@ -5,6 +5,7 @@ use App\Repositories\PublicPortal\RenderHTMLBannerRepository;
 use App\Repositories\PublicPortal\IndexRepository;
 use App\Repositories\PublicPortal\ProductsRepository;
 use App\Repositories\PublicPortal\AthleteRepository;
+use App\Repositories\PublicPortal\DentalPracticesRepository;
 
 use App\Product;
 
@@ -43,8 +44,8 @@ class PublicPortalController extends Controller
 
     public function map()
     {
-
         return view('publicportal.map', [
+            'pageLoadDentalPractices' => json_encode( DentalPracticesRepository::fetchPageLoadMapDentalPractices() ),
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }

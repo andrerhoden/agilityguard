@@ -29,6 +29,9 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7aEgrvcIl_h6cLGOVDdA1C1n
 </script>
 
 <script>
+
+console.log( {!! $pageLoadDentalPractices !!} );
+
 function initMap() {
   alert('this');
   var myLatLng = {lat: 43.623220, lng: -79.483930};
