@@ -309,7 +309,7 @@ function initSearch() {
     var distance = $(this).find("#distance").val();
     var unit = $(this).find("input[type='radio']:checked").val();
 
-    var url = "http://agilityguard.localhost/api/fetchMapDentalPractices/{{$_ENV['GOOGLE_API_KEY']}}/"+term+"/"+distance+"/"+unit;
+    var url = "{{$_ENV['APP_URL']}}api/fetchMapDentalPractices/{{$_ENV['GOOGLE_API_KEY']}}/"+term+"/"+distance+"/"+unit;
     
     $.ajax({
       url: url
