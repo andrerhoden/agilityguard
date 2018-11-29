@@ -506,7 +506,7 @@ header #primaryMenu li a.button {
   color: #fff;
 }
 
-header #primaryMenu li a[href$=dentist-portal] {
+header #primaryMenu li a[href$=map] {
   background: #013564;
   border-radius: 3px;
   color: #fff;
@@ -517,14 +517,14 @@ header #primaryMenu li a[href$=dentist-portal] {
   transition: background-color .5s;
 }
 
-header #primaryMenu li a[href$=dentist-portal]:hover {
+header #primaryMenu li a[href$=map]:hover {
   background: #0172cc;
   color: #fff;
   text-decoration: none;
   opacity: 1;
 }
 
-header #primaryMenu li a[href$=dentist-portal]:after {
+header #primaryMenu li a[href$=map]:after {
   content: none;
 }
 
