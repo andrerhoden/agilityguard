@@ -17,12 +17,14 @@ class DentalPracticesRepository {
 		foreach ( $results->get() as $rs )
         {
 
+			
+
 			$contacts = [];
-			foreach( $rs->Contacts()->select('*')->with('productsId')->get() as $rs )
+			foreach( $rs->Contacts()->select('*')->with('productsId')->get() as $rsContact )
 			{
 
 				$contactProducts = [];
-				if ( $rs->productsId ) foreach( $rs->productsId as $rsProd )
+				if ( $rsContact->productsId ) foreach( $rsContact->productsId as $rsProd )
 				{
 					$contactProducts[] = [
 						'Name' => $rsProd->name,
@@ -33,16 +35,15 @@ class DentalPracticesRepository {
 				}
 
 				$contacts[] = [
-					"Name" => $rs->Name,
-					"EmailAddress" => $rs->EmailAddress,
+					"Name" => $rsContact->Name,
+					"EmailAddress" => $rsContact->EmailAddress,
 					"Products" => $contactProducts
 				];
 
 				
 			}
 			
-
-            $returnResults[] = [
+			$returnResults[] = [
                 'Photo' => $rs->Photo,
                 'Name' => $rs->Name,
                 'EmailAddress' => $rs->EmailAddress,
