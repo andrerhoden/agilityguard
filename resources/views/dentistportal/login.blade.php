@@ -12,7 +12,8 @@
         <div class="row justify-content-md-center">
             <div class="col col-lg-8">
                   <p>
-                  <form id="log_in" action="/assets/services/DentistLogin/" method="post" class="cf" >	
+                  
+                  <form id="log_in" action="/dentist-portal/login/execute" method="post" class="cf" >	{{ csrf_field() }}
 		<fieldset style="border:0; width:600px; margin:auto;" class="cf">
 
 

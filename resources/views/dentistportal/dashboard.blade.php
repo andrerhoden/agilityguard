@@ -12,7 +12,7 @@
         <div class="row justify-content-md-center">
             <div class="col col-lg-8">
                   <p>
-                  
+                  dashboard
 
                     </p>
               </div>
