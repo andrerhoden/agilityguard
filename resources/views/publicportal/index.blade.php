@@ -172,7 +172,7 @@
               
               <div class="item">
                 <div class="testimony">
-                  <h2>{!!$rs['Testimony']!!}</h2>
+                  <div class="testimony-text lead">{!!$rs['Testimony']!!}</div>
                   <h3 class="author">{{$rs['Name']}}</h3>
                   <span class="position">{{$rs['Awards']}}</span>
                 </div>

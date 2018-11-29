@@ -23,4 +23,4 @@
 	
 
     <!-- Custom styles for this template -->
-    <link href="css/agility-guard.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">

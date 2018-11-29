@@ -1,0 +1,57 @@
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#searchMap {
+    form {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 1rem;
+
+        input[type=search],
+        select {
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 5px;
+            border: 1px solid #c9c9c9;
+            margin: 0;
+        }
+
+        .radios {
+            display: flex;
+            .form-check {
+                margin: 0 .5rem;
+            }
+        }
+        .form-group {
+            margin: 0 .5rem;
+        }
+    }
+}
+
+.location-listing {
+    margin: 2rem 0 0;
+    .location {
+        border-bottom: 1px solid #f6f5f6;
+        margin: 0 0 1rem;
+        padding: 0 0 1rem;
+
+        &:last-child {
+            border: 0;
+        }
+        .location-text {
+
+            h3 {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+        .location-action {
+
+        }
+ 
+    }
+}
