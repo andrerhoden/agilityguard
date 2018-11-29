@@ -47,9 +47,9 @@
     
 
 
-@if( !empty( Session::get('dpUser') ) )  
-{!! menu('DentistPortal', 'bootstrap') !!}
-@endif 
+  @if( !empty( Session::get('dpUser') ) )  
+    {!! menu('DentistPortal', 'bootstrap') !!}
+  @endif 
             
   <br><Br>
   {{ setting('site.title') }}
