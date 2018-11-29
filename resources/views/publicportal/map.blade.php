@@ -295,7 +295,7 @@ function initialize() {
   ];
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
+    zoom: 2,
     center: myLatLng,
     styles: mapStyles,
     disableDefaultUI: true
@@ -310,7 +310,7 @@ function initialize() {
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    icon: icon,
+    //icon: icon,
     title: 'Hello World!'
   });
 }
