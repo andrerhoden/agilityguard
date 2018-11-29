@@ -55,8 +55,7 @@ class DentistPortalController extends Controller
     }
 
     public function dashboard()
-    {
-        
+    {        
         return view('dentistportal.dashboard');
     }
 }
