@@ -10,6 +10,59 @@ use Illuminate\Support\Facades\DB;
 class DentalPracticesRepository {
     
 
+	private static function __prepContactsData( $results )
+	{
+		$returnResults = [];
+
+		foreach ( $results->get() as $rs )
+        {
+
+			$contacts = [];
+			foreach( $rs->Contacts()->select('*')->with('productsId')->get() as $rs )
+			{
+
+				$contactProducts = [];
+				if ( $rs->productsId ) foreach( $rs->productsId as $rsProd )
+				{
+					$contactProducts[] = [
+						'Name' => $rsProd->name,
+						'Icon' => $rsProd->icon,
+						'Slug' => $rsProd->slug
+					];
+					
+				}
+
+				$contacts[] = [
+					"Name" => $rs->Name,
+					"EmailAddress" => $rs->EmailAddress,
+					"Products" => $contactProducts
+				];
+
+				
+			}
+			
+
+            $returnResults[] = [
+                'Photo' => $rs->Photo,
+                'Name' => $rs->Name,
+                'EmailAddress' => $rs->EmailAddress,
+                'Description' => $rs->Description,
+                'Lat' => $rs->Lat,
+                'Long' => $rs->Long,
+                'Address' => $rs->Address,
+                'City' => $rs->City,
+                'Province' => $rs->Province,
+                'Country' => $rs->Country,
+                'Postal_code' => $rs->Postal_code,
+                'Website' => $rs->Website,
+				'Contacts' => $contacts
+                
+            ];
+		}
+		
+		return $returnResults;
+	}
+
     public static function fetchMapDentalPractices( $site, $search, $distance, $unit ) {
 
         $coordinates = self::GeoCodeAddress($search);				
@@ -31,60 +84,15 @@ class DentalPracticesRepository {
         $results = DentalPractice::select( DB::raw( $sqlDistance ) )
             ->having('distance', '<', $distance );
             
-        $returnResults = [];
-        foreach ( $results->get() as $rs )
-        {
+		
+        return self::__prepContactsData( $results );
 
-            // dump( $rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()->toArray() );
-            $returnResults[] = [
-                'Photo' => $rs->Photo,
-                'Name' => $rs->Name,
-                'EmailAddress' => $rs->EmailAddress,
-                'Description' => $rs->Description,
-                'Lat' => $rs->Lat,
-                'Long' => $rs->Long,
-                'Address' => $rs->Address,
-                'City' => $rs->City,
-                'Province' => $rs->Province,
-                'Country' => $rs->Country,
-                'Postal_code' => $rs->Postal_code,
-                'Website' => $rs->Website,
+	}
+	
+	public static function fetchPageLoadMapDentalPractices() {
 
-                'Contacts' => [
-					[
-						"Name" => "Andre Rhoden-PHI",
-						"EmailAddress" => "admin@admin.com",
-						"Photo" => null,
-						"products_id" => [
-							[
-								'Name' => 'PHI',
-								'Slug' => 'phi',
-								'Photo' => '["products\/November2018\/Zh5IqssMMUY9GRjFpGz5.jpg"]'
-							],
-							[
-								'Name' => 'Trophy',
-								'Slug' => 'phi',
-								'Photo' => '["["products\/November2018\/9x4XjE2sS8Ez4yidqqbT.jpg"]"]'
-							]
-						]
-					],[
-						"Name" => "Zariia Rhoden-trophy",
-						"EmailAddress" => "admin@admin.com",
-						"Photo" => "contacts/November2018/mSR9Mws0Q45mUuu1IhI1.jpeg",
-						"products_id" => [
-							[
-								'Name' => 'PHI',
-								'Slug' => 'phi',
-								'Photo' => '["products\/November2018\/Zh5IqssMMUY9GRjFpGz5.jpg"]'
-							]
-						]
-					]
-			  	]//$rs->Contacts()->select('Name', 'EmailAddress', 'Photo', 'products_id')->get()
-            ];
-        }
-        
-
-        return $returnResults;
+        $results = DentalPractice::select();
+        return self::__prepContactsData( $results );
 
     }
 

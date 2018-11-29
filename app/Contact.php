@@ -9,7 +9,14 @@ use App\DentalPractice;
 class Contact extends Model
 {
     public function productsId(){
-        return $this->belongsTo(Product::class, 'products_id');
+        return $this->belongsToMany(Product::class)
+            // ->using('App\ContactProduct')
+            // ->withPivot([
+            //     'created_by',
+            //     'updated_by',
+            //     'deleted_by'
+            // ])
+            ;
     }
 
     public function dentalPracticeId(){

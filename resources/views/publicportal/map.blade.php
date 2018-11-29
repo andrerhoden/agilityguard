@@ -131,7 +131,7 @@ src="https://maps.googleapis.com/maps/api/js?key={{$_ENV['GOOGLE_API_KEY']}}&cal
 
 <script>
 function initialize() {
-  //alert('this');
+  console.log( {!! $pageLoadDentalPractices !!} );
   var myLatLng = {lat: 43.623220, lng: -79.483930};
   var mapStyles = [
     {
