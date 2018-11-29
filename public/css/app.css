@@ -506,6 +506,28 @@ header #primaryMenu li a.button {
   color: #fff;
 }
 
+header #primaryMenu li a[href$=dentist-portal] {
+  background: #013564;
+  border-radius: 3px;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+header #primaryMenu li a[href$=dentist-portal]:hover {
+  background: #0172cc;
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+}
+
+header #primaryMenu li a[href$=dentist-portal]:after {
+  content: none;
+}
+
 header #primaryMenu li.active a {
   color: #013564;
 }
@@ -644,8 +666,19 @@ header #primaryMenu li.active a {
     float: right;
   }
 
+  header #primaryMenu .navbar-nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
   header #primaryMenu li {
-    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     list-style: none;
   }
 

@@ -131,6 +131,28 @@ header {
           color: $white;
           
         }
+        &[href$=dentist-portal] {
+          background: $primary;
+          border-radius: 3px;
+          color: $white;
+          padding: .5rem 1rem;
+          //font-size: .7rem;
+          text-transform: uppercase;
+          display: inline-block;
+          transition: background-color .5s;
+          
+          &:hover {
+              background: #0172cc;
+              color: $white;
+              text-decoration: none;
+              opacity: 1;
+          }
+              
+          &:after {
+            content: none;
+          }
+                      
+        }
       }
       &.active {
         a {
@@ -294,10 +316,15 @@ header {
 
     #primaryMenu {
       
+      .navbar-nav {
+        justify-content: flex-end;
+      }
+
       float: right;
       
       li {
-        display: inline-block;
+        align-items: center;
+        display: inline-flex;
         list-style: none;
         //margin: 0 .5rem;
         //padding: 0;
