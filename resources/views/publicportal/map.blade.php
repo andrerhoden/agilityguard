@@ -276,7 +276,7 @@ function loadPoints(points){
 
   for(i in points) {
     let point = points[i];
-    console.log(point);
+    
     let latLong = {lat: parseFloat(point.Lat), lng: parseFloat(point.Long)};
     let marker = new google.maps.Marker({
       position: latLong,
@@ -310,15 +310,14 @@ function initSearch() {
     var unit = $(this).find("input[type='radio']:checked").val();
 
     var url = "{{$_ENV['APP_URL']}}api/fetchMapDentalPractices/{{$_ENV['GOOGLE_API_KEY']}}/"+term+"/"+distance+"/"+unit;
-    
+    $(".loader").addClass("loading");
     $.ajax({
       url: url
     })
     .done(function( data ) {
-        console.log(data.length);
         loadSearchResults(data);
+        $(".loader").removeClass("loading");
     });
-
     event.preventDefault();
     
   });
