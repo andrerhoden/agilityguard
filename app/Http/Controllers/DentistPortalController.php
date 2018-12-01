@@ -62,4 +62,16 @@ class DentistPortalController extends Controller
     {        
         return view('dentistportal.dashboard');
     }
+
+    public function createOrder()
+    {        
+        return view('dentistportal.createOrder');
+    }
+
+    public function orders()
+    {        
+        return view('dentistportal.orders');
+    }
+
+    
 }
