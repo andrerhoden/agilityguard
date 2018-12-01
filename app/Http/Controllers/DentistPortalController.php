@@ -15,6 +15,10 @@ class DentistPortalController extends Controller
     public function __construct() 
     {
         
+        if ( empty( session('dpUser') ) )
+        {
+            return redirect('/dentist-portal');
+        }
     }
 
     public function login()
