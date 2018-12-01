@@ -5,7 +5,7 @@
     <div class="container">
     <div class="row">
         <div class="col">
-        <h1>Orders</h1>
+        <h1>Lab Orders</h1>
         </div>
     </div>
     </div>
@@ -20,7 +20,7 @@
             <nav class="portal-menu">
                 <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                        <a class="nav-link"  href="/dentist-portal/dashboard">Dashboard</a>
+                <a class="nav-link"  href="/dentist-portal/account">Account Profile</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/dentist-portal/create-order">Create Lab Order</a>

@@ -5,7 +5,7 @@
     <div class="container">
     <div class="row">
         <div class="col">
-        <h1>Create Order</h1>
+        <h1>Account Profile</h1>
         </div>
     </div>
     </div>
@@ -20,10 +20,10 @@
             <nav class="portal-menu">
                 <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                        <a class="nav-link"  href="/dentist-portal/account">Account Profile</a>
+                        <a class="nav-link active"  href="/dentist-portal/account">Account Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/dentist-portal/create-order">Create Lab Order</a>
+                        <a class="nav-link" href="/dentist-portal/create-order">Create Lab Order</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/dentist-portal/orders">Lab Orders</a>
@@ -40,6 +40,8 @@
         </div>
     </div>
 </section>
+
+
 
 
 <section class="white-bg">
@@ -67,7 +69,7 @@
                                         <div class="card-header" id="heading1">
                                             <h5 class="mb-0">
                                                 <button class="btn btn-link" data-toggle="collapse" data-target="#step1" aria-expanded="true" aria-controls="step1">
-                                                Step 1 - Patient Details Date:
+                                                Account Details:
                                                 </button>
                                             </h5>
                                         </div>
@@ -400,6 +402,10 @@
         </div>
     </div>
 </section>
+
+
+
+
 
   
 @endsection
