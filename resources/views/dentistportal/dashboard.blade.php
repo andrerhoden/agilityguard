@@ -1,6 +1,17 @@
 @extends('layouts.dentistportal.main')
 @section('content')
 
+<section class="masthead white-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1>Dashbaord</h1>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
 <section class="white-bg">
       <div class="container text-center">
         <div class="row">

@@ -34,7 +34,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="index.html">
-    <img src="img/logo.png" alt="Agility Guard" />
+  <img src="/img/logo.png" alt="{{ setting('site.title') }}" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -44,23 +44,17 @@
           <span aria-hidden="true">&times;</span>
         </button>
         
-    
-
-
-  @if( !empty( Session::get('dpUser') ) )  
-    {!! menu('DentistPortal', 'bootstrap') !!}
-  @endif 
-            
-  <br><Br>
-  {{ setting('site.title') }}
-  <br><Br>
-
-
+        <div id="primaryMenu">
+          {!! menu('main', 'bootstrap') !!}
+        </div>
+  
 
   </div>
 </nav>
 
 </header>
+
+
 
 
 
@@ -73,7 +67,7 @@
         <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h3><img src="img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
+              <h3><img src="/img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
                 <p>
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                     lobortis nisl ut aliquip.
