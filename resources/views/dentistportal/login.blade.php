@@ -1,6 +1,19 @@
 @extends('layouts.dentistportal.main')
 @section('content')
 
+
+<section class="masthead white-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1>{{ setting('site.title') }}</h1>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      
+
 <section class="white-bg">
         <div class="container">
 
