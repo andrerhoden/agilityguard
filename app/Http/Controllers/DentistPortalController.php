@@ -15,13 +15,17 @@ class DentistPortalController extends Controller
     public function __construct() 
     {
         
+        if ( empty( session('dpUser') ) )
+        {
+            return redirect('/dentist-portal');
+        }
     }
 
     public function login()
     {
         if ( !empty( session('dpUser') ) )
         {
-            return redirect('/dentist-portal/dashboard');
+            return redirect('/dentist-portal/orders');
         }
 
         return view('dentistportal.login');
@@ -43,7 +47,7 @@ class DentistPortalController extends Controller
         $this->__dpUser = $input;
         session(['dpUser' => $contact]);
 
-        return redirect('/dentist-portal/dashboard');
+        return redirect('/dentist-portal/orders');
     }
 
     public function logoutExecute(Request $request)
@@ -54,8 +58,21 @@ class DentistPortalController extends Controller
         return redirect('/dentist-portal')->with('success', 'Logout');
     }
 
-    public function dashboard()
+    
+
+    public function createOrder()
     {        
-        return view('dentistportal.dashboard');
+        return view('dentistportal.createOrder');
     }
+
+    public function orders()
+    {        
+        return view('dentistportal.orders');
+    }
+
+    public function account()
+    {
+        return view('dentistportal.account');
+    }
+    
 }
