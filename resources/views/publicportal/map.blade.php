@@ -328,14 +328,29 @@ function loadSearchResults(data) {
   $("#mapList").empty();  //Clear listing
   for(i = 0; i<data.length; i++){
     var record = data[i];
+    var contacts = record.Contacts;
+    console.log(record);
+    var emailAddress = (record.EmailAddress) ? `<a href="mailto:${ record.EmailAddress }" target="_blank">${ record.EmailAddress }</a>`:``;
+    var sitelink = (record.Website) ? `<a href="http://${ record.Website }" class="btn btn-primary" target="_blank">View Website</a>`:``;
+    var contactsItems = ``;
+
+    for(j = 0; j<contacts.length; j++){
+      var contact = contacts[i];
+      contactsItems += (contact.EmailAddress) ? `<a href="mailto:${ contact.EmailAddress }" target="_blank">${ contact.Name }</a>`:`${ contact.Name }`;
+      
+    }
+    
     var listitem = `<div class="row location">
                           <div class="col-md-9 col-lg-9 location-text">
                             <h3>${ record.Name }</h3>
                             <span class="address">${ record.Address }, ${ record.City } ${ record.Province }, ${ record.Postal_code }</span><br/>
-                            ${ record.EnmailAddress }
+                            ${ emailAddress }
                         </div>
-                        <div class="col-md-3 col-lg-3 location-action">
-                            <a href="${ record.Website }" class="btn btn-primary">View Website</a>
+                        <div class="col-md-3 col-lg-3 location-action text-right">
+                            ${ sitelink }
+                        </div>
+                        <div class="location-contacts col-sm-12">
+                        ${ contactsItems }
                         </div>
                     </div>`;
     $("#mapList").append(listitem); // Add record to listing
