@@ -53,5 +53,25 @@
 
         }
  
+        .location-contacts {
+            margin: .5rem 0 0;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    border-left: 4px solid $light-blue;
+                    font-size: .85rem;
+                    padding-left: .5rem;
+                    display: inline-block;
+                    margin-right: 1rem;
+                    
+                    a {
+                        color: $gray-600;
+                    }
+                }
+            }
+        }
     }
 }
+

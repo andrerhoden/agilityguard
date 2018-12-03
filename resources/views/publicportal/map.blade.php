@@ -335,8 +335,8 @@ function loadSearchResults(data) {
     var contactsItems = ``;
 
     for(j = 0; j<contacts.length; j++){
-      var contact = contacts[i];
-      contactsItems += (contact.EmailAddress) ? `<a href="mailto:${ contact.EmailAddress }" target="_blank">${ contact.Name }</a>`:`${ contact.Name }`;
+      var contact = contacts[j];
+      contactsItems += (contact.EmailAddress) ? `<li><a href="mailto:${ contact.EmailAddress }" target="_blank">${ contact.Name }</a></li>`:`<li>${ contact.Name }</li>`;
       
     }
     
@@ -350,7 +350,9 @@ function loadSearchResults(data) {
                             ${ sitelink }
                         </div>
                         <div class="location-contacts col-sm-12">
-                        ${ contactsItems }
+                          <ul>
+                            ${ contactsItems }
+                          </ul>
                         </div>
                     </div>`;
     $("#mapList").append(listitem); // Add record to listing
