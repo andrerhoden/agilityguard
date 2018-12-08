@@ -186,10 +186,9 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="form_product">Product *</label>
-                                                                <select id="form_product" name="product-1" class="form-control" required="required" data-error="Please specify your product.">
+                                                                <select id="form_product" name='product-1' class="form-control" required="required" data-error="Please specify your product.">
                                                                     <option value=""></option>
-                                                                    <option value="Product 1">Product 1</option>
-                                                                    <option value="Product 2">Product 2</option>
+                                                                    {!!$products!!}
                                                                 </select>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
@@ -267,7 +266,11 @@
                                         </div>
                                         <div id="step3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
                                             <div class="card-body">
-                                                
+                                                <select>
+                                                @foreach( $labs as $lab )
+                                                    <option value="{{$lab->id}}">{{$lab->name}}</option>                                                    
+                                                @endforeach
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -402,4 +405,94 @@
 </section>
 
   
+@endsection
+
+
+
+
+@section('pageFooterScripts')
+
+<script type="text/javascript">
+    var counter = 1; //how many rows of guards
+    var product_type = new Array();
+    var price_phi=200;
+    var price_trophy=300;
+    var subtotal_price;
+    var last_added_price;
+    var tax;
+    var total_order;
+    var product_obj = new Object();
+
+
+    $(document).ready(function () {
+        $('#dtLabOrders').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+    });
+
+
+    function addRow(){ 
+        var clonedRow = $("#guard-details .guard-item-order:first").clone(true);
+        $("#guard-details").append(clonedRow);
+        
+        if (counter>=1){
+        $("#remove_guard").show();
+            counter++
+        }else{
+            counter++
+        }
+        return false;	 
+    }
+
+    function removeRow(){	
+            if(counter!=1){
+                $("#guard-details .guard-item-order:last").remove();
+                
+                if (counter>1){
+                    product_type.pop();
+                    updateTotals();
+                }
+                
+                counter--
+                
+                if (counter==1){
+                    $("#remove_guard").hide();	
+                }
+            }else{
+                return false;	
+            }
+            
+            return false;
+    }
+
+
+    function updateTotals(){
+        subtotal=0;
+        for (i=0; i<product_type.length; i++){
+            $(product_obj).each(function() {
+                var m = this;
+                if (product_type[i]==m.id){
+                    subtotal += parseInt(m.msrp_c);
+                }
+            });
+        }
+        //alert(subtotal);
+        subtotal_price = '$'+subtotal+''; 
+        tax = subtotal*0.13;
+        total_order = subtotal+tax;
+        
+        tax_price = '$'+tax+'';
+        total_order_price = '$'+total_order+'';
+        
+        $('#sub_total').html(subtotal_price);
+        $('#sub_total2').html(subtotal_price);
+        $('#form_sub').attr('value', subtotal);
+        $('#taxes').html(tax_price);
+        $('#form_tax').attr('value', tax);
+        $('#totals').html(total_order_price);
+        $('#form_total').attr('value', total_order);
+    }
+
+    </script>
+
+
 @endsection
