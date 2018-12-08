@@ -86,7 +86,9 @@ class DentistPortalController extends Controller
             
         dump( $orders->get()->toArray() );
 
-        return view('dentistportal.orders');
+        return view('dentistportal.orders', [
+            'orders' => $orders->get()
+        ]);
     }
 
     public function account()
