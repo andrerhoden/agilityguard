@@ -81,6 +81,7 @@ class DentistPortalController extends Controller
     {        
         $orders = \App\LabOrder::select()
             ->with('products')
+            ->with('users')
             ->with('consumer');
             
         dump( $orders->get()->toArray() );
