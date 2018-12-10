@@ -294,6 +294,8 @@ function loadPoints(points){
             ${ points[i].Address }, <br/>${ points[i].City } ${ points[i].Province }, ${ points[i].Postal_code }<br/>
             ${ points[i].Country }<br/>${ siteLink }${ emailAddress }</p>`);
         infowindow.open(map, marker);
+        $("#mapList .location").removeClass("active");
+        $("#mapList .location#location-"+i).addClass("active");
       }
     })(marker, i));
   
@@ -329,18 +331,23 @@ function loadSearchResults(data) {
   for(i = 0; i<data.length; i++){
     var record = data[i];
     var contacts = record.Contacts;
-    console.log(record);
+    //console.log(record);
     var emailAddress = (record.EmailAddress) ? `<a href="mailto:${ record.EmailAddress }" target="_blank">${ record.EmailAddress }</a>`:``;
     var sitelink = (record.Website) ? `<a href="http://${ record.Website }" class="btn btn-primary" target="_blank">View Website</a>`:``;
     var contactsItems = ``;
 
     for(j = 0; j<contacts.length; j++){
       var contact = contacts[j];
-      contactsItems += (contact.EmailAddress) ? `<li><a href="mailto:${ contact.EmailAddress }" target="_blank">${ contact.Name }</a></li>`:`<li>${ contact.Name }</li>`;
-      
+      var products = contact.Products;
+      var icons = "";
+      for(k = 0; k<products.length; k++){
+        var slug = products[k].Slug;
+        icons += `<span class="product ${slug.toLowerCase()}">${products[k].Name}</span>`;
+      }
+      contactsItems += (contact.EmailAddress) ? `<li><a href="mailto:${ contact.EmailAddress }" target="_blank">${ contact.Name }</a>${icons}</li>`:`<li>${ contact.Name }${icons}</li>`;
     }
     
-    var listitem = `<div class="row location">
+    var listitem = `<div id="location-${i}" class="row location">
                           <div class="col-md-9 col-lg-9 location-text">
                             <h3>${ record.Name }</h3>
                             <span class="address">${ record.Address }, ${ record.City } ${ record.Province }, ${ record.Postal_code }</span><br/>

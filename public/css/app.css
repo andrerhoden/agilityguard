@@ -1568,6 +1568,10 @@ section.experience .text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 0 1rem;
 }
 
@@ -1592,17 +1596,34 @@ section.experience .text {
 }
 
 #searchMap form .form-group {
-  margin: 0 .5rem;
+  margin: 0 0 1rem;
+}
+
+@media (min-width: 550px) {
+  #searchMap form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  #searchMap form .form-group {
+    margin: 0 .5rem;
+  }
 }
 
 .location-listing {
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
 }
 
 .location-listing .location {
   border-bottom: 1px solid #f6f5f6;
   margin: 0 0 1rem;
-  padding: 0 0 1rem;
+  padding: 1rem 0;
+}
+
+.location-listing .location.active {
+  background: #ecfaff;
 }
 
 .location-listing .location:last-child {
@@ -1612,6 +1633,16 @@ section.experience .text {
 .location-listing .location .location-text h3 {
   font-size: 1rem;
   margin: 0;
+}
+
+.location-listing .location .location-action .btn {
+  font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+  .location-listing .location .location-action .btn {
+    font-size: 1rem;
+  }
 }
 
 .location-listing .location .location-contacts {
@@ -1625,15 +1656,38 @@ section.experience .text {
 }
 
 .location-listing .location .location-contacts ul li {
-  border-left: 4px solid #1a6db7;
+  border-left: 2px solid #cecece;
   font-size: .85rem;
   padding-left: .5rem;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-right: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .location-listing .location .location-contacts ul li a {
   color: #868e96;
+  margin: 0 .5rem 0 0;
+}
+
+.location-listing .location .location-contacts .product {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-size: 100%;
+  text-indent: -9000px;
+}
+
+.location-listing .location .location-contacts .product.phi {
+  background-image: url(/img/icons/phi-icon-blue.png);
+}
+
+.location-listing .location .location-contacts .product.trophy {
+  background-image: url(/img/icons/throphy-icon-blue.png);
 }
 
 .text-primary {

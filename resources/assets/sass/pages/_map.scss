@@ -8,6 +8,7 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         margin: 0 0 1rem;
 
         input[type=search],
@@ -27,18 +28,28 @@
             }
         }
         .form-group {
-            margin: 0 .5rem;
+            
+            margin: 0 0 1rem;
+        }
+
+        @media (min-width: 550px) {
+            flex-direction: row;
+            .form-group {
+                margin: 0 .5rem;
+            }
         }
     }
 }
 
 .location-listing {
-    margin: 2rem 0 0;
+    margin: 1rem 0 0;
     .location {
         border-bottom: 1px solid #f6f5f6;
         margin: 0 0 1rem;
-        padding: 0 0 1rem;
-
+        padding: 1rem 0;
+        &.active {
+            background: #ecfaff;
+        }
         &:last-child {
             border: 0;
         }
@@ -50,7 +61,14 @@
             }
         }
         .location-action {
-
+            .btn {
+                font-size: .8rem;
+            }
+            @media (min-width: 768px) {
+                .btn {
+                    font-size: 1rem;
+                }
+            }
         }
  
         .location-contacts {
@@ -60,15 +78,35 @@
                 margin: 0;
                 padding: 0;
                 li {
-                    border-left: 4px solid $light-blue;
+                    border-left: 2px solid #cecece;
                     font-size: .85rem;
                     padding-left: .5rem;
-                    display: inline-block;
+                    display: inline-flex;
                     margin-right: 1rem;
+                    align-items: center;
                     
                     a {
                         color: $gray-600;
+                        margin: 0 .5rem 0 0;
                     }
+                }
+            }
+
+            .product {
+                position: relative;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                
+                background-size: 100%;
+                text-indent: -9000px;
+                
+
+                &.phi {
+                    background-image: url(/img/icons/phi-icon-blue.png);
+                }
+                &.trophy {
+                    background-image: url(/img/icons/throphy-icon-blue.png);
                 }
             }
         }
