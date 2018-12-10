@@ -48,7 +48,8 @@
             <div class="col">
         
 
-                    <form id="order-form" method="get" role="form">
+                    <form id="order-form" method="post" action="/dentist-portal/create-order/save" role="form">
+                        {{ csrf_field() }}
 
                             <div class="messages"></div>
                             <div class="row">
@@ -360,7 +361,7 @@
                                                             <input type="hidden" value="" id="form_tax" name="form_tax">
                                                             <input type="hidden" value="" id="form_total" name="form_total">
                                                             
-                                                            <input type="submit" class="button" value="Process Order" />
+                                                            <input type="submit" class="button" value="Process Order" >
                                                         </div>
                                                     </div>
 

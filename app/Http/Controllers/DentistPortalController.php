@@ -53,6 +53,13 @@ class DentistPortalController extends Controller
         return redirect('/dentist-portal/orders');
     }
 
+    public function createOrderSave( Request $request )
+    {
+        $input = $request->all();
+        dump( $input );
+        die();
+    }
+
     public function logoutExecute(Request $request)
     {
         $request->session()->forget('dpUser');
@@ -91,10 +98,9 @@ class DentistPortalController extends Controller
         ]);
     }
 
+    
     public function account()
     {
-        
-
         return view('dentistportal.account');
     }
     
