@@ -26,10 +26,16 @@
 
         @foreach ( $testimonials as $rs )
 
+
        
         <div class="row testimonial">
             <div class="d-none d-md-block col-md-3 col-lg-3">
-                <img src="/img/callouts/Mouthguard-Lower-Gold-thumbnail.jpg" alt="" />  
+                @if( !empty($rs['dplyImg'] ) )
+                <img src="{{$rs['dplyImg']}}" alt="" />  
+                @else
+                  <img src="/img/callouts/Mouthguard-Lower-Gold-thumbnail.jpg" alt="" />  
+                @endif
+                
             </div>
             <div class="col-md-9 col-lg-9 text">
                     {!! $rs["Testimony"] !!}
