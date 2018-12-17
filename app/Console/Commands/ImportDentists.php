@@ -41,6 +41,8 @@ class ImportDentists extends Command
     public function handle()
     {
 
+        die('DISABLED');
+        
         $csvAccounts = public_path() . '/storage/Accounts.csv';
         $csvContacts = public_path() . '/storage/Contacts.csv';
         
