@@ -9,7 +9,8 @@ class DentalPractice extends Model
 {
     protected $table = 'DentalPractices';
 
-    // protected $fillable = ['Name', 'BillingAdress', 'EmailAddress', 'Description', 'Lat', 'Long'];
+
+    protected $fillable = ['Name', 'EmailAddress', 'Description', 'Lat', 'Long', 'Address', 'City', 'Province', 'Country', 'Postal_code', 'Website', 'phone_office'];
     // public $additional_attributes = ['Name'];
 
     // public function getNameAttribute()
