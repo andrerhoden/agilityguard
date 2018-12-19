@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Repositories\PublicPortal\IndexRepository;
-use App\Repositories\PublicPortal\ProductsRepository;
-
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use App\Repositories\DentistPortal\ProductsRepository;
 
 class DentistPortalController extends Controller
 {
@@ -13,35 +13,95 @@ class DentistPortalController extends Controller
 
     public function __construct() 
     {
-        // $this->__globalValues['productsForFooterMenu'] = ProductsRepository::fetchProductsForMenu();
-
         
-
-        if ( empty( session('dpUser') ) )
-        {
-            return redirect('/dentist-portal');
-
-        }else {
-            $this->__dpUser = session('dpUser');
-            dd( $this->__dpUser );
-        }
-
+        // if ( empty( session('dpUser') ) )
+        // {
+        //     return redirect('/dentist-portal');
+        // }
     }
-
 
     public function login()
     {
+        if ( !empty( session('dpUser') ) )
+        {
+            return redirect('/dentist-portal/orders');
+        }
 
         return view('dentistportal.login');
     }
 
-    public function dashboard()
+    public function loginExecute( Request $request )
     {
-        
-         //         return view('dentistportal.dashboard', [
-        //             'dpUser' => $dpUser
-        //         ]); 
+        $input = $request->all();
 
-        return view('dentistportal.dashboard');
+        $contact = \App\Contact::select()
+            ->where('EmailAddress', $input['Email'])  
+            ->first();
+        
+        
+
+        if (
+            ( empty($contact) )
+            || ( !Hash::check($input['strPassword'], $contact->Password ) ) 
+        ){
+           return redirect('/dentist-portal/logout');
+        }
+
+        $this->__dpUser = $input;
+        session(['dpUser' => $contact]);
+
+        return redirect('/dentist-portal/orders');
     }
+
+    public function createOrderSave( Request $request )
+    {
+        $input = $request->all();
+        dump( $input );
+        die();
+    }
+
+    public function logoutExecute(Request $request)
+    {
+        $request->session()->forget('dpUser');
+        $request->session()->flush();
+        
+        return redirect('/dentist-portal')->with('success', 'Logout');
+    }
+
+    
+
+    public function createOrder()
+    {        
+
+        
+        $labs = \App\User::select()
+            ->where('role_id', 3)
+            ->get();
+            
+        return view('dentistportal.createOrder', [
+            'labs'      => $labs,
+            'products'  => ProductsRepository::fetchProductsForDropDown()
+        ]);
+    }
+
+    public function orders()
+    {        
+        $orders = \App\LabOrder::select()
+            ->with('products')
+            ->with('users')
+            ->with('consumer');
+            
+        dump( $orders->get()->toArray() );
+
+        return view('dentistportal.orders', [
+            'orders' => $orders->get()
+        ]);
+    }
+
+    
+    public function account()
+    {
+        return view('dentistportal.account');
+    }
+    
 }

@@ -6,6 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
+                <div class="prefix">Sports</div>
                 <h1>MMA</h1>
               </div>
             </div>
@@ -16,14 +17,9 @@
       <section class="white-bg">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 d-none d-md-block">
-              <img src="img/inline/PanAmWR6.jpg" />
-            </div>
-            <div class="col-md-8">
-              
-               
+           <div class="col">
 
-               <div class="clearfix" id="body_content_left" style="min-height:1150px;">
+               <div class="clearfix" id="body_content_left">
           		<p class="quote">In 2006, Dr Hoa Nguyen, a Taekwon-do expert and AgilityGuard Dentist, represented Canada in the 7th Junior / 2nd Veteran International Taekwon-do Federation (ITF) World Championships held in Sofia, Bulgary, where he won a Gold Medal in his category. He states that &nbsp;"balance, flexibility, range of motion are all very important in martial arts, especially in TKD where kicks are emphasized. In TKD, there are lots more kicking techniques than hand techniques.  In these techniques, balance, speed, power, range of motion decide their effectiveness, and loose/relaxed muscles are required for highest effectiveness.</p>
               <p>Combat athletes require a broad spectrum of qualities such as dynamic range of motion, agility, quickness, strength, power, recovery and endurance. As well, they require mouthguard protection when in combat. AgilityGuard is the best-of-class performance mouthguard that offers both optimal athletic performance and mouthguard protection.</p>
 
@@ -52,34 +48,25 @@
             </div>
           </div>
           <div class="row callouts">
-              <div class="callout col-md-6">
-                <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Gold-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Get your custom athletic performance guard</h4>
-                    <p>Sed suscipit aliquet justo eu egestas. Aenean hendrerit consectetur egestas. Etiam eget nisl molestie, semper nibh id, faucibus massa.</p>
-                  </div>
+              <div class="callout col">
+                <h4>Become a Certified Dentist</h4>
+                  
+                  <ul>
+                      <li>Learn From Dr Clayton Chan,  the creator of the Chan Gneuromuscular™&nbsp;"Optimized Bite” and the “Chan Scan”</li>
+                      <li>Create a bridge between various practice philosophies that will provide the most sustainable and positive results for your clients</li>
+                  </ul>
+                  <a href="http://learning.agilityguard.com/" class="button" target="_blank">Find Out More</a> 
+                
                 </div>
               </div>
-              <div class="callout col-md-6">
-              <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Our Expertised</h4>
-                    <p>Nulla placerat magna ut nisl ornare, eget ultrices lectus aliquet. Sed pretium erat felis, aliquet malesuada neque venenatis quis.</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
          
         </div>
      
       </section>
+
 
 
 @endsection

@@ -1,0 +1,31 @@
+.button {
+    background: $primary;
+    border-radius: 3px;
+    color: $white;
+    padding: .5rem 1rem;
+    //font-size: .7rem;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color .5s;
+    
+    &:hover {
+        background: #0172cc;
+        color: $white;
+        text-decoration: none;
+        opacity: 1;
+    }
+    &.button {
+        color: $white;
+        
+        &:after {
+          content: none;
+        }
+        
+      }
+}
+@media (min-width: 768px) {
+    .button {
+        padding: .5rem 1rem;
+        //font-size: .8rem;
+    }
+}

@@ -1,0 +1,380 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+.wrapper-container {
+  padding: 0 1rem 1rem;
+  background: #fff;
+  margin: 0 auto;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: $primary;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+
+a,
+.btn-link {
+  color: $primary;
+  @include transition-all;
+  &:hover {
+    color: inherit;
+    opacity: .8;
+    //color: darken($primary, .1);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+  margin: .5rem 0 1rem;
+}
+h3 {
+  font-size: 1.15rem;
+  margin: .5rem 0 1rem;
+}
+h4 {
+  font-size: 1rem;
+}
+
+h2, h3 {
+  &.line {
+    margin-bottom: 2rem;
+    &::after {
+      content: "";
+      background: #a1b1bc;
+      bottom: -1rem;
+      display: block;
+      position: relative;
+      height: 2px;
+      margin: 0 auto;
+      width: 50px;
+    }
+    &.left-aligned {
+      &::after {
+        margin-left: 0;
+      }
+    }
+    &.right-aligned {
+      &::after {
+        margin-right: 0;
+      }
+    }
+    .red-bg & {
+      &::after {
+        margin-left: 0;
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+p {
+  font-family: $font-family-sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-dark {
+  background-color: $gray-900 !important;
+}
+
+.text-faded {
+  color: fade-out($white, .3);
+}
+
+section {
+  padding: 1.5rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+.prefix {
+  color: $primary;
+  .masthead & {
+    position: absolute;
+    bottom: 100%;
+  }
+}
+.highlight {
+  color: $primary;
+}
+
+
+.white-bg {
+  background: $white;
+}
+.black-bg {
+  background: #013564;
+  color: #a1b1bc;
+}
+.blue-bg {
+  background: #0f4576;
+  color: $white;
+}
+.red-bg {
+  background: #b0191c;
+  color: $white;
+  &.overlay {
+    position: relative;
+    &::before {
+      content: "";
+      background: #b0191c;
+      background: rgba(176, 25, 28, .88);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.white {
+  color: $white;
+}
+.gold {
+  color: $gold;
+}
+.blue {
+  color: $light-blue;
+}
+
+
+#testimonials {
+  background: url(/img/mouth-guard-watermark-2.png) right -40px center no-repeat;
+  background-size: 280px;
+
+  .author {
+    color: #669fda;
+  }
+}
+
+.owl-theme {
+  .owl-dots {
+    .owl-dot {
+      span {
+        background: $gray-500;
+      }
+      &.active {
+        span {
+          background: $gold;
+        }
+      }
+    }
+  }
+}
+
+.masthead {
+  background: url(/img/billboards/standard-masthead-banner.jpg) no-repeat right center;
+  position: relative;
+  min-height: 180px;
+  background-size: cover;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 0 -1rem;
+
+  &::before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .75;
+  }
+  h1 {
+    //color: #fff;
+    position: relative;
+    z-index: 1;
+    //text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  }
+}
+
+.callouts {
+  border-top: 1px solid #d4d4d4;
+  padding: 2rem 0 0;
+
+  .callout {
+ 
+    h4 {
+      margin: 0 0 .5rem;
+    }
+    p {
+      font-size: .9rem;
+    }
+
+    .callout-image {
+
+      margin: 0 0 1rem ;
+      img {
+          max-width: 100%;
+      }
+    }
+    .callout-text {
+
+    }
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    &.active {
+      background: $primary;
+    }
+  }
+}
+.page-item {
+  &.active {
+    .page-link {
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+  .page-link {
+    color: $primary;
+  }
+}
+  
+img {
+
+  &.float-left {
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+  }
+  &.float-right {
+    display: inline-block;
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+@media (min-width: 460px) {
+
+
+  .callouts {
+  
+    .callout {
+      .box {
+        display: inline-flex;
+      }
+  
+      .callout-image {
+  
+        width: 50%;
+        margin: 0 1rem 1rem 0;
+  
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+   
+      }
+    
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper-container {
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, .1);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.45rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  #testimonials {
+    background: url(/img/mouth-guard-watermark-2.png) right center no-repeat;
+    background-size: 300px;
+    padding: 3rem 0 2rem;
+  }
+
+
+
+}
+
+@media (min-width: 992px) {
+
+  .wrapper-container {
+    margin: 0 auto 2rem;
+    
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.65rem;
+  }
+  h3 {
+    font-size: 1.45rem;
+  }
+  .masthead {
+    margin: 0 0 1rem;
+  }
+  section {
+    padding: 1rem 0;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}

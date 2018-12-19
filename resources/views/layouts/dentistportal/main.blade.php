@@ -34,7 +34,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="index.html">
-    <img src="img/logo.png" alt="Agility Guard" />
+  <img src="/img/logo.png" alt="{{ setting('site.title') }}" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -44,22 +44,17 @@
           <span aria-hidden="true">&times;</span>
         </button>
         
-    
-
-
-
-
-            {!! menu('DentistPortal', 'bootstrap') !!}
-  <br><Br>
-  {{ setting('site.title') }}
-  <br><Br>
-
-
+        <div id="primaryMenu">
+          {!! menu('main', 'bootstrap') !!}
+        </div>
+  
 
   </div>
 </nav>
 
 </header>
+
+
 
 
 
@@ -72,7 +67,7 @@
         <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h3><img src="img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
+              <h3><img src="/img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
                 <p>
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                     lobortis nisl ut aliquip.
@@ -119,62 +114,33 @@
   </footer>
 </div>
 
+<div class="loader">
+  <div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-<script src="vendor/colorbox/jquery.colorbox.js"></script>
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/vendor/owlcarousel/owl.carousel.min.js"></script>
+<script src="/vendor/colorbox/jquery.colorbox.js"></script>
 
 <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="js/agility-guard.min.js"></script>
+<script src="/js/agility-guard.min.js"></script>
 
-<script type="text/javascript">
-  
-  // Add Touch funtionality to the Bootstrao slider
-  var myElement = document.getElementById('carouselExampleIndicators');
-  var mc = new Hammer(myElement);
-  var panning = false;
-  mc.on("panleft", function(ev) {
-    if(!panning){
-      panning = true;
-      $('.carousel').carousel('next');
-    }
-  });
-  mc.on("panright", function(ev) {
-    if(!panning){
-      panning = true;
-      $('.carousel').carousel('prev');
-    }
-  });
-  mc.on("panend", function(ev) {
-    panning = false;
-  });
 
-  jQuery("#vid-list li a").click(function(e){
-    e.preventDefault();
-    var screenWidth = jQuery(window).width();
-    var link = jQuery(this).attr("href");
+@yield('pageFooterScripts')
 
-    if(jQuery(window).width() < 768){
-      jQuery.colorbox({
-        href: link,
-        iframe: true, 
-        innerWidth: "90%", 
-        innerHeight: (screenWidth < 500) ? 250 : 350
-      });
-    }else{
-      document.getElementById('vid_frame').src=link;
-    }
-    return false;
-  });
-</script>
 </body>  
     
 </html>

@@ -8,7 +8,9 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+      {!!$bannerProducts!!}
+      {!!$bannerAthletes!!}
+        <!-- <div class="carousel-item active">
             <picture>
               <source media="(max-width: 640px)" srcset="img/billboards/Christian-Homer-billboard-mobile.jpg">
               <img class="d-block w-100" src="img/billboards/Christian-Homer-billboard.jpg" alt="Add billboard text here" />
@@ -78,7 +80,7 @@
                   Singapore 2010 Youth Olympics)</span>
               </div>
           
-        </div>
+        </div> -->
       
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -170,7 +172,7 @@
               
               <div class="item">
                 <div class="testimony">
-                  <h2>"{{$rs['Testimony']}}"</h2>
+                  <div class="testimony-text lead">{!!$rs['Testimony']!!}</div>
                   <h3 class="author">{{$rs['Name']}}</h3>
                   <span class="position">{{$rs['Awards']}}</span>
                 </div>
@@ -188,5 +190,48 @@
  
   </section>
 
+@endsection
+
+@section('footerScript')
+<script type="text/javascript">
+  
+  // Add Touch funtionality to the Bootstrao slider
+  var myElement = document.getElementById('carouselExampleIndicators');
+  var mc = new Hammer(myElement);
+  var panning = false;
+  mc.on("panleft", function(ev) {
+    if(!panning){
+      panning = true;
+      $('.carousel').carousel('next');
+    }
+  });
+  mc.on("panright", function(ev) {
+    if(!panning){
+      panning = true;
+      $('.carousel').carousel('prev');
+    }
+  });
+  mc.on("panend", function(ev) {
+    panning = false;
+  });
+
+  jQuery("#vid-list li a").click(function(e){
+    e.preventDefault();
+    var screenWidth = jQuery(window).width();
+    var link = jQuery(this).attr("href");
+
+    if(jQuery(window).width() < 768){
+      jQuery.colorbox({
+        href: link,
+        iframe: true, 
+        innerWidth: "90%", 
+        innerHeight: (screenWidth < 500) ? 250 : 350
+      });
+    }else{
+      document.getElementById('vid_frame').src=link;
+    }
+    return false;
+  });
+</script>
 
 @endsection

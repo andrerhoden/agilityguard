@@ -6,6 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
+                <div class="prefix">Sports</div>
                 <h1>Lacrosse</h1>
               </div>
             </div>
@@ -16,11 +17,7 @@
       <section class="white-bg">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 d-none d-md-block">
-              <img src="img/inline/PanAmWR6.jpg" />
-            </div>
-            <div class="col-md-8">
-              
+            <div class="col">
                <h2>Changing the <span class="blue">Game</span></h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus enim, scelerisque ac ante sit amet, feugiat porttitor tellus. Sed quam nisl, venenatis sit amet venenatis sed, luctus sed justo. Donec nunc ante, lobortis et viverra eu, porta vitae mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin laoreet gravida bibendum. Phasellus maximus turpis justo, sit amet hendrerit lacus interdum eu. Duis nulla nisi, egestas ac tristique sed, luctus ac tortor. Quisque tincidunt lorem ut quam tempor, in gravida nisi pellentesque.
@@ -39,28 +36,18 @@
             </div>
           </div>
           <div class="row callouts">
-              <div class="callout col-md-6">
-                <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Gold-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Get your custom athletic performance guard</h4>
-                    <p>Sed suscipit aliquet justo eu egestas. Aenean hendrerit consectetur egestas. Etiam eget nisl molestie, semper nibh id, faucibus massa.</p>
-                  </div>
+              <div class="callout col">
+                <h4>Become a Certified Dentist</h4>
+                  
+                  <ul>
+                      <li>Learn From Dr Clayton Chan,  the creator of the Chan Gneuromuscular™&nbsp;"Optimized Bite” and the “Chan Scan”</li>
+                      <li>Create a bridge between various practice philosophies that will provide the most sustainable and positive results for your clients</li>
+                  </ul>
+                  <a href="http://learning.agilityguard.com/" class="button" target="_blank">Find Out More</a> 
+                
                 </div>
               </div>
-              <div class="callout col-md-6">
-              <div class="box">
-                  <div class="callout-image">
-                    <img src="img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
-                  </div>
-                  <div class="callout-text">
-                    <h4>Our Expertised</h4>
-                    <p>Nulla placerat magna ut nisl ornare, eget ultrices lectus aliquet. Sed pretium erat felis, aliquet malesuada neque venenatis quis.</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
          

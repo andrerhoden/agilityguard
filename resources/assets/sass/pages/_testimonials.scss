@@ -1,0 +1,26 @@
+.testimonial-listing {
+    margin: 0 0 2rem;
+    .testimonial {
+
+        padding: 2rem 0 0;
+        margin: 2rem 0 0;
+        border-top: 1px solid #ddd;
+
+       
+
+        .text {
+            font-family: "Open Sans",sans-serif;
+            p, span {
+                font-family: inherit !important;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+            .award {
+                font-size: .9rem;
+                font-style: italic;
+            }
+        }
+    }
+}

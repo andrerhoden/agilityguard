@@ -4,8 +4,20 @@ namespace App\Repositories\PublicPortal;
 
 use App\Product;
 
-class ProductsRepository {
+class ProductsRepository 
+{
     
+    public static function fetchForHomeProductsBanner()
+    {
+
+        $results = Product::select(['*'])
+            ->where('deleted_at', NULL)
+            ->get()
+            ->toArray();
+        
+        return $results;        
+
+    }
 
     public static function fetchProducts() {
 
@@ -13,8 +25,19 @@ class ProductsRepository {
             ->where('deleted_at', NULL)
             ->get();
 
+        foreach( $results as &$rs)
+        {
+            $imagesFullPath = [];
+            $images = json_decode($rs['images'], true);
+            foreach( $images as $img ) 
+            {
+                $imagesFullPath[] = $_ENV['APP_URL'] .'storage/'. $img;
+            }
 
+            $rs->imagesFullPath = $imagesFullPath;
+        }
 
+        
         return $results;
 
     }
@@ -28,7 +51,7 @@ class ProductsRepository {
                 ->get()
             AS $product
         ){
-            $results .= "<li><a href='#'>" . $product->name . "</a></li>";
+            $results .= "<li><a href='/products/{$product->slug}'>" . $product->name . "</a></li>";
         }
         $results .= "</ul>";
         return $results;
