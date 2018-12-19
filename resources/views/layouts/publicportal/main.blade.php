@@ -140,20 +140,20 @@
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}vendor/jquery/jquery.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="/vendor/owlcarousel/owl.carousel.min.js"></script>
-<script src="/vendor/colorbox/jquery.colorbox.js"></script>
+<script src="{{$_ENV['APP_URL']}}vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}vendor/owlcarousel/owl.carousel.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}vendor/colorbox/jquery.colorbox.js"></script>
 
 <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="/js/agility-guard.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}js/agility-guard.min.js"></script>
 
 @yield('footerScript')
 
