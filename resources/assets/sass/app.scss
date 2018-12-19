@@ -1,9 +1,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|PT+Sans');
-body {
-  color: red;
-}
+
 @import "general/variables.scss";
 @import "general/mixins.scss";
 @import "general/global.scss";
@@ -17,6 +15,8 @@ body {
 @import "components/billboards.scss";
 @import "components/video-player.scss";
 @import "components/datatables.scss";
+
+@import "components/forms.scss";
 
 
 @import "pages/home.scss";

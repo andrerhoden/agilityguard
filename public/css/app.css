@@ -1,8 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|PT+Sans);body {
-  color: red;
-}
-
-body,
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|PT+Sans);body,
 html {
   width: 100%;
   height: 100%;
@@ -1349,6 +1345,18 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-li
 
 .bs-select select {
   display: inline-block !important;
+}
+
+#contact-form label {
+  display: inline-block;
+}
+
+#contact-form input[type=submit] {
+  background: #0b4479;
+  border: 0;
+  padding: .5rem 2rem;
+  color: #fff;
+  border-radius: 3px;
 }
 
 section.experience {
