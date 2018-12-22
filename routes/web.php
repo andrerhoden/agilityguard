@@ -23,6 +23,7 @@ Route::get('/products/{product}', 'PublicPortalController@productDetails');
 Route::get('/testimonials', 'PublicPortalController@testimonials');
 
 Route::get('/contact-us', 'PublicPortalController@contactus');
+Route::post('/contact-us/save', 'PublicPortalController@contactusSave');
 
 Route::get('/sports/basketball', 'PublicPortalController@sports_basketball');
 Route::get('/sports/baseball', 'PublicPortalController@sports_baseball');

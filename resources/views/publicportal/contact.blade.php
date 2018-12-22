@@ -16,7 +16,20 @@
         <div class="form-row row justify-content-md-center">
             <div class="col col-lg-8">
 
-                <form id="contact-form" action="contact/" method="post" onsubmit="return checkform(this);">
+
+                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session()->get('message') }}
+                    </div>
+                @endif
+                @if(session()->has('warning'))
+                    <div class="alert alert-danger">
+                        {{ session()->get('warning') }}
+                    </div>
+                @endif
+
+                <form id="contact-form" action="contact-us/save" method="post" onsubmit="return checkform(this);">
+                <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                     <div class="form-group">
                         <div class="row text-left">
                             <div class="col">
@@ -30,6 +43,18 @@
                             <div class="col">
                                 <label for="email">Email Address</label>
                                 <input type="email" class="form-control" id="email" name="email" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row text-left">
+                            <div class="col">
+                                <label for="email">Your Interest</label>
+                                <select name="interest">
+                                    <option></option>
+                                    <option>Athlete</option>
+                                    <option>Dentist</option>
+                                </select>
                             </div>
                         </div>
                     </div>

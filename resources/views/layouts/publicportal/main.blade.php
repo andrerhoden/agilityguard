@@ -15,7 +15,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 column text-left">
-          <span class="group"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:19055555555" class="highlight">905.555.5555</a></span> 
+          <span class="group"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:18773310028" class="highlight">1.877.331.0028</a></span> 
           <span class="group"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:contact@agilityguard.com" class="highlight">contact@agilityguard.com</a></span> 
         
         </div>
@@ -77,11 +77,12 @@
             <div class="row">
               <div class="col-md-4">
                 <h3><img src="{{$_ENV['APP_URL']}}img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
+                <!--
                 <p>
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                     lobortis nisl ut aliquip.
                 </p>
-                
+                -->
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-3">
