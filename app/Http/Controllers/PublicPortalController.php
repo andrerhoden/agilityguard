@@ -71,7 +71,7 @@ class PublicPortalController extends Controller
 
         if ( $lead )
         {
-            $status = "Thank you for your interest, we will contact you shortlyy";
+            $status = "Thank you for your interest, we will contact you shortly";
             return redirect()->back()->with('message', $status);
         }else {
             $status = "Opps, did not work. Please directly email at contactus@agilityguard.com";
