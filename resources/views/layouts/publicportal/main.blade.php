@@ -33,7 +33,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">
-          <img src="/img/logo.png" alt="{{ setting('site.title') }}" />
+          <img src="{{$_ENV['APP_URL']}}img/logo.png" alt="{{ setting('site.title') }}" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
         <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h3><img src="/img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
+                <h3><img src="{{$_ENV['APP_URL']}}img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
                 <p>
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
                     lobortis nisl ut aliquip.
