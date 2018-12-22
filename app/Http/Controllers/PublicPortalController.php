@@ -6,8 +6,9 @@ use App\Repositories\PublicPortal\IndexRepository;
 use App\Repositories\PublicPortal\ProductsRepository;
 use App\Repositories\PublicPortal\AthleteRepository;
 use App\Repositories\PublicPortal\DentalPracticesRepository;
-
+use Illuminate\Http\Request;
 use App\Product;
+use App\Lead;
 
 class PublicPortalController extends Controller
 {
@@ -56,6 +57,32 @@ class PublicPortalController extends Controller
         return view('publicportal.contact', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
+    }
+    public function contactusSave( Request $request )
+    {
+        $input = $request->all();
+
+        $lead = Lead::create([
+            'name' => $input['name'],
+            'email' => $input['email'],
+            'interest' => $input['interest'],
+            'comments' => $input['comments']
+        ]);
+
+        if ( $lead )
+        {
+            $status = "Thank you for your interest, we will contact you shortlyy";
+            return redirect()->back()->with('message', $status);
+        }else {
+            $status = "Opps, did not work. Please directly email at contactus@agilityguard.com";
+            return redirect()->back()->with('warning', $status);
+        }
+
+        
+
+        // return view('publicportal.contact', [
+        //     'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        // ]);
     }
 
     public function testimonials()
