@@ -187,7 +187,12 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="form_product">Product *</label>
-                                                                <select id="form_product" name='product-1' class="form-control" required="required" data-error="Please specify your product.">
+                                                                <select id="form_product" name='product-1' 
+                                                                    class="form-control form_product" 
+                                                                    required="required" 
+                                                                    data-error="Please specify your product."
+                                                                    onchange="updateTotals();"
+                                                                >
                                                                     <option value=""></option>
                                                                     {!!$products!!}
                                                                 </select>
@@ -197,7 +202,7 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="form_product_type">Guard Type *</label>
-                                                                <select id="form_product_type" name="product-1-type" class="form-control" required="required" data-error="Please specify a type.">
+                                                                <select id="form_product_type" name="product-1-type" class="form-control form_product_type" required="required" data-error="Please specify a type.">
                                                                     <option value=""></option>
                                                                     <option value="upper">Upper</option>
                                                                     <option value="lower">Lower</option>
@@ -208,7 +213,7 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="form_product_color">Color *</label>
-                                                                <select id="form_product_color" name="product-1-color" class="form-control" required="required" data-error="Please specify a color.">
+                                                                <select id="form_product_color" name="product-1-color" class="form-control form_product_color" required="required" data-error="Please specify a color.">
                                                                     <option value=""></option>
                                                                     <option value="bright red">Bright Red</option>
                                                                     <option value="maroon">Maroon</option>
@@ -426,7 +431,7 @@
 
 
     $(document).ready(function () {
-        $('#dtLabOrders').DataTable();
+        // $('#dtLabOrders').DataTable();
         $('.dataTables_length').addClass('bs-select');
     });
 
@@ -441,6 +446,9 @@
         }else{
             counter++
         }
+
+        updateTotals();
+
         return false;	 
     }
 
@@ -467,15 +475,33 @@
 
 
     function updateTotals(){
+        
+        console.log( $("#guard-details .form_product option:selected") );
+
         subtotal=0;
-        for (i=0; i<product_type.length; i++){
-            $(product_obj).each(function() {
-                var m = this;
-                if (product_type[i]==m.id){
-                    subtotal += parseInt(m.msrp_c);
-                }
-            });
-        }
+
+        // for (i=0; i<product_type.length; i++){
+        //     $(product_obj).each(function() {
+        //         var m = this;
+        //         if (product_type[i]==m.id){
+        //             subtotal += parseInt(m.msrp_c);
+        //         }
+        //     });
+        // }
+
+        $("#guard-details .form_product option:selected").each(function() {
+
+            console.log( $(this).data('msrp') );
+
+            if ( typeof $(this).data('msrp') !== "undefined" )
+            {
+                subtotal += parseInt( $(this).data('msrp') );
+            }
+            
+        });
+
+
+
         //alert(subtotal);
         subtotal_price = '$'+subtotal+''; 
         tax = subtotal*0.13;
