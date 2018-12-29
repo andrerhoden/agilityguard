@@ -72,13 +72,14 @@ class DentistPortalController extends Controller
 
     public function createOrder()
     {        
-
         
+
         $labs = \App\User::select()
             ->where('role_id', 3)
             ->get();
             
         return view('dentistportal.createOrder', [
+            'dentistPortal' => session('dpUser')->dentalPracticeId()->first(),
             'labs'      => $labs,
             'products'  => ProductsRepository::fetchProductsForDropDown()
         ]);
