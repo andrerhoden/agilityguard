@@ -41,6 +41,16 @@
     </div>
 </section>
 
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>        
+@endif
+@if(session()->has('warning'))
+    <div class="alert alert-danger">
+        {{ session()->get('warning') }}
+    </div>        
+@endif
 
 <section class="white-bg">
     <div class="container">
@@ -151,7 +161,7 @@
                                                             <div class="col-md-12">
                                                                 <div class="form-group">
                                                                     <label for="form-address">Sports</label>
-                                                                    <input id="form-address" type="text" name="address" placeholder="comma separated" class="form-control" data-error="Address is required.">
+                                                                    <input id="form-address" type="text" name="sports" placeholder="comma separated" class="form-control" data-error="Address is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
@@ -272,10 +282,11 @@
                                         </div>
                                         <div id="step3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
                                             <div class="card-body">
-                                                <select>
-                                                @foreach( $labs as $lab )
-                                                    <option value="{{$lab->id}}">{{$lab->name}}</option>                                                    
-                                                @endforeach
+                                                <select name="lab" required="required" data-error="Please specify a lab.">
+                                                    <option value=""></option>
+                                                    @foreach( $labs as $lab )
+                                                        <option value="{{$lab->id}}">{{$lab->name}}</option>                                                    
+                                                    @endforeach
                                                 </select>
                                             </div>
                                         </div>

@@ -41,6 +41,16 @@
     </div>
 </section>
 
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>        
+@endif
+@if(session()->has('warning'))
+    <div class="alert alert-danger">
+        {{ session()->get('warning') }}
+    </div>        
+@endif
 
 <section class="white-bg">
     <div class="container">
