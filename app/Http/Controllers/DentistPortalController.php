@@ -20,8 +20,8 @@ class DentistPortalController extends Controller
     private function __chkDpUser()
     {
         if ( empty( session('dpUser') ) )
-        {
-            return redirect('/dentist-portal');
+        {            
+            return redirect('/dentist-portal/logout');
         }
     }
 
