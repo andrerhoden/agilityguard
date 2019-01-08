@@ -34,6 +34,9 @@ class LabOrdersRepository
                 'shipping_address' => $input['shipToText'],
                 'status' => 'pending_payment',
                 'lab_id' => $input['lab'],
+                'subtotal' => $input['form_sub'],
+                'taxes' => $input['form_tax'],
+                'total' => $input['form_total'],
             ]);
             
             

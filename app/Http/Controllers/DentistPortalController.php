@@ -112,6 +112,15 @@ class DentistPortalController extends Controller
             'orders' => $orders->get()
         ]);
     }
+    public function orderDetails( \App\LabOrder $order )
+    {
+        $this->__chkDpUser();
+
+        return view('dentistportal.orderDetails', [
+            'order' => $order
+        ]);
+
+    }
 
     
     public function account()

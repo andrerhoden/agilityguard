@@ -77,7 +77,9 @@
 
                         @foreach( $orders as $order )
                             <tr>
-                                <td>{{$order->id}}</td>
+                                <td>
+                                    <a href="/dentist-portal/order/{{$order->id}}">Lab Order #{{$order->id}}</a>
+                                </td>
                                 <td>{{$order->created_at}}</td>
                                 <td>{{$order->consumer->last_name}}, {{$order->consumer->first_name}}</td>
                                 <td>{{$order->status}}</td>

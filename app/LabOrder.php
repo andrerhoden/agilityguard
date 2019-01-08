@@ -9,7 +9,7 @@ class LabOrder extends Model
 {
     protected $table = 'LabOrders';
 
-    protected $fillable = ['shipping_address', 'status', 'consumer_id', 'lab_id'];
+    protected $fillable = ['shipping_address', 'status', 'consumer_id', 'lab_id', 'subtotal', 'taxes', 'total'];
     
     public function users()
     {   // LAB //
