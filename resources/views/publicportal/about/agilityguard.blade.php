@@ -6,7 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <h1>About Us</h1>
+                <h1>About Us - Agility Guard</h1>
               </div>
             </div>
           </div>

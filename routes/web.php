@@ -13,7 +13,9 @@
 
 Route::get('/', 'PublicPortalController@index');
 
-Route::get('/about-us', 'PublicPortalController@about');
+Route::get('/about-us/agilityguard', 'PublicPortalController@about_agilityguard');
+Route::get('/about-us/advisory-board', 'PublicPortalController@about_advisoryBoard');
+Route::get('/about-us/our-experts', 'PublicPortalController@about_ourExperts');
 
 Route::get('/map', 'PublicPortalController@map');
 

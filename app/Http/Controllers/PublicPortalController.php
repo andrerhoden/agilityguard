@@ -95,10 +95,24 @@ class PublicPortalController extends Controller
     }
 
 
-    public function about()
+    public function about_agilityguard()
     {
 
-        return view('publicportal.about', [
+        return view('publicportal.about.agilityguard', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function about_advisoryBoard()
+    {
+
+        return view('publicportal.about.advisoryBoard', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function about_ourExperts()
+    {
+
+        return view('publicportal.about.ourExperts', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }
