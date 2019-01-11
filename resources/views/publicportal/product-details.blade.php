@@ -15,7 +15,15 @@
 
 <section class="white-bg">
       <div class="container">
-      
+      <div class="row">
+            <div class="col">
+                  <p>
+                    <img src="{!!$product->imagesFullPath!!}">
+                    </p>
+              </div>
+          
+          </div>
+
         <div class="row">
             <div class="col">
                   <p>
