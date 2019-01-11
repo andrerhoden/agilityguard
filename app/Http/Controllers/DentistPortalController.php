@@ -19,9 +19,10 @@ class DentistPortalController extends Controller
 
     private function __chkDpUser()
     {
+        
         if ( empty( session('dpUser') ) )
         {            
-            return redirect('/dentist-portal/logout');
+            return redirect('/dentist-portal/logout');            
         }
     }
 
@@ -60,6 +61,7 @@ class DentistPortalController extends Controller
 
     public function logoutExecute(Request $request)
     {
+        
         $request->session()->forget('dpUser');
         $request->session()->flush();
         
@@ -126,8 +128,15 @@ class DentistPortalController extends Controller
     public function account()
     {
         $this->__chkDpUser();
+        $dpUser = session('dpUser');
+        
+        dump( $dpUser );
+        dump( $dpUser->dentalPracticeId );
+        
 
-        return view('dentistportal.account');
+        return view('dentistportal.account',[
+            'dentist' => $dpUser
+        ]);
     }
     
 }
