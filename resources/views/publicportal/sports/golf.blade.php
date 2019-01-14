@@ -16,9 +16,17 @@
 
       <section class="white-bg">
         <div class="container">
+
+        <Center>
+          <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_golf.jpg" >
+          <br><br>
+        </center>
+
           <div class="row">
             <div class="col">
                
+
+
             <div class="clearfix" id="body_content_left">
           		<h3 class="quote">The USGA recently ruled on the use by golfers of AgilityGuards, allowing for use by golfers under certain circumstances. Your AgilityGuard Dentist is able to provide you with a copy of the ruling.</h3>
 

@@ -15,14 +15,27 @@
         
 
       <section class="white-bg">
+
+        <Center>
+          <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_hockey.jpg" >
+          <br><br>
+        </center>
+
         <div class="container">
           <div class="row">
             <div class="col">
                
             <div class="clearfix" id="body_content_left">
-          		<p><img src="/assets/images/system/images/0000/0823/TrevorCann_medium.jpg" title="Trevor Cann" alt="Trevor Cann" rel="medium"></p>
-            <p class="quote">"From the first time I tried the AgilityGuard, I was shocked; I couldn't believe the difference it made. As a goalie there are many saves that require flexibility and athleticism, and the AgilityGuard gives me that edge - I can more fluidly and easily move into positions that I otherwise would have found to be difficult to achieve. I also found that the basic movement I do as a goalie was more smooth and agile, helping to get me into position. I'm excited to go through this season with this guard! " - <strong><em>Trevor Cann</em>
-            </strong>, Colorado Avalanche</p>
+
+            <div style="float:left; margin-right:20px;">
+              <p><img src="http://www.agilityguard.com/assets/images/system/images/0000/0823/TrevorCann_medium.jpg" title="Trevor Cann" alt="Trevor Cann" rel="medium"></p>
+            </div>
+            <div>          		
+              <p class="quote">"From the first time I tried the AgilityGuard, I was shocked; I couldn't believe the difference it made. As a goalie there are many saves that require flexibility and athleticism, and the AgilityGuard gives me that edge - I can more fluidly and easily move into positions that I otherwise would have found to be difficult to achieve. I also found that the basic movement I do as a goalie was more smooth and agile, helping to get me into position. I'm excited to go through this season with this guard! " - <strong><em>Trevor Cann</em>
+              </strong>, Colorado Avalanche</p>
+            </div>
+
+            <div style="clear:both;"></div>
 
             <h2>NHL Combines</h2>
             <p>The NHL Combines measures, among other things, (i) repeatable power by way of a 150-pound bench press, (ii) strength and explosive power by way of a standing long jump, (iii) peak power by means of a vertical leap, and (iv) peak power output during a 30 second Wingate Cycle Ergometer test. A recent study by Rutgers University on individuals using a neuromuscular dentistry-designed mouthguard reported significant improvement in vertical jump and peak power during a 30 second WAn t test. </p>

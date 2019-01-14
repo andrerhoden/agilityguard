@@ -16,6 +16,13 @@
 
       <section class="white-bg">
         <div class="container">
+
+
+        <div class="row">
+          <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_cycling.jpg">
+        </div>
+
+
           <div class="row">
             <div class="col">
                
@@ -24,7 +31,7 @@
           		<p class="quote"></p>
 
 <div class="tes">
-<img src="/assets/images/testimonials/giddeon.jpg">
+<img src="http://www.agilityguard.com/assets/images/testimonials/giddeon.jpg">
 <div>
 <p class="t_quote">“I consider AgilityGuard an essential piece of equipment”</p>
 <p class="t_name">Giddeon Massie</p>
@@ -33,7 +40,7 @@
 <div class="clearfix"></div>
 </div>
 
-<div class="tes"><p><img src="/assets/images/system/images//0000/2488/Lucas_Euser_-_Spidertech_Pro_Cyclist_Testimonial_medium.png" title="Lucas Euser   Spidertech Pro Cyclist Testimonial" alt="Lucas Euser   Spidertech Pro Cyclist Testimonial" rel="medium">
+<div class="tes"><p><img src="http://www.agilityguard.com/assets/images/system/images//0000/2488/Lucas_Euser_-_Spidertech_Pro_Cyclist_Testimonial_medium.png" title="Lucas Euser   Spidertech Pro Cyclist Testimonial" alt="Lucas Euser   Spidertech Pro Cyclist Testimonial" rel="medium">
 </p>
 <div>
 <p class="t_quote">"I endorse, use and love the AgilityGuard. Don't ever see myself riding without one!"</p>
@@ -43,7 +50,7 @@
 <div class="clearfix"></div>
 </div>
 
-<div class="tes"><img src="/assets/images/system/images//0000/2506/Dave_Wenger_-_Cycling_Testimonial_medium.png" title="Dave Wenger   Cycling Testimonial" alt="Dave Wenger   Cycling Testimonial" rel="medium"><div>
+<div class="tes"><img src="http://www.agilityguard.com/assets/images/system/images//0000/2506/Dave_Wenger_-_Cycling_Testimonial_medium.png" title="Dave Wenger   Cycling Testimonial" alt="Dave Wenger   Cycling Testimonial" rel="medium"><div>
 <p class="t_quote">"Within about 20 minutes of using AgilityGuard for the first time, I noticed improved mechanics on the bike. I have found myself much more centered on the saddle and less sore after training or competitions. My body recovers faster and without the fatigue commonly experienced. Further, my abdomen and back have gained strength as muscle recruitment from these areas has improved. Overall, I am recovering much faster between rides thanks to the improvement in efficiency with AgilityGuard."</p>
 <p class="t_name">Dave Wenger</p>
 <p class="t_title">USA Cyclist, 2011 Men's Elite Criterium Winner, USA Cycling Road National Championships</p>
@@ -51,7 +58,7 @@
 <div class="clearfix"></div>
 </div>
 
-<div class="tes"><img src="/assets/images/system/images//0000/2425/Dotsie_Bausch_-_Cycling__Team_Pursuit__medium.png" title="Dotsie Bausch   Cycling  Team Pursuit " alt="Dotsie Bausch   Cycling  Team Pursuit " rel="medium">
+<div class="tes"><img src="http://www.agilityguard.com/assets/images/system/images//0000/2425/Dotsie_Bausch_-_Cycling__Team_Pursuit__medium.png" title="Dotsie Bausch   Cycling  Team Pursuit " alt="Dotsie Bausch   Cycling  Team Pursuit " rel="medium">
 <div>
 <p class="t_quote">"Agility Guard is now my secret weapon of choice. Never having experienced any issues or problems with my
 mouth or jaw, I was skeptical at how the AG would improve my performance. I put the trust in my coach though, as he was absolutely convinced I needed
@@ -71,7 +78,7 @@ Thank you AG!!"</p>
 </div>
 
 <div class="tes">
-<p><img src="/assets/images/system/images//0000/2137/Kirk_Bausch_-_Cyclist_medium.png" title="Kirk Bausch   Cyclist" alt="Kirk Bausch   Cyclist" rel="medium">
+<p><img src="http://www.agilityguard.com/assets/images/system/images//0000/2137/Kirk_Bausch_-_Cyclist_medium.png" title="Kirk Bausch   Cyclist" alt="Kirk Bausch   Cyclist" rel="medium">
 </p>
 <div>
 <p class="t_quote">"I picked up my AgilityGuard a few days before the State TT Championships but was reluctant to wear it... I said, "what the hell" and gave it a shot. Well... I PR'd and won the California State Time Trial Championships!  My power increase was 30 watts higher than last year. The AgilityGuard is my new best friend."</p>
@@ -82,7 +89,7 @@ Thank you AG!!"</p>
 </div>
 
 <div class="tes">
-<p><img src="/assets/images/system/images//0000/2146/Bert_Glennon_-_Testimonial_medium.png" title="Bert Glennon   Testimonial" alt="Bert Glennon   Testimonial" rel="medium">&nbsp;&nbsp;&nbsp; &nbsp;<a href="/assets/images/system/resources/0000/0012/BGM_Sports_-_AgilityGuard_Analysis.pdf" title="Bgm Sports   Agility Guard Analysis"><img src="/assets/images/assets/images/system/images///0000/2209/BGM_Sports_-_AgilityGuard_Analysis_medium.png" title="Bgm Sports   Agility Guard Analysis" alt="Bgm Sports   Agility Guard Analysis" rel="medium"></a>
+<p><img src="http://www.agilityguard.com/assets/images/system/images//0000/2146/Bert_Glennon_-_Testimonial_medium.png" title="Bert Glennon   Testimonial" alt="Bert Glennon   Testimonial" rel="medium">&nbsp;&nbsp;&nbsp; &nbsp;<a href="/assets/images/system/resources/0000/0012/BGM_Sports_-_AgilityGuard_Analysis.pdf" title="Bgm Sports   Agility Guard Analysis"><img src="/assets/images/assets/images/system/images///0000/2209/BGM_Sports_-_AgilityGuard_Analysis_medium.png" title="Bgm Sports   Agility Guard Analysis" alt="Bgm Sports   Agility Guard Analysis" rel="medium"></a>
 </p>
 <div>
 <p class="t_quote">"I had been using the AgilityGuard for 6 weeks in a base strength training cycle and decided to put it to the test on a familiar course with the same objectives I had in the past. The results were amazing in performance number terms and, as a coach, to see such a jump in base strength was unbelievable. The AgilityGuard has the potential to help every athlete in every sport, particularly cycling."</p>
@@ -95,7 +102,7 @@ Thank you AG!!"</p>
 <p>Maximum peak power (explosive power) is, in Giddeon's view, &nbsp;"of huge importance.. the magic number being 25 watts/kg body weight. The higher the explosive power, the faster we can attain  top speed".&nbsp;&nbsp;In longer races, this may be important to break away from the pack.</p>
 <p>Sustainable Peak Power is, as well, of great &nbsp;importance in Giddeon's view -&nbsp;<em>"the longer we are able to maintain this power or close to it, the longer our sprint. For longer races, being able to maximize threshold sustainable power is key."</em>&nbsp;</p>
 <h2>Balance and Flexibility</h2>
-<p><img src="/assets/images/system/images//0000/0769/Giddeom2010-2_medium.jpg" title="Giddeom2010 2" alt="Giddeom2010 2" rel="medium"></p>
+<p><img src="http://www.agilityguard.com/assets/images/system/images//0000/0769/Giddeom2010-2_medium.jpg" title="Giddeom2010 2" alt="Giddeom2010 2" rel="medium"></p>
 <p>Balance is important for many cyclists, and flexibility allows you to get into positions that may provide you with a race advantage.</p>
 <h2>Range of Motion</h2>
 <p>We have been told that an increased range of motion/range of vision, provides a tactical advantage on being able to see more fully where your competitors are around you, and to give you a sense of positioning in the pack. </p>

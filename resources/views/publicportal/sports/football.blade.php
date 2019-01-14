@@ -22,7 +22,10 @@
             <div class="clearfix" id="body_content_left">
           		<p class="quote"></p>
 
-
+<Center>
+  <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_football.jpg" >
+  <br><Br>
+</center>
 
 <h2>Strength</h2>
 <p>It’s the core of every hardcore athlete. And every little bit helps. With Triumphant on your team, you’ll have an immediate advantage over your opponent from training day straight through to game day. </p>
