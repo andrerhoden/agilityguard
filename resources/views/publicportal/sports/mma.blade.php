@@ -16,6 +16,12 @@
 
       <section class="white-bg">
         <div class="container">
+
+          <center>
+            <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_mixed_martial_arts.jpg" >
+            <Br><br>
+            </center>
+
           <div class="row">
            <div class="col">
 

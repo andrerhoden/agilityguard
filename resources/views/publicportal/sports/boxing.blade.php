@@ -16,6 +16,13 @@
 
       <section class="white-bg">
         <div class="container">
+
+
+        <div class="row">
+          <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_boxing.jpg">
+        </div>
+
+
           <div class="row">
             <div class="col">
                
