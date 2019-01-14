@@ -20,19 +20,19 @@
             <nav class="portal-menu">
                 <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                <a class="nav-link"  href="/dentist-portal/account">Account Profile</a>
+                <a class="nav-link"  href="{{$_ENV['APP_URL']}}/dentist-portal/account">Account Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/dentist-portal/create-order">Create Lab Order</a>
+                        <a class="nav-link" href="{{$_ENV['APP_URL']}}/dentist-portal/create-order">Create Lab Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/dentist-portal/orders">Lab Orders</a>
+                        <a class="nav-link active" href="{{$_ENV['APP_URL']}}/dentist-portal/orders">Lab Orders</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#">Change Password</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/dentist-portal/logout">Logout</a>
+                        <a class="nav-link" href="{{$_ENV['APP_URL']}}/dentist-portal/logout">Logout</a>
                     </li>
                 </ul>
             </nav>
@@ -78,7 +78,7 @@
                         @foreach( $orders as $order )
                             <tr>
                                 <td>
-                                    <a href="/dentist-portal/order/{{$order->id}}">Lab Order #{{$order->id}}</a>
+                                    <a href="{{$_ENV['APP_URL']}}/dentist-portal/order/{{$order->id}}">Lab Order #{{$order->id}}</a>
                                 </td>
                                 <td>{{$order->created_at}}</td>
                                 <td>{{$order->consumer->last_name}}, {{$order->consumer->first_name}}</td>
