@@ -20,19 +20,19 @@
             <nav class="portal-menu">
                 <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                        <a class="nav-link"  href="/dentist-portal/account">Account Profile</a>
+                        <a class="nav-link"  href="{{$_ENV['APP_URL']}}/dentist-portal/account">Account Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/dentist-portal/create-order">Create Lab Order</a>
+                        <a class="nav-link active" href="{{$_ENV['APP_URL']}}/dentist-portal/create-order">Create Lab Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/dentist-portal/orders">Lab Orders</a>
+                        <a class="nav-link " href="{{$_ENV['APP_URL']}}/dentist-portal/orders">Lab Orders</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#">Change Password</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/dentist-portal/logout">Logout</a>
+                        <a class="nav-link" href="{{$_ENV['APP_URL']}}/dentist-portal/logout">Logout</a>
                     </li>
                 </ul>
             </nav>
@@ -58,7 +58,7 @@
             <div class="col">
         
 
-                    <form id="order-form" method="post" action="/dentist-portal/create-order/save" role="form">
+                    <form id="order-form" method="post" action="{{$_ENV['APP_URL']}}/dentist-portal/create-order/save" role="form">
                         {{ csrf_field() }}
 
                             <div class="messages"></div>

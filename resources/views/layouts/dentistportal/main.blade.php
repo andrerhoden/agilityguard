@@ -34,7 +34,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="index.html">
-  <img src="/img/logo.png" alt="{{ setting('site.title') }}" />
+  <img src="{{$_ENV['APP_URL']}}/img/logo.png" alt="{{ setting('site.title') }}" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -67,11 +67,7 @@
         <div class="container">
             <div class="row">
               <div class="col-md-4">
-              <h3><img src="/img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
-                <p>
-                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                    lobortis nisl ut aliquip.
-                </p>
+              <h3><img src="{{$_ENV['APP_URL']}}/img/ag-logo-white.png" class="logo" alt="Agility Guard" /></h3>
                 
               </div>
               <div class="col-md-1"></div>
@@ -123,20 +119,20 @@
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}/vendor/jquery/jquery.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="/vendor/owlcarousel/owl.carousel.min.js"></script>
-<script src="/vendor/colorbox/jquery.colorbox.js"></script>
+<script src="{{$_ENV['APP_URL']}}/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}/vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}/vendor/owlcarousel/owl.carousel.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}/vendor/colorbox/jquery.colorbox.js"></script>
 
 <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="/js/agility-guard.min.js"></script>
+<script src="{{$_ENV['APP_URL']}}/js/agility-guard.min.js"></script>
 
 
 @yield('pageFooterScripts')
