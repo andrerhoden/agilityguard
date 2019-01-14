@@ -122,7 +122,7 @@
           <div class="row">
             <div class="col">
               <small>
-                  &copy; 2018 <span class="gold">TRIUMPHANT ATHLETICS GROUP</span> All Rights Reserved.
+                  &copy; <?=date('Y')?> <span class="gold">TRIUMPHANT ATHLETICS GROUP</span> All Rights Reserved.
               </small>
             </div>
           </div>

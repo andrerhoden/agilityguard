@@ -13,6 +13,7 @@
 
 Route::get('/', 'PublicPortalController@index');
 
+Route::get('/about-us/news-videos', 'PublicPortalController@about_news');
 Route::get('/about-us/agilityguard', 'PublicPortalController@about_agilityguard');
 Route::get('/about-us/advisory-board', 'PublicPortalController@about_advisoryBoard');
 Route::get('/about-us/our-experts', 'PublicPortalController@about_ourExperts');
