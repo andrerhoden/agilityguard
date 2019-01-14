@@ -41,6 +41,16 @@
     </div>
 </section>
 
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>        
+@endif
+@if(session()->has('warning'))
+    <div class="alert alert-danger">
+        {{ session()->get('warning') }}
+    </div>        
+@endif
 
 <section class="white-bg">
     <div class="container">
@@ -67,7 +77,9 @@
 
                         @foreach( $orders as $order )
                             <tr>
-                                <td>{{$order->id}}</td>
+                                <td>
+                                    <a href="/dentist-portal/order/{{$order->id}}">Lab Order #{{$order->id}}</a>
+                                </td>
                                 <td>{{$order->created_at}}</td>
                                 <td>{{$order->consumer->last_name}}, {{$order->consumer->first_name}}</td>
                                 <td>{{$order->status}}</td>

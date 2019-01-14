@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Repositories\DentistPortal\ProductsRepository;
+use App\Repositories\DentistPortal\LabOrdersRepository;
+use Illuminate\Support\Facades\Redirect;
 
 class DentistPortalController extends Controller
 {
@@ -13,11 +15,15 @@ class DentistPortalController extends Controller
 
     public function __construct() 
     {
+    }
+
+    private function __chkDpUser()
+    {
         
-        // if ( empty( session('dpUser') ) )
-        // {
-        //     return redirect('/dentist-portal');
-        // }
+        if ( empty( session('dpUser') ) )
+        {            
+            return redirect('/dentist-portal/logout');            
+        }
     }
 
     public function login()
@@ -53,15 +59,9 @@ class DentistPortalController extends Controller
         return redirect('/dentist-portal/orders');
     }
 
-    public function createOrderSave( Request $request )
-    {
-        $input = $request->all();
-        dump( $input );
-        die();
-    }
-
     public function logoutExecute(Request $request)
     {
+        
         $request->session()->forget('dpUser');
         $request->session()->flush();
         
@@ -72,36 +72,71 @@ class DentistPortalController extends Controller
 
     public function createOrder()
     {        
+        $this->__chkDpUser();
 
-        
         $labs = \App\User::select()
             ->where('role_id', 3)
             ->get();
             
         return view('dentistportal.createOrder', [
+            'dentistPortal' => session('dpUser')->dentalPracticeId()->first(),
             'labs'      => $labs,
             'products'  => ProductsRepository::fetchProductsForDropDown()
         ]);
     }
+    public function createOrderSave( Request $request )
+    {
+        
+        $input = $request->all();
+        if ( LabOrdersRepository::saveOrder( $input ) )
+        {
+            $status = "Order was successfully created";
+            return redirect('/dentist-portal/orders')->with('message', $status);
+        }
+
+        $status = "ERROR: Order was NOT created";
+        return redirect()->back()->with('warning', $status);
+
+        return;
+    }
+
 
     public function orders()
     {        
+        $this->__chkDpUser();
+
         $orders = \App\LabOrder::select()
             ->with('products')
             ->with('users')
             ->with('consumer');
             
-        dump( $orders->get()->toArray() );
-
         return view('dentistportal.orders', [
             'orders' => $orders->get()
         ]);
+    }
+    public function orderDetails( \App\LabOrder $order )
+    {
+        $this->__chkDpUser();
+
+        return view('dentistportal.orderDetails', [
+            'order' => $order
+        ]);
+
     }
 
     
     public function account()
     {
-        return view('dentistportal.account');
+        $this->__chkDpUser();
+        $dpUser = session('dpUser');
+        
+        dump( $dpUser );
+        dump( $dpUser->dentalPracticeId );
+        
+
+        return view('dentistportal.account',[
+            'dentist' => $dpUser
+        ]);
     }
     
 }

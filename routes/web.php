@@ -13,7 +13,9 @@
 
 Route::get('/', 'PublicPortalController@index');
 
-Route::get('/about-us', 'PublicPortalController@about');
+Route::get('/about-us/agilityguard', 'PublicPortalController@about_agilityguard');
+Route::get('/about-us/advisory-board', 'PublicPortalController@about_advisoryBoard');
+Route::get('/about-us/our-experts', 'PublicPortalController@about_ourExperts');
 
 Route::get('/map', 'PublicPortalController@map');
 
@@ -46,6 +48,7 @@ Route::group(['prefix' => 'dentist-portal'], function () {
     Route::get('/create-order', 'DentistPortalController@createOrder');
     Route::post('/create-order/save', 'DentistPortalController@createOrderSave');
     Route::get('/orders', 'DentistPortalController@orders');
+    Route::get('/order/{order}', 'DentistPortalController@orderDetails');
 
     Route::get('/', 'DentistPortalController@login');
     Route::post('/login/execute', 'DentistPortalController@loginExecute');

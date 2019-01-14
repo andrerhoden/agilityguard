@@ -95,10 +95,24 @@ class PublicPortalController extends Controller
     }
 
 
-    public function about()
+    public function about_agilityguard()
     {
 
-        return view('publicportal.about', [
+        return view('publicportal.about.agilityguard', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function about_advisoryBoard()
+    {
+
+        return view('publicportal.about.advisoryBoard', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function about_ourExperts()
+    {
+
+        return view('publicportal.about.ourExperts', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }
@@ -107,7 +121,7 @@ class PublicPortalController extends Controller
     
     public function products()
     {
-        
+       
         
         return view('publicportal.products', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu'],
@@ -124,6 +138,20 @@ class PublicPortalController extends Controller
 
         if ( !empty( $product ) )
         {
+
+            $imagesFullPath;
+            $images = json_decode($product->images, true);
+            if( $images[0] )
+            {
+                $product->imagesFullPath = $_ENV['APP_URL'] .'storage/'. $images[0];
+            }   
+            
+
+            
+
+
+
+
             return view('publicportal.product-details', [
                 'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu'],
                 'product' => $product

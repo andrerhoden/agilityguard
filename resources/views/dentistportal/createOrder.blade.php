@@ -41,6 +41,16 @@
     </div>
 </section>
 
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>        
+@endif
+@if(session()->has('warning'))
+    <div class="alert alert-danger">
+        {{ session()->get('warning') }}
+    </div>        
+@endif
 
 <section class="white-bg">
     <div class="container">
@@ -67,9 +77,9 @@
                                     <div class="card">
                                         <div class="card-header" id="heading1">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link" data-toggle="collapse" data-target="#step1" aria-expanded="true" aria-controls="step1">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#step1" aria-expanded="true" aria-controls="step1">
                                                 Step 1 - Patient Details Date:
-                                                </button>
+                                                </a>
                                             </h5>
                                         </div>
                                     
@@ -79,15 +89,15 @@
                                                     <div class="row">
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="form_name">Firstname *</label>
-                                                                    <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                                                                    <label for="form-first_name">Firstname *</label>
+                                                                    <input id="form-first_name" type="text" name="first_name" class="form-control" required="required" data-error="Firstname is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="form_lastname">Lastname *</label>
-                                                                    <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required.">
+                                                                    <label for="form-last_name">Lastname *</label>
+                                                                    <input id="form-last_name" type="text" name="last_name" class="form-control" required="required" data-error="Lastname is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
@@ -95,8 +105,8 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <div class="form-group">
-                                                                    <label for="form_address">Address *</label>
-                                                                    <input id="form_address" type="text" name="address" class="form-control" required="required" data-error="Address is required.">
+                                                                    <label for="form-address">Address *</label>
+                                                                    <input id="form-address" type="text" name="address" class="form-control" required="required" data-error="Address is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
@@ -104,22 +114,22 @@
                                                         <div class="row">
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="form_city">City *</label>
-                                                                    <input id="form_city" type="text" name="city" class="form-control" required="required" data-error="City is required.">
+                                                                    <label for="form-city">City *</label>
+                                                                    <input id="form-city" type="text" name="city" class="form-control" required="required" data-error="City is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                    <label for="form_prov">Prov/State *</label>
-                                                                    <input id="form_prov" type="text" name="prov" class="form-control" required="required" data-error="Prov/State is required.">
+                                                                    <label for="form-prov">Prov/State *</label>
+                                                                    <input id="form-prov" type="text" name="prov" class="form-control" required="required" data-error="Prov/State is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                    <label for="form_postal">Postal/Zip *</label>
-                                                                    <input id="form_postal" type="text" name="postal" class="form-control" required="required" data-error="Postal/Zip is required.">
+                                                                    <label for="form-postal">Postal/Zip *</label>
+                                                                    <input id="form-postal" type="text" name="postal" class="form-control" required="required" data-error="Postal/Zip is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
@@ -127,31 +137,22 @@
                                                         <div class="row">
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="form_country">Country *</label>
-                                                                    <input id="form_country" type="text" name="country" class="form-control" required="required" data-error="Country is required.">
+                                                                    <label for="form-country">Country *</label>
+                                                                    <input id="form-country" type="text" name="country" class="form-control" required="required" data-error="Country is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="form_phone">Phone Number *</label>
-                                                                    <input id="form_phone" type="text" name="phone" class="form-control" required="required" data-error="Phone Number is required.">
+                                                                    <label for="form-phone_number">Phone Number *</label>
+                                                                    <input id="form-phone_number" type="text" name="phone_number" class="form-control" required="required" data-error="Phone Number is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="form_email">Email *</label>
-                                                                    <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Email is required.">
-                                                                    <div class="help-block with-errors"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    <label for="form_address">Sports</label>
-                                                                    <input id="form_address" type="text" name="address" placeholder="comma separated" class="form-control" data-error="Address is required.">
+                                                                    <label for="form-email">Email *</label>
+                                                                    <input id="form-email" type="email" name="email" class="form-control" required="required" data-error="Email is required.">
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
@@ -159,8 +160,17 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <div class="form-group">
-                                                                    <label for="form_comments">Comments </label>
-                                                                    <textarea id="form_comments" name="comments" class="form-control" rows="4"></textarea>
+                                                                    <label for="form-address">Sports</label>
+                                                                    <input id="form-address" type="text" name="sports" placeholder="comma separated" class="form-control" data-error="Address is required.">
+                                                                    <div class="help-block with-errors"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <label for="form-comments">Comments </label>
+                                                                    <textarea id="form-comments" name="comments" class="form-control" rows="4" ></textarea>
                                                                     <div class="help-block with-errors"></div>
                                                                 </div>
                                                             </div>
@@ -173,9 +183,9 @@
                                     <div class="card">
                                         <div class="card-header" id="heading2">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#step2" aria-expanded="false" aria-controls="step2">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#step2" aria-expanded="false" aria-controls="step2">
                                                     Step 2 - Guard Details
-                                                </button>
+                                                </a>
                                             </h5>
                                         </div>
                                         <div id="step2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
@@ -187,7 +197,12 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="form_product">Product *</label>
-                                                                <select id="form_product" name='product-1' class="form-control" required="required" data-error="Please specify your product.">
+                                                                <select id="form_product" name='product[]' 
+                                                                    class="form-control form_product" 
+                                                                    required="required" 
+                                                                    data-error="Please specify your product."
+                                                                    onchange="updateTotals();"
+                                                                >
                                                                     <option value=""></option>
                                                                     {!!$products!!}
                                                                 </select>
@@ -197,7 +212,7 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="form_product_type">Guard Type *</label>
-                                                                <select id="form_product_type" name="product-1-type" class="form-control" required="required" data-error="Please specify a type.">
+                                                                <select id="form_product_type" name="product-type[]" class="form-control form_product_type" required="required" data-error="Please specify a type.">
                                                                     <option value=""></option>
                                                                     <option value="upper">Upper</option>
                                                                     <option value="lower">Lower</option>
@@ -208,7 +223,7 @@
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="form_product_color">Color *</label>
-                                                                <select id="form_product_color" name="product-1-color" class="form-control" required="required" data-error="Please specify a color.">
+                                                                <select id="form_product_color" name="product-color[]" class="form-control form_product_color" required="required" data-error="Please specify a color.">
                                                                     <option value=""></option>
                                                                     <option value="bright red">Bright Red</option>
                                                                     <option value="maroon">Maroon</option>
@@ -260,17 +275,18 @@
                                     <div class="card">
                                         <div class="card-header" id="heading3">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#step3" aria-expanded="false" aria-controls="step3">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#step3" aria-expanded="false" aria-controls="step3">
                                                 Step 3 - Choose Lab
-                                                </button>
+                                                </a>
                                             </h5>
                                         </div>
                                         <div id="step3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
                                             <div class="card-body">
-                                                <select>
-                                                @foreach( $labs as $lab )
-                                                    <option value="{{$lab->id}}">{{$lab->name}}</option>                                                    
-                                                @endforeach
+                                                <select name="lab" required="required" data-error="Please specify a lab.">
+                                                    <option value=""></option>
+                                                    @foreach( $labs as $lab )
+                                                        <option value="{{$lab->id}}">{{$lab->name}}</option>                                                    
+                                                    @endforeach
                                                 </select>
                                             </div>
                                         </div>
@@ -278,9 +294,9 @@
                                     <div class="card">
                                         <div class="card-header" id="heading4">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#step4" aria-expanded="false" aria-controls="step4">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#step4" aria-expanded="false" aria-controls="step4">
                                                     Step 4 - Shipping Info
-                                                </button>
+                                                </a>
                                             </h5>
                                         </div>
                                         <div id="step4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
@@ -290,27 +306,33 @@
                                                     <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="shipto" id="shipto1" value="option1" checked>
+                                                                    <input class="form-check-input form-shipto" type="radio" name="shipto" id="shipto1" value="dentist" checked>
                                                                     <label class="form-check-label" for="shipto1">
-                                                                        Dentist
-                                                                    </label>
+                                                                        Dentist                                                                        
+                                                                    </label>                                                                    
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="shipto" id="shipto2" value="option2">
+                                                                    <input class="form-check-input form-shipto" type="radio" name="shipto" id="shipto2" value="patient" click="alert();updateShipToPatientField();" >
                                                                     <label class="form-check-label" for="shipto2">
                                                                         Patient
                                                                     </label>
+                                                                    
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="shipto" id="shipto3" value="option3">
+                                                                    <input class="form-check-input form-shipto" type="radio" name="shipto" id="shipto3" value="other">
                                                                     <label class="form-check-label" for="shipto3">
                                                                         Other
-                                                                    </label>
+                                                                    </label>                                                                    
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                            <textarea id="shipToText" name="shipToText" class="form-control"  rows="4">{!!$dentistPortal->Name!!}&#13;&#10;{!!$dentistPortal->Address!!}&#13;&#10;{!!$dentistPortal->City!!}&#13;&#10;{!!$dentistPortal->Province!!}&#13;&#10;{!!$dentistPortal->Country!!}&#13;&#10;{!!$dentistPortal->Postal_code!!}</textarea>
                                                             </div>
                                                         </div>
 
@@ -321,9 +343,9 @@
                                     <div class="card">
                                         <div class="card-header" id="heading5">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#step5" aria-expanded="false" aria-controls="step5">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#step5" aria-expanded="false" aria-controls="step5">
                                                 Your Order
-                                                </button>
+                                                </a>
                                             </h5>
                                         </div>
                                         <div id="step5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
@@ -423,13 +445,44 @@
     var tax;
     var total_order;
     var product_obj = new Object();
-
+    var dpShippingAddress = "{!!$dentistPortal->Name!!}\n{!!$dentistPortal->Address!!}\n{!!$dentistPortal->City!!}\n{!!$dentistPortal->Province!!}\n{!!$dentistPortal->Country!!}\n{!!$dentistPortal->Postal_code!!}";
 
     $(document).ready(function () {
-        $('#dtLabOrders').DataTable();
+        // $('#dtLabOrders').DataTable();
         $('.dataTables_length').addClass('bs-select');
+
+
+        $('.form-shipto').click(function() {
+
+            $('#shipToText').text('');
+            $('#shipToText').removeAttr('readonly');
+
+            if ( $(this).val() == 'dentist' )
+            {
+                $('#shipToText').text( dpShippingAddress );
+                $('#shipToText').attr('readonly','readonly');
+
+            } else if ( $(this).val() == 'patient' ) {
+
+                var patientAddress = $('#form-first_name').val() + ' ' + $('#form-last_name').val() + '\n'
+                    + $('#form-address').val() + '\n'
+                    + $('#form-prov').val() + '\n'
+                    + $('#form-country').val() + '\n'
+                    + $('#form-postal').val() + ' ';
+
+                $('#shipToText').text( patientAddress );
+                
+            } 
+            
+        });
+
+
     });
 
+    function updateShipToPatientField()
+    {
+        console.log( $('#step1 input') );
+    }
 
     function addRow(){ 
         var clonedRow = $("#guard-details .guard-item-order:first").clone(true);
@@ -441,10 +494,14 @@
         }else{
             counter++
         }
+
+        updateTotals();
+
         return false;	 
     }
 
-    function removeRow(){	
+    function removeRow()
+    {	
             if(counter!=1){
                 $("#guard-details .guard-item-order:last").remove();
                 
@@ -466,16 +523,23 @@
     }
 
 
-    function updateTotals(){
+    function updateTotals()
+    {
         subtotal=0;
-        for (i=0; i<product_type.length; i++){
-            $(product_obj).each(function() {
-                var m = this;
-                if (product_type[i]==m.id){
-                    subtotal += parseInt(m.msrp_c);
-                }
-            });
-        }
+
+        $("#guard-details .form_product option:selected").each(function() {
+
+            console.log( $(this).data('msrp') );
+
+            if ( typeof $(this).data('msrp') !== "undefined" )
+            {
+                subtotal += parseFloat( $(this).data('msrp') );
+            }
+            
+        });
+
+
+
         //alert(subtotal);
         subtotal_price = '$'+subtotal+''; 
         tax = subtotal*0.13;
