@@ -9,6 +9,7 @@ use App\Repositories\PublicPortal\DentalPracticesRepository;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Lead;
+use App\News;
 
 class PublicPortalController extends Controller
 {
@@ -94,7 +95,17 @@ class PublicPortalController extends Controller
         ]);
     }
 
-
+    
+    public function about_news()
+    {
+        $news = News::select(['*'])
+            ->get();
+        
+        return view('publicportal.about.news', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu'],
+            'news' => $news
+        ]);
+    }
     public function about_agilityguard()
     {
 
