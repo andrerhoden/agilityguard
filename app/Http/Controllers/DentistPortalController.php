@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Repositories\DentistPortal\ProductsRepository;
 use App\Repositories\DentistPortal\LabOrdersRepository;
 use Illuminate\Support\Facades\Redirect;
+use App\Repositories\DentistPortal\DentalPracticesRepository;
 
 class DentistPortalController extends Controller
 {
@@ -130,13 +131,27 @@ class DentistPortalController extends Controller
         $this->__chkDpUser();
         $dpUser = session('dpUser');
         
-        dump( $dpUser );
-        dump( $dpUser->dentalPracticeId );
-        
-
         return view('dentistportal.account',[
             'dentist' => $dpUser
         ]);
+    }
+    public function accountSave( Request $request )
+    {
+        $this->__chkDpUser();
+
+        $input = $request->all();
+        $result = DentalPracticesRepository::updateProfile( $input, session('dpUser') );
+
+        if ( $result === true )
+        {
+            $status = "Account was successfully updated";
+            return redirect('/dentist-portal/account')->with('message', $status);
+        }else{            
+            $status = $result;
+            return redirect()->back()->with('warning', $status);
+        }
+
+        return;
     }
     
 }
