@@ -45,6 +45,8 @@ Route::get('/sports/tennis', 'PublicPortalController@sports_tennis');
 Route::group(['prefix' => 'dentist-portal'], function () {
 
     Route::get('/account', 'DentistPortalController@account');
+    Route::post('/account/save', 'DentistPortalController@accountSave');
+
     Route::get('/create-order', 'DentistPortalController@createOrder');
     Route::post('/create-order/save', 'DentistPortalController@createOrderSave');
     Route::get('/orders', 'DentistPortalController@orders');
