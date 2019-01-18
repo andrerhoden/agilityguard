@@ -32,15 +32,19 @@ Route::get('/sports/basketball', 'PublicPortalController@sports_basketball');
 Route::get('/sports/baseball', 'PublicPortalController@sports_baseball');
 Route::get('/sports/boxing', 'PublicPortalController@sports_boxing');
 Route::get('/sports/cycling', 'PublicPortalController@sports_cycling');
-Route::get('/sports/fitness', 'PublicPortalController@sports_fitness');
+Route::get('/sports/multisports', 'PublicPortalController@sports_multisports');
 Route::get('/sports/football', 'PublicPortalController@sports_football');
 Route::get('/sports/golf', 'PublicPortalController@sports_golf');
 Route::get('/sports/hockey', 'PublicPortalController@sports_hockey');
-Route::get('/sports/lacrosse', 'PublicPortalController@sports_lacrosse');
 Route::get('/sports/mma', 'PublicPortalController@sports_mma');
 Route::get('/sports/running', 'PublicPortalController@sports_running');
 Route::get('/sports/swimming', 'PublicPortalController@sports_swimming');
 Route::get('/sports/tennis', 'PublicPortalController@sports_tennis');
+Route::get('/sports/soccer', 'PublicPortalController@sports_soccer');
+Route::get('/sports/singers', 'PublicPortalController@sports_singers');
+Route::get('/sports/shooting', 'PublicPortalController@sports_shooting');
+Route::get('/sports/sliding', 'PublicPortalController@sports_sliding');
+Route::get('/sports/speed-skating', 'PublicPortalController@sports_speedskating');
 
 
 Route::group(['prefix' => 'dentist-portal'], function () {

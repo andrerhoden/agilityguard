@@ -18,7 +18,7 @@
         <div class="container">
 
           <center>
-            <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_mixed_martial_arts.jpg" >
+            <img width="100%" height="100%"  src="http://www.agilityguard.com/assets/images/sports/sport_banner_mixed_martial_arts.jpg" >
             <Br><br>
             </center>
 
@@ -26,7 +26,7 @@
            <div class="col">
 
                <div class="clearfix" id="body_content_left">
-          		<p class="quote">In 2006, Dr Hoa Nguyen, a Taekwon-do expert and AgilityGuard Dentist, represented Canada in the 7th Junior / 2nd Veteran International Taekwon-do Federation (ITF) World Championships held in Sofia, Bulgary, where he won a Gold Medal in his category. He states that &nbsp;"balance, flexibility, range of motion are all very important in martial arts, especially in TKD where kicks are emphasized. In TKD, there are lots more kicking techniques than hand techniques.  In these techniques, balance, speed, power, range of motion decide their effectiveness, and loose/relaxed muscles are required for highest effectiveness.</p>
+          		<p class="quote"><b>In 2006, Dr Hoa Nguyen, a Taekwon-do expert and AgilityGuard Dentist, represented Canada in the 7th Junior / 2nd Veteran International Taekwon-do Federation (ITF) World Championships held in Sofia, Bulgary, where he won a Gold Medal in his category. He states that &nbsp;"balance, flexibility, range of motion are all very important in martial arts, especially in TKD where kicks are emphasized. In TKD, there are lots more kicking techniques than hand techniques.  In these techniques, balance, speed, power, range of motion decide their effectiveness, and loose/relaxed muscles are required for highest effectiveness.</b></p>
               <p>Combat athletes require a broad spectrum of qualities such as dynamic range of motion, agility, quickness, strength, power, recovery and endurance. As well, they require mouthguard protection when in combat. AgilityGuard is the best-of-class performance mouthguard that offers both optimal athletic performance and mouthguard protection.</p>
 
               <h2>Strength</h2>

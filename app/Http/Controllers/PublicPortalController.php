@@ -201,9 +201,9 @@ class PublicPortalController extends Controller
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }
-    public function sports_fitness()
+    public function sports_multisports()
     {
-        return view('publicportal.sports.fitness', [
+        return view('publicportal.sports.multisports', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }
@@ -255,5 +255,37 @@ class PublicPortalController extends Controller
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }
+    public function sports_soccer()
+    {
+        return view('publicportal.sports.soccer', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function sports_singers()
+    {
+        return view('publicportal.sports.singers', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function sports_shooting()
+    {
+        return view('publicportal.sports.shooting', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    
+    public function sports_sliding()
+    {
+        return view('publicportal.sports.sliding', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function sports_speedskating()
+    {
+        return view('publicportal.sports.speed-skating', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    
     
 }
