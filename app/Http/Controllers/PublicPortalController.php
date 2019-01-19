@@ -287,5 +287,58 @@ class PublicPortalController extends Controller
         ]);
     }
     
+
+
+
+
+    public function certification()
+    {
+
+        return view('publicportal.certification', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function yourPractice()
+    {
+
+        return view('publicportal.your-practice', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function regions()
+    {
+
+        return view('publicportal.regions', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function claytonChan()
+    {
+
+        return view('publicportal.clayton-a-chan-dds', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function occlusionConnection()
+    {
+
+        return view('publicportal.occlusion-connection', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function labPartners()
+    {
+
+        return view('publicportal.lab-partners', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function research()
+    {
+
+        return view('publicportal.research', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
     
 }

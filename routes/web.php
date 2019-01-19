@@ -62,7 +62,13 @@ Route::group(['prefix' => 'dentist-portal'], function () {
     Route::get('/logout', 'DentistPortalController@logoutExecute');
 
 });
-
+Route::get('/certification', 'PublicPortalController@certification');
+Route::get('/your-practice', 'PublicPortalController@yourPractice');
+Route::get('/regions', 'PublicPortalController@regions');
+Route::get('/research', 'PublicPortalController@research');
+Route::get('/clayton-a-chan-dds', 'PublicPortalController@claytonChan');
+Route::get('/occlusion-connections', 'PublicPortalController@occlusionConnection');
+Route::get('/lab-partners', 'PublicPortalController@labPartners');
 
 
 
