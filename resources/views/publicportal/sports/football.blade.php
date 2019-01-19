@@ -23,7 +23,7 @@
           		<p class="quote"></p>
 
 <Center>
-  <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_football.jpg" >
+  <img width="100%" height="100%"  src="http://www.agilityguard.com/assets/images/sports/sport_banner_football.jpg" >
   <br><Br>
 </center>
 

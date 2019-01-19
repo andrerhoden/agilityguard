@@ -201,9 +201,9 @@ class PublicPortalController extends Controller
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }
-    public function sports_fitness()
+    public function sports_multisports()
     {
-        return view('publicportal.sports.fitness', [
+        return view('publicportal.sports.multisports', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }
@@ -252,6 +252,91 @@ class PublicPortalController extends Controller
     public function sports_tennis()
     {
         return view('publicportal.sports.tennis', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function sports_soccer()
+    {
+        return view('publicportal.sports.soccer', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function sports_singers()
+    {
+        return view('publicportal.sports.singers', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function sports_shooting()
+    {
+        return view('publicportal.sports.shooting', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    
+    public function sports_sliding()
+    {
+        return view('publicportal.sports.sliding', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function sports_speedskating()
+    {
+        return view('publicportal.sports.speed-skating', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    
+
+
+
+
+    public function certification()
+    {
+
+        return view('publicportal.certification', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function yourPractice()
+    {
+
+        return view('publicportal.your-practice', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function regions()
+    {
+
+        return view('publicportal.regions', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function claytonChan()
+    {
+
+        return view('publicportal.clayton-a-chan-dds', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function occlusionConnection()
+    {
+
+        return view('publicportal.occlusion-connection', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function labPartners()
+    {
+
+        return view('publicportal.lab-partners', [
+            'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
+        ]);
+    }
+    public function research()
+    {
+
+        return view('publicportal.research', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }

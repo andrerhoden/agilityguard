@@ -19,7 +19,7 @@
 
 
         <div class="row">
-          <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_boxing.jpg">
+          <img  width="100%" height="100%" src="http://www.agilityguard.com/assets/images/sports/sport_banner_boxing.jpg">
         </div>
 
 
@@ -31,45 +31,71 @@
 <h2 class="quote">No matter what the weight class, AgilityGuard is the preferred mouthguard of Champions:</h2>
 <p class="quote"></p>
 
-<div class="tes"><img src="/assets/images/system/images/0000/1246/bermane_small.jpg" title="Bermane" alt="Bermane" rel="small">
 
 
-<p class="t_name">Bermane "Bware" Stiverne</p>
-<p class="t_title">"This mouthpiece is for real. I notice instant improvements in my balance, reflexes, power and endurance. AgilityGuard has definitely made me a more complete boxer."</p>
-<p class="t_title">Heavyweight Champion- WBA International, WBC/USNBC, WBA Fedelatin</p>
-</div>
 
-
-<div class="tes"><img src="/assets/images/system/images/0000/2362/Gabriel__Tito__Bracero_-_Boxing_Junior_Welterweight_small.png" title="Gabriel  Tito  Bracero   Boxing Junior Welterweight" alt="Gabriel  Tito  Bracero   Boxing Junior Welterweight" rel="small">
-
-<p>When my strength and conditioning coach John Schaeffer first told me about the AgilityGuard, I was a little skeptical. After training and fighting with an AG, I' ve noticed a significant improvement in my balance, breathing and most of all - power.  I am able to "go lower" into my punches, and deliver them with more devastating power. With my AG, I now feel complete. I have won my last 3 fights by KO, and improved my record to 17-0, and as a result, I am soon to be fighting for a world title.The AgilityGuard is now an essential part of my equipment. My recommendation to any athlete wanting to perform better or to take their training to the next level - Get yourself an AgilityGuard!</p>
+<p>
 <div>
+  <div style="float:left; margin-right:20px;" >
+  <img src="http://www.agilityguard.com/assets/images/system/images/0000/1246/bermane_small.jpg" title="Bermane" alt="Bermane" rel="small">
+  </div>
+  <div>
+    <h3>Bermane "Bware" Stiverne</h3>
+    <p class="t_title">"This mouthpiece is for real. I notice instant improvements in my balance, reflexes, power and endurance. AgilityGuard has definitely made me a more complete boxer."</p>
+    <i>Heavyweight Champion- WBA International, WBC/USNBC, WBA Fedelatin</i>
 
-<p class="t_name">Gabriel "Tito" Bracero</p>
-<p class="t_title">Undefeated Junior Welterweight</p>
+  </div>
+  <div class="clearfix"></div>
 </div>
-<div class="clearfix"></div>
-</div>
-
-
-<div class="tes"><img src="/assets/images/system/images/0000/2353/Carl_Davis_-_Boxing_Cruiserweight_small.png" title="Carl Davis   Boxing Cruiserweight" alt="Carl Davis   Boxing Cruiserweight" rel="small">
+</p>
+<div style="float:left; margin-right:20px;" >
+<p>
 <div>
-
-<p class="t_name">Carl Davis</p>
-<p class="t_title">USBO Cruiserweight Champion</p>
+  <div style="float:left; margin-right:20px;" >
+    <img src="http://www.agilityguard.com/assets/images/system/images/0000/2362/Gabriel__Tito__Bracero_-_Boxing_Junior_Welterweight_small.png" title="Gabriel  Tito  Bracero   Boxing Junior Welterweight" alt="Gabriel  Tito  Bracero   Boxing Junior Welterweight" rel="small">
+  </div>
+  <div>
+    <h3>Gabriel "Tito" Bracero</h3>
+    <p>When my strength and conditioning coach John Schaeffer first told me about the AgilityGuard, I was a little skeptical. After training and fighting with an AG, I' ve noticed a significant improvement in my balance, breathing and most of all - power.  I am able to "go lower" into my punches, and deliver them with more devastating power. With my AG, I now feel complete. I have won my last 3 fights by KO, and improved my record to 17-0, and as a result, I am soon to be fighting for a world title.The AgilityGuard is now an essential part of my equipment. My recommendation to any athlete wanting to perform better or to take their training to the next level - Get yourself an AgilityGuard!</p>
+    <i>Undefeated Junior Welterweight</i>
+  </div>
+  <div class="clearfix"></div>
 </div>
-<div class="clearfix"></div>
-</div>
-
-<div class="tes"><img src="/assets/images/system/images/0000/2452/David_Estrada_-_Boxer_small.png" title="David Estrada   Boxer" alt="David Estrada   Boxer" rel="small">
-<div class="tes"><p>"The AgilityGuard is the best mouthguard I have ever had. I've noticed that I have better reaction time, balance and focus while using it. I will never use another mouthguard!"</p>
+</p>
+<div style="float:left; margin-right:20px;" >
+<p>
 <div>
+  <div style="float:left; margin-right:20px;" >
+  <img src="http://www.agilityguard.com/assets/images/system/images/0000/2353/Carl_Davis_-_Boxing_Cruiserweight_small.png" title="Carl Davis   Boxing Cruiserweight" alt="Carl Davis   Boxing Cruiserweight" rel="small">
+  </div>
+  <div>
+    <h3>Carl Davis</h3>
+    <i>USBO Cruiserweight Champion</i>
+  </div>
+  <div class="clearfix"></div>
+</div>
+</p>
+<div style="float:left; margin-right:20px;" >
+<p>
+<div>
+  <div style="float:left; margin-right:20px;" >
+    <img src="http://www.agilityguard.com/assets/images/system/images/0000/2452/David_Estrada_-_Boxer_small.png" title="David Estrada   Boxer" alt="David Estrada   Boxer" rel="small">
+  </div>
+  <div>
+    <h3>"King" David Estrada</h3>
+    <p>"The AgilityGuard is the best mouthguard I have ever had. I've noticed that I have better reaction time, balance and focus while using it. I will never use another mouthguard!"</p>
+    <i>Light Middleweight</i>
+  </div>
+  <div class="clearfix"></div>
+</div>
+</p>
+<div style="float:left; margin-right:20px;" >
 
-<p class="t_name">"King" David Estrada</p>
-<p class="t_title">Light Middleweight</p>
-</div>
-<div class="clearfix"></div>
-</div>
+
+
+
+
+
 
 <h2>Strength and Power</h2>
 <p>It’s the core of every hardcore boxer. When you call upon your body to move, your muscles need to have the power to comply with your instructions. When you punch your opponent, you want to make it count.&nbsp;</p>

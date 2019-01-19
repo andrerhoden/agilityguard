@@ -18,7 +18,7 @@
         <div class="container">
           
         <div class="row">
-          <img src="http://www.agilityguard.com/assets/images/sports/sport_banner_baseball.jpg">
+          <img width="100%" height="100%" src="http://www.agilityguard.com/assets/images/sports/sport_banner_baseball.jpg">                    
         </div>
           
           <div class="row">
