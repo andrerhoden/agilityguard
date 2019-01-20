@@ -89,7 +89,7 @@
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label for="form_name">Dentist Name *</label>
-                                                                        <input id="form_name" type="text" name="DentistName" class="form-control" value="{{$dentist->Name}}" required="required" data-error="Firstname is required.">
+                                                                        <input id="form_name" type="text" name="DentistName" class="form-control" value="{{$dentist->Name}}" required="required" readonly data-error="Firstname is required.">
                                                                         <div class="help-block with-errors"></div>
                                                                     </div>
                                                                 </div>
@@ -139,7 +139,7 @@
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="form_name">Dental Practice Name *</label>
-                                                            <input id="form_name" type="text" name="DentalPracticeName" class="form-control" value="{{$dentist->dentalPracticeId->Name}}" required="required" data-error="Firstname is required.">
+                                                            <input id="form_name" type="text" name="DentalPracticeName" class="form-control" readonly value="{{$dentist->dentalPracticeId->Name}}" required="required" data-error="Firstname is required.">
                                                             <div class="help-block with-errors"></div>
                                                         </div>
                                                     </div>                                                    
