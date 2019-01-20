@@ -18,4 +18,26 @@ class IndexRepository {
 
     }
 
+
+    public static function getAmateurAtheletes()
+    {
+
+        $return = [];
+        
+        if ($handle = opendir( $_SERVER['DOCUMENT_ROOT'] . '/storage/HomePageAthletes' )) {
+
+            while (false !== ($entry = readdir($handle))) {
+        
+                if ($entry != "." && $entry != "..") {
+        
+                    $return[] = '/storage/HomePageAthletes/' . $entry;
+                }
+            }
+        
+            closedir($handle);
+        }
+
+        return $return;
+
+    }
 }

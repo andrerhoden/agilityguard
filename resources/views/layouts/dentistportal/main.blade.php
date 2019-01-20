@@ -20,7 +20,7 @@
         
         </div>
         <div class="col-sm-4 column text-right">
-          <a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/www.agilityguard.ca" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </div>
       </div>

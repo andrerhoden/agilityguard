@@ -82,7 +82,8 @@ class DentalPracticesRepository {
         $sqlDistance = $xUnit . " * ACOS( 
             COS( RADIANS(" . $coordinates['lat'] . ") ) * COS( RADIANS( Lat ) ) * COS( RADIANS( `Long` ) - RADIANS(". $coordinates['lng'] .") ) + SIN( RADIANS(" . $coordinates['lat'] . ") ) * SIN( RADIANS( Lat ) )  
         ) AS distance, `*` ";
-        $results = DentalPractice::select( DB::raw( $sqlDistance ) )
+		$results = DentalPractice::select( DB::raw( $sqlDistance ) )
+			->where('display_on_website', 1)
             ->having('distance', '<', $distance );
             
 		
@@ -92,7 +93,8 @@ class DentalPracticesRepository {
 	
 	public static function fetchPageLoadMapDentalPractices() {
 
-        $results = DentalPractice::select();
+		$results = DentalPractice::select()
+			->where('display_on_website', 1);
         return self::__prepContactsData( $results );
 
     }

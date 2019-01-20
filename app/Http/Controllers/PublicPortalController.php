@@ -27,16 +27,12 @@ class PublicPortalController extends Controller
     {
 
         
+        
+
         $RenderHTMLBannerRepository = new RenderHTMLBannerRepository();
         
-        // dump( $RenderHTMLBannerRepository->activeBanner );
-        
-        // dump( $RenderHTMLBannerRepository->RenderProductsBannerHtml() );
-
-        // dump( $RenderHTMLBannerRepository->activeBanner );
-        // die();
-
         return view('publicportal.index', [
+            'amateurAtheletes' => IndexRepository::getAmateurAtheletes(),
             'bannerProducts' => $RenderHTMLBannerRepository->RenderProductsBannerHtml(),
             'bannerAthletes' => $RenderHTMLBannerRepository->RenderAtheletesBannerHtml(),
             'testimonials' => AthleteRepository::fetchTestimonialsForHomepage(),
