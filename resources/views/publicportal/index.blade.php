@@ -190,6 +190,36 @@
  
   </section>
 
+  <section id="amateurAtheletes" class="white-bg text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          
+        @if( !empty( $amateurAtheletes ) )
+          
+          <div id="owl-amateurAtheletes" class="owl-carousel owl-theme">
+            @foreach ( $amateurAtheletes as $rs )
+              
+              <div class="item">
+                <div class="testimony">
+                  <div class="testimony-text lead">
+                      <img src="{{$rs}}">
+                  </div>
+                </div>
+              </div>
+
+            @endforeach
+            </div>
+            
+        @endif
+
+        </div>
+      </div>
+     
+    </div>
+ 
+  </section>
+
 @endsection
 
 @section('footerScript')
