@@ -7,7 +7,7 @@
             <div class="row">
               <div class="col">
                 <div class="prefix">Sports</div>
-                <h1>Sliding</h1>
+                <h1>Sleding</h1>
               </div>
             </div>
           </div>

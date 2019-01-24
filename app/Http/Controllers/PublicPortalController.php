@@ -270,9 +270,9 @@ class PublicPortalController extends Controller
         ]);
     }
     
-    public function sports_sliding()
+    public function sports_sleding()
     {
-        return view('publicportal.sports.sliding', [
+        return view('publicportal.sports.sleding', [
             'productsForFooterMenu' => $this->__globalValues['productsForFooterMenu']
         ]);
     }

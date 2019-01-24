@@ -346,26 +346,6 @@
               
               
 
-
-
-              <div>
-                <div style="float:left; margin-right:20px;" >
-                        <p><strong><img src="http://www.agilityguard.com/assets/images/system/images/0000/0436/Joseph_Andary_Pic_medium.jpg" title="Joseph Andary Pic" alt="Joseph Andary Pic" rel="medium"></strong>
-                      </p>
-                </div>
-                <div>
-                        <h2><strong>Dr. Joseph Andary (Toronto Area)</strong>
-                        </h2>
-                        <p>Dr. Joseph Andary, co-founder and CTO, is a practising dentist with over 25 years experience. He has worked with many world-class athletes, including a number of Olympic medalists, and is a co-inventor of another performance mouthguard. He is a graduate of the University of Toronto where he earned his Doctor of Dental Surgery degree in 1985. WIth a commitment to excellence and continued self-improvement, Dr. Andary has pursued his training in various aspects of dentistry. He has attended the Las Vegas Institute, and has, more recently, advanced to train under Dr Clayton Chan at Occlusion Connections where he has completed most of the courses offered by Dr Chan. Dr. Andary is located at&nbsp;511 Maple Grove Drive, Oakville ON L6J 4W3. &nbsp;<strong>Phone:&nbsp;(905) 842-5051. &nbsp;Email: &nbsp;drandary@agilityguard.com</strong>
-                        </p>
-                </div>
-                <div style="clear:both;"></div>
-              </div>
-              
-              
-
-
-
               <div>
                 <div style="float:left; margin-right:20px;" >
                       <p><strong><img src="http://www.agilityguard.com/assets/images/system/images/0000/1174/Natalie_Vachon_Pic_medium.jpg" title="Natalie Vachon Pic" alt="Natalie Vachon Pic" rel="medium"></strong>

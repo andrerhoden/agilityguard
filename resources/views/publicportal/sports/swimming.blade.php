@@ -28,9 +28,23 @@
                
               <div class="clearfix" id="body_content_left">
                 <p class="quote">AgilityGuard swimmers include Rory Walker, 2009 Canadian National Champion in the 50 metre Fly in his age category, Christian Homer, Gold Medalist in the 50 metre Backstroke in the 2010 Youth Olympic Games, and Kimberlee John-Williams of the Trinidad and Tobago National Team.</p>
+                
+                <div>
+                <div style="float:left; margin-right:20px;" >
+                <p><img src="http://www.agilityguard.com/assets/images/system/images/0000/1210/TAG-_Christian_Homer_2_medium.jpg" title="Tag  Christian Homer 2" alt="Tag  Christian Homer 2" rel="medium"></p>
+                </div>
+                <div>
                 <h2 class="quote">Christian Homer</h2>
-                <p><img src="/assets/images/system/images/0000/1210/TAG-_Christian_Homer_2_medium.jpg" title="Tag  Christian Homer 2" alt="Tag  Christian Homer 2" rel="medium"></p>
                 <p>"My name is Christian Homer and I am an elite swimmer. I first became aware of the AgilityGuard in 2010. I immediately saw that this device would have an impact on my training and racing. I got my AgilityGuard and immediately started using it in both in my pool sessions (which are two hours long) and my weights sessions (which last an hour and a half). From my first sessions using the AgilityGuard, the first thing I realized was that I was able to go harder for longer and not feel as tired after both my land and pool sessions. I found that I could push myself longer and not 'burn out'  as quickly as I usually did. For example, I could hold my breath underwater for longer. I was able to move my butterfly kicks from five off of each wall to six in a matter of days and still feel comfortable. Now I do eight butterfly kicks off each wall at speed and I am able to hold my form and breath for the entire duration. My times in training became a lot faster, in some cases up to a second quicker over fifty meters, from the first time I used my AgilityGuard. In my weights sessions, I am able to achieve a greater range of movement in the exercises and lift heavier weights for higher repetitions. I believe that my AgilityGuard has a part to play in this development. I feel stronger, faster, and even at times more focused, when I am wearing it. With the AgilityGuard as a training aid, I was able to win a gold medal at the Youth Olympic Games. The AgilityGuard has indeed enhanced the way I am able to train and race."</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+                
+                
+                
+                
+                
+                
 
                 <h2>Strength</h2>
                 <p>It’s the core of every hardcore athlete. And every little bit helps. With AgilityGuards™ on your team, you’ll have an immediate advantage over your opponent from training day straight through to game day.&nbsp;</p>

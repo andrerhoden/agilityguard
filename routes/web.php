@@ -43,7 +43,7 @@ Route::get('/sports/tennis', 'PublicPortalController@sports_tennis');
 Route::get('/sports/soccer', 'PublicPortalController@sports_soccer');
 Route::get('/sports/singers', 'PublicPortalController@sports_singers');
 Route::get('/sports/shooting', 'PublicPortalController@sports_shooting');
-Route::get('/sports/sliding', 'PublicPortalController@sports_sliding');
+Route::get('/sports/sleding', 'PublicPortalController@sports_sleding');
 Route::get('/sports/speed-skating', 'PublicPortalController@sports_speedskating');
 
 

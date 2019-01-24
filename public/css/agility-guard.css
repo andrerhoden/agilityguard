@@ -683,6 +683,8 @@ footer ul.social li {
 
 .carousel .carousel-item {
   color: #fff;
+  max-height: 400px;
+  overflow: hidden;
 }
 
 .carousel .carousel-item:before {
@@ -712,7 +714,6 @@ footer ul.social li {
   position: absolute;
   z-index: 0;
 }
-
 .carousel .carousel-item .carousel-text {
   min-height: 250px;
   display: table;
@@ -721,7 +722,6 @@ footer ul.social li {
   padding: 1rem;
   width: 100%;
 }
-
 .carousel .carousel-item .carousel-text .row {
   display: table-cell;
   vertical-align: middle;

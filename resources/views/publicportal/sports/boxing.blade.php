@@ -121,21 +121,7 @@
 
             </div>
           </div>
-          <div class="row callouts">
-              <div class="callout col">
-                <h4>Become a Certified Dentist</h4>
-                  
-                  <ul>
-                      <li>Learn From Dr Clayton Chan,  the creator of the Chan Gneuromuscular™&nbsp;"Optimized Bite” and the “Chan Scan”</li>
-                      <li>Create a bridge between various practice philosophies that will provide the most sustainable and positive results for your clients</li>
-                  </ul>
-                  <a href="http://learning.agilityguard.com/" class="button" target="_blank">Find Out More</a> 
-                
-                </div>
-              </div>
-              
-            </div>
-          </div>
+          
          
         </div>
      

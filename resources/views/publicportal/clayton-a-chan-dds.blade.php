@@ -13,6 +13,12 @@
 <section class="white-bg">
     <div class="container">
             
+        <p><center><i>
+        "Good ideas are not adopted automatically. They must be driven into practice with courageous patience." - Admiral Hyman Rickover.
+        </i></center>
+        <br><br>
+        </p>
+
             <div>
                 <div style="float:left; margin-right:20px;" >
                   <img src="http://www.agilityguard.com/assets/images/system/images/0000/0886/clayton.jpg" title="Clayton Chair" alt="Clayton Chair" rel="medium">
