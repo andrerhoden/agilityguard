@@ -24,7 +24,7 @@ class IndexRepository {
 
         $return = [];
         
-        if ($handle = opendir( $_SERVER['DOCUMENT_ROOT'] . '/storage/HomePageAthletes' )) {
+        if ($handle = opendir( $_SERVER['DOCUMENT_ROOT'] . $_ENV['APP_IMG_PATH'] . '/storage/HomePageAthletes' )) {
 
             while (false !== ($entry = readdir($handle))) {
         
