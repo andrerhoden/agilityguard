@@ -30,7 +30,7 @@ class IndexRepository {
         
                 if ($entry != "." && $entry != "..") {
         
-                    $return[] = '/storage/HomePageAthletes/' . $entry;
+                    $return[] = $_ENV['APP_URL'] . '/storage/HomePageAthletes/' . $entry;
                 }
             }
         
