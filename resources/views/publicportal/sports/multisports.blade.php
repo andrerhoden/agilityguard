@@ -44,20 +44,6 @@
 
               <div>
                 <div style="float:left; margin-right:20px;" >
-                  <img src="http://www.agilityguard.com/images/testimonials/mark.jpg">
-                </div>
-                <div>
-                    <h3>Mark Fretta</h3>
-                    <p class="t_quote">"The AgilityGuard has had an extremely noticeable and positive effect on my abilities as a triathlete. It has created an immediate increase in both my short-term and prolonged power outputs. This increased strength has directly translated to greater speed on my run, a better power-to-weight ratio on my bike, and prolonged muscular endurance evident in my swim, bike, and run."</p>
-                    <i>Former World Number 1 Tri-Athlete, 2010 Chicago Triathlon Champion</i>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-
-              <hr style="max-width:100%; margin-top:20px; margin-bottom:20px;">  
-
-              <div>
-                <div style="float:left; margin-right:20px;" >
                     <img src="http://www.agilityguard.com/assets/images/system/images/0000/2236/Paul_Romero_-_Testimonial_medium.png" title="Paul Romero   Testimonial" alt="Paul Romero   Testimonial" rel="medium"> 
                 </div>
                 <div>
@@ -102,7 +88,9 @@
                 <h3>Mark Fretta</h3>
                 <p>Former world number 1-ranked triathlete and winner of the recent Chicago TriAthlon, is an AgilityGuard user. Mark provides the following feedback:"Triathlon is a sport of many elements. In order to reach the peak of performance in the sport, one must develop quickness, endurance, power, speed, and technique in the three disciplines of swimming, cycling, and running. Additionally, to reach the elite levels of triathlon, one must find a way to maximize fitness and performance daily. To do so, an athlete must constantly find ways to improve upon weaknesses and continue to train and develop strengths. After several years of developing and maintaining my peak form in the sport of triathlon, I have finally found a unique product that has made a substantial difference in both my training and my performance."</p>
                 <p>"The AgilityGuard has had an extremely noticeable and positive effect on my abilities as a triathlete. Proper placement of my bite during my training, especially in the weight room and on my bike, has created an immediate increase in both my short-term and prolonged power outputs. Additionally, this increased strength has directly translated to greater speed on my run, a better power-to-weight ratio on my bike, and prolonged muscular endurance evident in my swim, bike, and run.</p>
+                <p class="t_quote">"The AgilityGuard has had an extremely noticeable and positive effect on my abilities as a triathlete. It has created an immediate increase in both my short-term and prolonged power outputs. This increased strength has directly translated to greater speed on my run, a better power-to-weight ratio on my bike, and prolonged muscular endurance evident in my swim, bike, and run."</p>
                 <p>The AgilityGuard is one of the greatest discoveries I have made this year in enhancing my athletic performance. I am excited to see what new levels I can reach in my training and competitions with the help of AgilityGuard."</p>
+                <i>Former World Number 1 Tri-Athlete, 2010 Chicago Triathlon Champion</i>
                 </div>
                 <div class="clearfix"></div>
               </div>
