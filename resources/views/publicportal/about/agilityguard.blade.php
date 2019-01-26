@@ -49,7 +49,7 @@
 
           <div class="row callouts">
               <div class="callout col-md-3">
-                <img src="img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
+                <img src="{{$_ENV['APP_URL']}}img/callouts/Mouthguard-Lower-Grey-thumbnail.jpg" />
               </div>
               <div class="callout col-md-9">
               

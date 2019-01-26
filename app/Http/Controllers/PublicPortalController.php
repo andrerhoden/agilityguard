@@ -95,6 +95,7 @@ class PublicPortalController extends Controller
     public function about_news()
     {
         $news = News::select(['*'])
+            ->orderBy('title', 'asc')
             ->get();
         
         return view('publicportal.about.news', [
