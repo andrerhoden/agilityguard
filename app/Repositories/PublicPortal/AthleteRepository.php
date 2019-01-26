@@ -12,7 +12,7 @@ class AthleteRepository {
         $results = Athlete::select(['*'])
             ->where('display_athlete_banner', 1)
             ->where('deleted_at', NULL)
-            ->orderBy('sort_order', 'asc')
+            ->orderBy('homepage_banner_order', 'asc')
             ->orderBy('name', 'desc')
             ->get()
             ->toArray();
@@ -62,7 +62,7 @@ class AthleteRepository {
         $results = Athlete::select(['*'])
             ->where('display_testimony_homepage', 1)
             ->where('deleted_at', NULL)
-            ->orderBy('sort_order', 'asc')
+            ->orderBy('homepage_banner_order', 'asc')
             ->orderBy('name', 'desc')
             ->get()
             ->toArray();
