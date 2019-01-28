@@ -112,7 +112,7 @@ EOT;
 
             
             $html .= <<<EOT
-            <div class="carousel-item carousel-item-right {$this->activeBanner}">            
+            <div class="carousel-item {$this->activeBanner}">            
                 <picture>
                     <source media="(max-width: 640px)" srcset="{$dsplyBannerImage}">
                     <img class="d-block w-100" src="{$dsplyBannerImage}" alt="{$bannerAthelete['Name']} - {$bannerAthelete['Awards']}" />
@@ -131,11 +131,11 @@ EOT;
                     </div>
                     
                 </div>
-                <!--<div class="photo-credit">
-                    <span class="name">{$bannerAthelete['Testimony']}</span>
-                    <span class="summary"></span>
+                <div class="photo-credit">
+                    <span class="name">{$bannerAthelete['Name']}</span>
+                    <span class="summary">{$bannerAthelete['Awards']}</span>
                 </div>            
-                -->
+                
             </div>
 EOT;
         }

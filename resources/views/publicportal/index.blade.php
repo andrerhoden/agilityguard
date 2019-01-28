@@ -10,77 +10,7 @@
       <div class="carousel-inner">
       {!!$bannerProducts!!}
       {!!$bannerAthletes!!}
-        <!-- <div class="carousel-item active">
-            <picture>
-              <source media="(max-width: 640px)" srcset="img/billboards/Christian-Homer-billboard-mobile.jpg">
-              <img class="d-block w-100" src="img/billboards/Christian-Homer-billboard.jpg" alt="Add billboard text here" />
-            </picture>
-
-            <div class="carousel-text">
-              <div class="row">
-                  <div class="col-10 col-sm-12 col-md-7 col-lg-6">
-                    <h1>
-                        Dolor sit amet,
-                        consectetur!</h1>
-                    <h2>Subtext to go here and here</h2>
-                    <a href="#" class="button">Learn more</a>
-                  </div>
-                </div>
-            </div>
-            <div class="photo-credit">
-                <span class="name">Christian Homer</span>
-                <span class="summary">Swimmer, Gold Medal, 50M Butterfy, 
-                Singapore 2010 Youth Olympics)</span>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-          
-          <picture>
-            <source media="(max-width: 640px)" srcset="img/billboards/Christian-Homer-billboard-mobile.jpg">
-            <img class="d-block w-100" src="img/billboards/Christian-Homer-billboard.jpg" alt="Add billboard text here" />
-          </picture>
-          
-              <div class="carousel-text">
-                <div class="row">
-                  <div class="col-10 col-sm-12 col-md-7 col-lg-6">
-                      <h1>Lorem ipsum
-                          dolor sit amet.</h1>
-                      <h2>Subtext to go here and here</h2>
-                      <a href="#" class="button">Learn more</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="photo-credit">
-                  <span class="name">Christian Homer</span>
-                  <span class="summary">Swimmer, Gold Medal, 50M Butterfy, 
-                  Singapore 2010 Youth Olympics)</span>
-              </div>
-          
-        </div>
-        <div class="carousel-item">
-          <picture>
-            <source media="(max-width: 640px)" srcset="img/billboards/Christian-Homer-billboard-mobile.jpg">
-            <img class="d-block w-100" src="img/billboards/Christian-Homer-billboard.jpg" alt="Add billboard text here" />
-          </picture>
-         
-              <div class="carousel-text">
-                <div class="row">
-                  <div class="col-10 col-sm-12 col-md-7 col-lg-6">
-                      <h1>Consectetur
-                          adipiscing elit.</h1>
-                      <h2>Subtext to go here and here</h2>
-                      <a href="#" class="button">Learn more</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="photo-credit">
-                  <span class="name">Christian Homer</span>
-                  <span class="summary">Swimmer, Gold Medal, 50M Butterfy, 
-                  Singapore 2010 Youth Olympics)</span>
-              </div>
-          
-        </div> -->
+        
       
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
