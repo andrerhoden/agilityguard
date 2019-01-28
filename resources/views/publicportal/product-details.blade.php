@@ -17,9 +17,11 @@
       <div class="container">
       <div class="row">
             <div class="col">
+            <Center>
                   <p>
                     <img src="{!!$product->imagesFullPath!!}">
                     </p>
+                    </center>
               </div>
           
           </div>

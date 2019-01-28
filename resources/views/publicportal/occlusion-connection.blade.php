@@ -16,7 +16,7 @@
 
     <div class="clearfix" id="body_content_left" style="min-height:1000px;">
           <center>
-          <a href="http://occlusionconnections.com/" target="_blank"><img src="http://www.agilityguard.com/assets/images/system/images/0000/0895/oclogo.png" title="OC Logo" alt="OC Logo"></a>
+            <a href="http://occlusionconnections.com/" target="_blank"><img src="http://www.agilityguard.com/assets/images/system/images/0000/0895/oclogo.png" title="OC Logo" alt="OC Logo"></a>
           </center>
           
           <p>Occlusion Connections is a group of dental professionals who are dedicated toward promoting dental health and wellness to those in need nationally and internationally. It is comprised of a community of dentists and laboratory technicians who are trained and skilled in temporomandibular joint dysfunction, restorative/prosthetic and orthodontic/orthopedic dentistry.</p>

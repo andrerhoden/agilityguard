@@ -212,6 +212,10 @@
             </div>
             
         @endif
+        <center>
+        * Athletes fitted does not imply their endorsement of AgilityGuard nor use in competition.
+        </center>
+
 
         </div>
       </div>
