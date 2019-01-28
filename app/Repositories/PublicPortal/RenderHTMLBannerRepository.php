@@ -121,7 +121,7 @@ EOT;
                     <div class="row">
                     
                         
-                        <div class="col-10 col-sm-12 col-md-7 col-lg-6">
+                        <div class="col-10 col-sm-12 col-md-7 col-lg-6 carousel-text-inner">
                             <h1>{$bannerAthelete['Name']}</h1>
                             <h2>{$bannerAthelete['Awards']}</h2>
                             <a href="/products" class="button">Learn more</a>

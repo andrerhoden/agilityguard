@@ -1014,9 +1014,13 @@ footer ul.social li {
     position: absolute;
     top: 0;
     z-index: 10;
-    padding: 3rem 0 0;
-    left: 2rem;
+    padding: 3rem 2rem 0;
+    left: 0;
     text-shadow: 1px 1px 1px #353535;
+  }
+  .carousel .carousel-item.carousel-item-right .carousel-text .carousel-text-inner {
+    text-align: right;
+    float: right;
   }
 
   .carousel .carousel-item .photo-credit {
