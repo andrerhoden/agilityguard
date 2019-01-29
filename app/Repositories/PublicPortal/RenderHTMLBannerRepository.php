@@ -94,10 +94,20 @@ EOT;
             
 
             $imageTextLayout = "";
-
+            if (
+                ( !empty( $bannerAthelete['billboard_img_position'] ) )
+                && ( $bannerAthelete['billboard_img_position'] == 'left' )
+            ){
+                $photo_text_position = 'item-right';
+                $photo_credit_text_position = '';
+            }else{
+                $photo_text_position = '';
+                $photo_credit_text_position = 'right';
+            }
             
+
             $html .= <<<EOT
-            <div class="carousel-item item-right {$this->activeBanner}">            
+            <div class="carousel-item {$photo_text_position} {$this->activeBanner}">            
                 <picture>
                     <source media="(max-width: 640px)" srcset="{$dsplyBannerImage}">
                     <img class="d-block w-100" src="{$dsplyBannerImage}" alt="{$bannerAthelete['Name']} - {$bannerAthelete['Awards']}" />
@@ -116,7 +126,7 @@ EOT;
                     </div>
                     
                 </div>
-                <div class="photo-credit">
+                <div class="photo-credit {$photo_credit_text_position}">
                     <span class="name">{$bannerAthelete['Name']}</span>
                     <span class="summary">{$bannerAthelete['Awards']}</span>
                 </div>            
