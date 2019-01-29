@@ -914,12 +914,11 @@ footer ul.social li {
 
 .carousel .carousel-item:before {
   content: "";
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
   position: absolute;
   width: 100%;
   height: 101%;
   z-index: 1;
-  display: none;
 }
 
 .carousel .carousel-item.active {
@@ -1028,12 +1027,11 @@ footer ul.social li {
   }
 
   .carousel .carousel-item .photo-credit {
-    background: rgba(1, 53, 100, .95);
     position: absolute;
     right: 0;
     width: 300px;
   }
-  .carousel .carousel-item.item-right .photo-credit {
+  .carousel .carousel-item .photo-credit.right {
     right: auto;
     left: 0;
     border: 0;
@@ -1059,6 +1057,17 @@ footer ul.social li {
     display: -ms-flexbox;
     display: flex;
     width: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel .carousel-item h2 {
+    margin-bottom: 2rem;
+  }
+  .carousel .carousel-item .carousel-text {
+    padding: 3rem 2rem;
+  }
+  .carousel .carousel-item .photo-credit {
+    background: rgba(1, 53, 100, .95);
   }
 }
 
@@ -1463,9 +1472,7 @@ section.experience .text {
   .brands {
     margin: 2rem auto -2rem;
   }
-  .carousel .carousel-item h2 {
-    margin-bottom: 2rem;
-  }
+
 }
 #owl-testimonies .owl-stage {
   display: flex;
