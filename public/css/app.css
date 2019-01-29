@@ -1509,7 +1509,9 @@ section.experience .text {
   .services {
     margin-top: 3rem;
   }
-
+  .carousel .carousel-item {
+    min-height: 350px;
+  }
   .services .service {
     margin: 0 0 2rem;
   }
