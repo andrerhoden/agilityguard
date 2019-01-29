@@ -97,7 +97,7 @@ EOT;
 
             
             $html .= <<<EOT
-            <div class="carousel-item {$this->activeBanner}">            
+            <div class="carousel-item item-right {$this->activeBanner}">            
                 <picture>
                     <source media="(max-width: 640px)" srcset="{$dsplyBannerImage}">
                     <img class="d-block w-100" src="{$dsplyBannerImage}" alt="{$bannerAthelete['Name']} - {$bannerAthelete['Awards']}" />
