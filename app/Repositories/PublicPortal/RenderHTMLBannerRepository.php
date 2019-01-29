@@ -50,21 +50,6 @@ class RenderHTMLBannerRepository {
                     <source media="(max-width: 640px)" srcset="{$dsplyBannerImage}">
                     <img class="d-block w-100" src="{$dsplyBannerImage}" alt="{$bannerProduct['name']}" />
                 </picture>            
-                <div class="carousel-text">
-                    <div class="row">
-                    
-                        <!--
-                        <div class="col-10 col-sm-12 col-md-7 col-lg-6">
-                            <h1>Lorem ipsum
-                                dolor sit amet.</h1>
-                            <h2>Subtext to go here and here</h2>
-                            <a href="#" class="button">Learn more</a>
-                        </div>
-                        -->
-
-                    </div>
-                    
-                </div>
                 <div class="photo-credit">
                     <span class="name">{$bannerProduct['name']}</span>
                     <!--<span class="name">{$bannerProduct['Summary']}</span>-->                    
@@ -112,7 +97,7 @@ EOT;
 
             
             $html .= <<<EOT
-            <div class="carousel-item carousel-item-right {$this->activeBanner}">            
+            <div class="carousel-item item-right {$this->activeBanner}">            
                 <picture>
                     <source media="(max-width: 640px)" srcset="{$dsplyBannerImage}">
                     <img class="d-block w-100" src="{$dsplyBannerImage}" alt="{$bannerAthelete['Name']} - {$bannerAthelete['Awards']}" />
@@ -121,7 +106,7 @@ EOT;
                     <div class="row">
                     
                         
-                        <div class="col-10 col-sm-12 col-md-7 col-lg-6">
+                        <div class="col-12 col-md-7 col-lg-6 carousel-text-inner">
                             <h1>{$bannerAthelete['Name']}</h1>
                             <h2>{$bannerAthelete['Awards']}</h2>
                             <a href="/products" class="button">Learn more</a>
@@ -131,11 +116,11 @@ EOT;
                     </div>
                     
                 </div>
-                <!--<div class="photo-credit">
-                    <span class="name">{$bannerAthelete['Testimony']}</span>
-                    <span class="summary"></span>
+                <div class="photo-credit">
+                    <span class="name">{$bannerAthelete['Name']}</span>
+                    <span class="summary">{$bannerAthelete['Awards']}</span>
                 </div>            
-                -->
+                
             </div>
 EOT;
         }
