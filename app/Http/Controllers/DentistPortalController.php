@@ -43,6 +43,9 @@ class DentistPortalController extends Controller
 
         $contact = \App\Contact::select()
             ->where('EmailAddress', $input['Email'])  
+            ->whereHas('dentalPracticeId', function($q){
+                $q->where('dp_access', 1);
+            })
             ->first();
         
         
@@ -51,7 +54,9 @@ class DentistPortalController extends Controller
             ( empty($contact) )
             || ( !Hash::check($input['strPassword'], $contact->Password ) ) 
         ){
-           return redirect('/dentist-portal/logout');
+            $request->session()->forget('dpUser');
+        $request->session()->flush();
+           return redirect('/dentist-portal')->with('warning', 'Login denied, please contact administrator.');;
         }
 
         $this->__dpUser = $input;
@@ -66,7 +71,7 @@ class DentistPortalController extends Controller
         $request->session()->forget('dpUser');
         $request->session()->flush();
         
-        return redirect('/dentist-portal')->with('success', 'Logout');
+        return redirect('/dentist-portal')->with('message', 'Successfully signed out');
     }
 
     
