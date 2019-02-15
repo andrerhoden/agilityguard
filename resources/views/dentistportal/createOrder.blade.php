@@ -175,6 +175,34 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="marketing_feedback">How did you hear about AgilityGuard?</label>
+                                                                    <select name="marketing_feedback" id="marketing_feedback" >    
+                                                                        <option value="" disabled selected>Select...</option>
+                                                                        <option value="friend">Friend</option>
+                                                                        <option value="family-dentist">Family Dentist</option>
+                                                                        <option value="web-ad">Web Ad</option>                                                                        
+                                                                    </select>
+                                                                    <div class="help-block with-errors"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="wear_frequency">How often will you use/wear AgilityGuard?</label>
+                                                                    <select name="wear_frequency" id="wear_frequency">     
+                                                                        <option value="" disabled selected>Select...</option>                                                                   
+                                                                        <option value="daily">Daily</option>
+                                                                        <option value="weekly">Weekly</option>
+                                                                        <option value="monthly">Monthly</option>                                                                        
+                                                                    </select>
+                                                                    <div class="help-block with-errors"></div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
                 
 
                                             </div>

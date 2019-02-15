@@ -24,7 +24,9 @@ class LabOrdersRepository
             'country' => $input['country'],
             'phone_number' => $input['phone_number'],
             'sports' => $input['sports'],
-            'comments' => $input['comments']    
+            'comments' => $input['comments'],
+            'marketing_feedback' => $input['marketing_feedback'],
+            'wear_frequency' => $input['wear_frequency']    
         ]);
 
         if ( $consumer )
