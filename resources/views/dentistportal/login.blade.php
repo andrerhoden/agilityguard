@@ -12,7 +12,16 @@
           </div>
       </section>
 
-      
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>        
+@endif
+@if(session()->has('warning'))
+    <div class="alert alert-danger">
+        {{ session()->get('warning') }}
+    </div>        
+@endif
 
 <section class="white-bg">
         <div class="container">
@@ -29,6 +38,10 @@
             <div class="row justify-content-sm-center">
                 <div class="col-sm-8 col-md-6">
                 
+                
+
+
+
                     <form id="log_in" action="{{$_ENV['APP_URL']}}/dentist-portal/login/execute" method="post" class="cf" >	{{ csrf_field() }}
 
                         <div class="form-group">
