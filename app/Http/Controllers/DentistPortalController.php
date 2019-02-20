@@ -18,13 +18,18 @@ class DentistPortalController extends Controller
     {
     }
 
-    private function __chkDpUser()
+    private function __chkDpUser() 
     {
         
-        if ( empty( session('dpUser') ) )
-        {            
-            return redirect('/dentist-portal/logout');            
+           
+        if ( empty( session('dpUser') ) )         
+        {       
+            header("Location: /dentist-portal/logout");
+            die();
+            // echo  redirect()->route('logout') ;
+            // die('Logging out...');
         }
+        
     }
 
     public function login()
@@ -56,7 +61,7 @@ class DentistPortalController extends Controller
         ){
             $request->session()->forget('dpUser');
         $request->session()->flush();
-           return redirect('/dentist-portal')->with('warning', 'Login denied, please contact administrator.');;
+           return redirect('/dentist-portal')->with('warning', 'Login denied, please contact administrator.');
         }
 
         $this->__dpUser = $input;
@@ -78,8 +83,9 @@ class DentistPortalController extends Controller
 
     public function createOrder()
     {        
+        
         $this->__chkDpUser();
-
+        
         $labs = \App\User::select()
             ->where('role_id', 3)
             ->get();
