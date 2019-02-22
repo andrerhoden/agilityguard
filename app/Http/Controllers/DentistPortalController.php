@@ -100,7 +100,7 @@ class DentistPortalController extends Controller
     {
         
         $input = $request->all();
-        if ( LabOrdersRepository::saveOrder( $input ) )
+        if ( LabOrdersRepository::saveOrder( $input, session('dpUser') ) )
         {
             $status = "Order was successfully created";
             return redirect('/dentist-portal/orders')->with('message', $status);
@@ -117,10 +117,13 @@ class DentistPortalController extends Controller
     {        
         $this->__chkDpUser();
 
+
+
         $orders = \App\LabOrder::select()
             ->with('products')
             ->with('users')
-            ->with('consumer');
+            ->with('consumer')
+            ->where('dentalpractice_id', session('dpUser')->dentalPracticeId()->first()->id );
             
         return view('dentistportal.orders', [
             'orders' => $orders->get()
