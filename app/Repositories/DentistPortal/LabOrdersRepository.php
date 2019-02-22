@@ -9,9 +9,8 @@ use Illuminate\Support\Facades\DB;
 class LabOrdersRepository 
 {
     
-    public static function saveOrder( $input )
+    public static function saveOrder( $input, $dpUser )
     {
-        
         
         $consumer = Consumer::create([
             'last_name' => $input['last_name'],
@@ -39,6 +38,8 @@ class LabOrdersRepository
                 'subtotal' => $input['form_sub'],
                 'taxes' => $input['form_tax'],
                 'total' => $input['form_total'],
+                'dentist_id' => $dpUser->id,
+                'dentalpractice_id' => $dpUser->dentalPracticeId()->first()->id
             ]);
             
             
