@@ -24,7 +24,7 @@ class DentistPortalController extends Controller
            
         if ( empty( session('dpUser') ) )         
         {       
-            header("Location: /dentist-portal/logout");
+            header("Location: {$_ENV['APP_URL']}/dentist-portal/logout");
             die();
             // echo  redirect()->route('logout') ;
             // die('Logging out...');
