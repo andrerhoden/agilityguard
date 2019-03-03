@@ -89,14 +89,14 @@
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label for="form_name">Dentist Name *</label>
-                                                                        <input id="form_name" type="text" name="DentistName" class="form-control" value="{{$dentist->Name}}" required="required" readonly data-error="Firstname is required.">
+                                                                        <input id="form_name" type="text" name="DentistName" class="form-control" value="{{$dentist->Name}}"  readonly >
                                                                         <div class="help-block with-errors"></div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label for="form_email">Email *</label>
-                                                                        <input id="form_email" type="email" name="EmailAddress" value="{{$dentist->EmailAddress}}" class="form-control" required="required" data-error="Email is required.">
+                                                                        <input id="form_email" type="email" name="EmailAddress" value="{{$dentist->EmailAddress}}" class="form-control" >
                                                                         <div class="help-block with-errors"></div>
                                                                     </div>
                                                                 </div>
@@ -167,7 +167,7 @@
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="form_address">Address *</label>
-                                                            <input id="form_address" type="text" name="address" class="form-control" value="{{$dentist->dentalPracticeId->Address}}" required="required" data-error="Address is required.">
+                                                            <input id="form_address" type="text" name="address" class="form-control" value="{{$dentist->dentalPracticeId->Address}}" readonly>
                                                             <div class="help-block with-errors"></div>
                                                         </div>
                                                     </div>
@@ -176,21 +176,21 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="form_city">City *</label>
-                                                            <input id="form_city" type="text" name="city" class="form-control" value="{{$dentist->dentalPracticeId->City}}" required="required" data-error="City is required.">
+                                                            <input id="form_city" type="text" name="city" class="form-control" value="{{$dentist->dentalPracticeId->City}}" readonly>
                                                             <div class="help-block with-errors"></div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label for="form_prov">Prov/State *</label>
-                                                            <input id="form_prov" type="text" name="prov" class="form-control" value="{{$dentist->dentalPracticeId->Province}}" required="required" data-error="Prov/State is required.">
+                                                            <input id="form_prov" type="text" name="prov" class="form-control" value="{{$dentist->dentalPracticeId->Province}}" readonly>
                                                             <div class="help-block with-errors"></div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label for="form_postal">Postal/Zip *</label>
-                                                            <input id="form_postal" type="text" name="postal" class="form-control" value="{{$dentist->dentalPracticeId->Postal_code}}" required="required" data-error="Postal/Zip is required.">
+                                                            <input id="form_postal" type="text" name="postal" class="form-control" value="{{$dentist->dentalPracticeId->Postal_code}}" readonly>
                                                             <div class="help-block with-errors"></div>
                                                         </div>
                                                     </div>
@@ -199,7 +199,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="form_country">Country *</label>
-                                                            <input id="form_country" type="text" name="country" class="form-control" value="{{$dentist->dentalPracticeId->Country}}" required="required" data-error="Country is required.">
+                                                            <input id="form_country" type="text" name="country" class="form-control" value="{{$dentist->dentalPracticeId->Country}}" readonly>
                                                             <div class="help-block with-errors"></div>
                                                         </div>
                                                     </div>
