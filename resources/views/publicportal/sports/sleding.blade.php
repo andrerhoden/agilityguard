@@ -34,19 +34,6 @@
 
         <div>
           <div style="float:left;margin-right:20px;">
-            <a href="http://www.youtube.com/watch?v=IBQ1zVJPyvc" title="http://www.youtube.com/watch?v=IBQ1zVJPyvc" target="_blank"><img src="http://www.agilityguard.com/assets/images/system/images/0000/2308/Katie_Uhlaender_-_Skeleton___Weightlifting_medium.png" title="Katie Uhlaender   Skeleton   Weightlifting" alt="Katie Uhlaender   Skeleton   Weightlifting" rel="medium"></a>
-          </div>
-          <div>
-            <h2>Katie Uhlaender</h2>
-            <p class="t_quote">"In both my sports, power, speed and agility are key. For me, it's all about performance and AgilityGuard gives me that performance. Whether you are an everyday athlete or and elite athlete, AgilityGuard will get you results!"</p>
-            <i>2-Time Olympian &amp; 2-Time World Cup Champion (Skeleton), Olympic Weightlifting Hopeful</i>
-          </div>
-          <div class="clearfix"></div>
-          <hr style="max-width:100%; margin-top:20px; margin-bottom:20px;">  
-        </div>
-
-        <div>
-          <div style="float:left;margin-right:20px;">
           <img src="http://www.agilityguard.com/assets/images/system/images/0000/1255/elana.jpg">
           </div>
           <div>
@@ -58,7 +45,18 @@
           <hr style="max-width:100%; margin-top:20px; margin-bottom:20px;">  
         </div>
 
-
+        <div>
+          <div style="float:left;margin-right:20px;">
+            <a href="http://www.youtube.com/watch?v=IBQ1zVJPyvc" title="http://www.youtube.com/watch?v=IBQ1zVJPyvc" target="_blank"><img src="http://www.agilityguard.com/assets/images/system/images/0000/2308/Katie_Uhlaender_-_Skeleton___Weightlifting_medium.png" title="Katie Uhlaender   Skeleton   Weightlifting" alt="Katie Uhlaender   Skeleton   Weightlifting" rel="medium"></a>
+          </div>
+          <div>
+            <h2>Katie Uhlaender</h2>
+            <p class="t_quote">"In both my sports, power, speed and agility are key. For me, it's all about performance and AgilityGuard gives me that performance. Whether you are an everyday athlete or and elite athlete, AgilityGuard will get you results!"</p>
+            <i>2-Time Olympian &amp; 2-Time World Cup Champion (Skeleton), Olympic Weightlifting Hopeful</i>
+          </div>
+          <div class="clearfix"></div>
+          <hr style="max-width:100%; margin-top:20px; margin-bottom:20px;">  
+        </div>
 
 
               <h1>Performance Benefits:</h1>

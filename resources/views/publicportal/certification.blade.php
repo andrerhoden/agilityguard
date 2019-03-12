@@ -85,7 +85,7 @@
 
             <div class="divider">
             <p><img src="http://www.agilityguard.com/assets/images/courses_phi.png" style="display: block; float: none;"></p>
-            <p>Triumphant Athletics Group's online PHI AgilityGuard Course Registration fee is $500.  The PHI Course covers the Optimized-Bite principles and techniques of Dr. Clayton Chan. It also includes  product, diagnostic and technical overviews, instructional videos and testing resource access. Access is limited to Triumphant Athletics Group certified dentists in good standing. Contact Nigel with any questions at nigel@agilityguard.com. Cancellation Policy: Course fees are non-refundable.</p>
+            <p>Triumphant Athletics Group's online PHI AgilityGuard Course Registration fee is $500.  The PHI Course covers the Optimized-Bite principles and techniques of Dr. Clayton Chan. It also includes  product, diagnostic and technical overviews, instructional videos and testing resource access. Access is limited to Triumphant Athletics Group certified dentists in good standing. Contact Customer Service with any questions at customerservice@agilityguard.com. Cancellation Policy: Course fees are non-refundable.</p>
 
             <img src="http://www.agilityguard.com/assets/images/credits_3CE.png">
             <img src="http://www.agilityguard.com/assets/images/logo_smile.png">
@@ -95,7 +95,7 @@
 
             <div class="divider">
             <img src="http://www.agilityguard.com/assets/images/courses_trophy.png" style="display: block; float: none;">
-            <p>Triumphant Athletics Group's online Trophy AgilityGuard Course Registration fee is $750.  The Trophy course    covers the Optimized-Bite principles and techniques of Dr. Clayton Chan. It also includes product, diagnostic and technical overviews, instructional videos and testing resource access.  Access is limited to Triumphant Athletics Group certified dentists in good standing. Contact Nigel with any questions at nigel@agilityguard.com. Cancellation Policy: Course fees are non-refundable.</p>
+            <p>Triumphant Athletics Group's online Trophy AgilityGuard Course Registration fee is $500.  The Trophy course    covers the Optimized-Bite principles and techniques of Dr. Clayton Chan. It also includes product, diagnostic and technical overviews, instructional videos and testing resource access.  Access is limited to Triumphant Athletics Group certified dentists in good standing. Contact Customer Service with any questions at customerservice@agilityguard.com. Cancellation Policy: Course fees are non-refundable.</p>
 
             <img src="http://www.agilityguard.com/assets/images/credits_4CE.png">
             <img src="http://www.agilityguard.com/assets/images/logo_smile.png">

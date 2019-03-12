@@ -61,23 +61,11 @@
               </li>
               
               <li>
-                <a href="https://youtube.com/embed/Hjfp03SO3os?autoplay=1&rel=0&showinfo=0&autohide=1">
-                  <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/Hjfp03SO3os/default.jpg" /></span>
-                  <div class="desc">AgilityGuard</div>
+                <a href="https://www.youtube.com/embed/OvWtzxRMhkA?autoplay=1&rel=0&showinfo=0&autohide=1">
+                  <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/OvWtzxRMhkA/default.jpg" /></span>
+                  <div class="desc">Check this out - AgilityGuard High Performance!</div>
                 </a>
-              </li>
-              <li>
-                <a href="https://youtube.com/embed/ucM2EDQMVVI?autoplay=1&rel=0&showinfo=0&autohide=1">
-                  <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/ucM2EDQMVVI/default.jpg" /></span>
-                  <div class="desc">AgilityGuard - Apolo Ohno</div>
-                </a>
-              </li>
-              <li>
-                <a href="https://youtube.com/embed/rOhKllkRnJ0?autoplay=1&rel=0&showinfo=0&autohide=1">
-                  <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/rOhKllkRnJ0/default.jpg" /></span>
-                  <div class="desc">Beyond the Next Level</div>
-                </a>
-              </li>
+              </li>              
             </ul>
       </div>
 
